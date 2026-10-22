@@ -6,7 +6,7 @@ Continue the existing Extra Lives 1.170.64 reverse-engineering project from the 
 
 The goal is to understand the actual relationships between the game's data files and executable code, especially `Frames.txt`, then establish an evidence-based technical plan for possible online multiplayer.
 
-Work incrementally. Preserve progress in small, useful documentation updates rather than attempting an enormous one-shot analysis. Avoid unnecessarily expensive repeated scans, massive terminal output, or dumping entire decompiled classes into the conversation. Use targeted searches and save findings to files.
+Work incrementally. Preserve progress in small, useful documentation updates rather than attempting an enormous one-shot analysis. Avoid unnecessarily expensive repeated scans, massive terminal output, or dumping entire decompiled classes into the conversation. Use targeted searches and save findings to files. Heavy analysis itself is acceptable when useful; the priority is durable progress, not minimizing computation.
 
 ## 1. Start safely and inspect the workspace
 
@@ -19,6 +19,19 @@ Before changing anything:
 - Do not print huge file contents or huge search results to the terminal. Use targeted queries and write detailed results directly to Markdown files.
 
 If the previous session was interrupted, inspect its partial output and Git state first. Recover useful work rather than starting over.
+
+## Mandatory checkpoint and model-switch recovery protocol
+
+The model/provider may change during this task because of rate limits or exhausted free-model quotas. Assume a later model may have no access to the previous model's conversational context. The repository files must therefore be the source of truth for progress.
+
+- Maintain `docs/extralives-swf-analysis/INVESTIGATION-PROGRESS.md` as a concise, durable handoff checkpoint.
+- At the start, create or update it with the current branch/commit, initial Git state, artifact locations, completed work, existing evidence, and the next concrete action.
+- After each meaningful stage, save findings to the appropriate deliverable and update the progress checkpoint immediately. Do not wait until the entire investigation is finished.
+- The checkpoint must list completed stages, files created/updated, key verified findings, unresolved questions, commands/tools already run when relevant, any failed attempts worth avoiding, and the exact next steps.
+- Record whether findings are committed/pushed or still uncommitted. Never describe unsaved conversational reasoning as durable progress.
+- Before switching tasks or finishing a session, leave the repository in a recoverable state with the checkpoint updated.
+- If a new model/provider continues the task, its first action must be to read this prompt, `INVESTIGATION-PROGRESS.md`, Git status/recent commits, and the relevant existing reports. It must resume from the last verified checkpoint, not restart completed work or trust unsupported summaries.
+- Keep the checkpoint concise and factual. Do not duplicate the full reports inside it.
 
 ## 2. Investigate Frames.txt completely
 
@@ -152,7 +165,7 @@ Use this sequence:
 6. Write the prototype plan.
 7. Cross-check documentation, then update summaries and open questions.
 
-After each stage, save useful findings to the intended Markdown files so a crash or interruption does not lose all progress. Keep tool output concise. Avoid giant terminal dumps, huge context responses, unnecessary parallel heavy jobs, or repeating completed scans. If a task is too large for the current session, finish and validate the current stage, document the exact next step, and stop cleanly rather than risking the whole session.
+After each stage, save useful findings to the intended Markdown files and update `INVESTIGATION-PROGRESS.md` so a crash, token limit, rate limit, or model/provider change does not lose progress. Keep tool output concise, but do not avoid substantial analysis when it is necessary. Avoid giant terminal dumps, huge context responses, unnecessary parallel heavy jobs, or repeating completed scans. If a task is too large for the current session, finish and validate the current stage, update the checkpoint with the exact next step, and stop cleanly. Never wait until the end to save all findings.
 
 ## 11. Verification and GitHub
 
