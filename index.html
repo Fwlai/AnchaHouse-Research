@@ -105,7 +105,7 @@ const starsVisible=1-dayBlend; // sparse tiny square stars fade away in daylight
 castleRoot.rotation.y=dragging?targetYaw:THREE.MathUtils.damp(castleRoot.rotation.y,targetYaw+Math.sin(t*.22)*.012,.7,dt);
 castleRoot.rotation.x=dragging?targetPitch:THREE.MathUtils.damp(castleRoot.rotation.x,targetPitch,.8,dt);
 if(!dragging){targetYaw=THREE.MathUtils.damp(targetYaw,0,.5,dt);targetPitch=THREE.MathUtils.damp(targetPitch,0,.65,dt);}
-island.rotation.y=castleRoot.rotation.y*.10;island.rotation.x=castleRoot.rotation.x*.1;
+
 camera.position.x=THREE.MathUtils.damp(camera.position.x,Math.sin(castleRoot.rotation.y)*1.15,.9,dt);camera.position.y=8.4+castleRoot.rotation.x*5;camera.lookAt(lookTarget);
 clouds.forEach(c=>{c.position.x=c.userData.x+Math.sin(t*c.userData.speed+c.userData.phase)*1.1;c.position.y+=Math.sin(t*.15+c.userData.phase)*.0008;});
 ocean.children.forEach(tile=>{tile.position.y=tile.userData.baseY+Math.sin(t*.7+tile.userData.phase)*.035;});
