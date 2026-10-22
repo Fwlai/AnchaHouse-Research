@@ -4,9 +4,11 @@ An independent small multiplayer 2D fantasy castle world for friends. Developmen
 
 ## Current focus: main menu
 
-Open [`index.html`](index.html) through a local HTTP server or a web host. The menu layout has a reserved 3D presentation stage for the supplied castle GLB, navigation sections, and a responsive mobile layout.
+Open the deployed GitHub Pages site (see below) or serve the folder over HTTP (`python -m http.server 8080`) and open `index.html`. The menu shows the castle GLB (`assets/castle_3d_model.glb`) on a pixel-tile ground, turning slowly (drag to rotate), with two pixel witches on brooms flying around it, and the menu buttons on the right. Music is still a placeholder.
 
-The model is expected at `assets/castle_3d_model.glb`. The file has not yet been added to this repository, so the 3D stage will show a missing-model notice until the exact asset is uploaded. No substitute castle has been invented.
+## Deployment
+
+Every push to `main` runs `.github/workflows/pages.yml` and publishes the repository to GitHub Pages. One-time setup: repository Settings, Pages, Build and deployment, Source: GitHub Actions.
 
 ## Project boundaries
 

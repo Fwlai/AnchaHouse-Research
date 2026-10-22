@@ -1,6 +1,6 @@
 # Ancha House - Asset Sources, Credits and Obligations
 
-This document tracks third-party assets, source code, music, and other resources considered for Ancha House. Nothing listed here should be treated as approved for redistribution until its exact source and license have been verified.
+This document tracks third-party assets, source code, music, and other resources used or considered for Ancha House. Nothing listed as unreviewed should be treated as approved for redistribution until its exact source and license have been verified.
 
 ## Tracking template
 
@@ -19,7 +19,35 @@ For every selected asset, record:
 - Intended use in Ancha House:
 - Notes:
 
-## Stendhal
+## In use
+
+### Castle 3D Model
+- Local path: `assets/castle_3d_model.glb`
+- Original source URL: https://sketchfab.com/3d-models/castle-3d-model-23eb94cac33d4099b7185a81bdc038e4
+- Creator: JoshGarber (https://sketchfab.com/JoshGarber)
+- License stated by the original source and inside the file metadata: Creative Commons Attribution 4.0 (CC BY 4.0), http://creativecommons.org/licenses/by/4.0/
+- Required attribution text: "Castle 3D Model" by JoshGarber, licensed under CC BY 4.0.
+- Modifications made: none to the file; the menu scales and re-centers it at runtime.
+- Verification status: Verified against the Sketchfab download page and the glTF asset metadata.
+- Intended use: 3D castle in the main menu.
+- Notes: glTF 2.0, about 60k triangles, 42 PNG textures (about 20 MB). Can be compressed later (WebP/Draco); record any such change here.
+
+### Witch on Broomstick (v1.2)
+- Local path: `assets/sprites/witch-on-broomstick/` (license files and README included)
+- Original source URL: https://opengameart.org/node/86131
+- Creators: Svetlana Kushnariova (Cabbit) and Jordan Irwin (AntumDeluge)
+- License stated by the original source: OpenGameArt.org Attribution (OGA BY) 3.0 or later, and Creative Commons Attribution (CC BY) 3.0 or later
+- Required attribution text: "Witch on Broomstick" by Svetlana Kushnariova (Cabbit) and Jordan Irwin (AntumDeluge), OGA-BY 3.0 / CC BY 3.0, https://opengameart.org/node/86131. Based on work by Svetlana Kushnariova (see `sources.md`).
+- Modifications made: none to the files; the menu animates the 24x32 sheets in code.
+- Source-file or license-document path: `assets/sprites/witch-on-broomstick/LICENSE-*.txt`, `README.txt`, `sources.md`
+- Verification status: Verified from the supplied pack documentation.
+- Intended use: pixel witches flying around the castle in the main menu.
+- Notes: sheet layout is 3 columns x 4 rows, rows N/E/S/W in the NESW files.
+
+### Pixel ground tiles
+- Drawn procedurally in `index.html` (original work for this project, no third-party art).
+
+## Stendhal (research only, nothing copied yet)
 
 - Source repository: https://github.com/arianne/stendhal
 - Official website: https://arianne-project.org/game/stendhal.html
@@ -38,7 +66,7 @@ Potential areas to inspect:
 - `doc/sources/graphics-misc.txt`
 - `doc/sources/audio-music.txt`
 
-Licensing and attribution may differ between individual assets. Check the relevant documentation and original source before selecting an asset.
+Licensing and attribution differ between individual assets. Check the relevant documentation and original source before selecting an asset. Entries marked ??? in Stendhal's source records are not usable until their provenance is resolved.
 
 ## Other potential sources
 
@@ -63,6 +91,6 @@ Planned ideas:
 - A dedicated credits and licenses section in the interactive bot startup flow.
 - Interactive bot messages describing creators, licenses, obligations, and sources.
 - A button inside the Mini App that opens the bot using a specific start parameter.
-- A credits/legal section inside the Mini App itself.
+- A credits/legal section inside the Mini App itself (the menu's Credits panel already lists the assets in use).
 
 These are future design ideas, not implemented features.
