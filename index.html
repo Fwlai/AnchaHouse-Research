@@ -108,8 +108,8 @@ renderer.domElement.addEventListener('pointermove',e=>{if(!dragging)return;const
 const endDrag=()=>{dragging=false;};renderer.domElement.addEventListener('pointerup',endDrag);renderer.domElement.addEventListener('pointercancel',endDrag);
 const clock=new THREE.Clock();const lookTarget=new THREE.Vector3(0,2.2,0);const cameraTarget=new THREE.Vector3(-4.5,6.4,18.5);
 function render(){requestAnimationFrame(render);const dt=Math.min(clock.getDelta(),.04),t=clock.elapsedTime;
-// One complete day/night cycle takes two minutes, with equal-length day and night.
-const phase=(t/120*Math.PI*2-Math.PI/2);dayBlend=(Math.sin(phase)+1)/2;
+// One complete day/night cycle takes three minutes, with equal-length day and night.
+const phase=(t/180*Math.PI*2-Math.PI/2);dayBlend=(Math.sin(phase)+1)/2;
 const night=new THREE.Color('#111a39'),dawn=new THREE.Color('#d28d83'),day=new THREE.Color('#77b5df'),dusk=new THREE.Color('#df8b72');let skyColor;
 if(dayBlend<.25)skyColor=night.clone().lerp(dawn,dayBlend/.25);else if(dayBlend<.72)skyColor=dawn.clone().lerp(day,(dayBlend-.25)/.47);else skyColor=day.clone().lerp(dusk,Math.min(1,(dayBlend-.72)/.28));
 scene.background.copy(skyColor);skyMaterial.uniforms.topColor.value.copy(new THREE.Color('#090f28').lerp(new THREE.Color('#78b8e6'),dayBlend));skyMaterial.uniforms.horizonColor.value.copy(skyColor);skyMaterial.uniforms.lowColor.value.copy(new THREE.Color('#10162e').lerp(new THREE.Color('#d7a39a'),dayBlend*.7));scene.fog.color.copy(skyColor);starField.visible=dayBlend<.98;starField.children.forEach(star=>{star.material.opacity=THREE.MathUtils.clamp(1-dayBlend*1.15,0,1);});
@@ -117,7 +117,7 @@ key.color.copy(new THREE.Color('#a7c7ff').lerp(new THREE.Color('#fff0cf'),dayBle
 const starsVisible=1-dayBlend; // sparse tiny square stars fade away in daylight
 targetPitch=THREE.MathUtils.clamp(targetPitch,-.20,.78);if(!dragging){targetYaw+=dt*.13*orbitDirection;}
 yaw=THREE.MathUtils.damp(yaw,targetYaw,5.5,dt);pitch=THREE.MathUtils.damp(pitch,targetPitch,5.5,dt);
-const orbitRadius=19.2,orbitElevation=THREE.MathUtils.clamp(.28+pitch,.08,1.08),horizontalRadius=orbitRadius*Math.cos(orbitElevation);lookTarget.set(-4.5,1.1,0);camera.position.set(lookTarget.x+Math.sin(yaw)*horizontalRadius,lookTarget.y+Math.sin(orbitElevation)*orbitRadius,lookTarget.z+Math.cos(yaw)*horizontalRadius);camera.up.set(0,1,0);camera.lookAt(lookTarget);
+const orbitRadius=19.2,orbitElevation=THREE.MathUtils.clamp(.28+pitch,.08,1.08),horizontalRadius=orbitRadius*Math.cos(orbitElevation),castleCenterX=-8.4,castleCenterY=1.1,castleCenterZ=-.2;camera.position.set(castleCenterX+Math.sin(yaw)*horizontalRadius,castleCenterY+Math.sin(orbitElevation)*orbitRadius,castleCenterZ+Math.cos(yaw)*horizontalRadius);lookTarget.set(castleCenterX+Math.cos(yaw)*3.2,castleCenterY,castleCenterZ-Math.sin(yaw)*3.2);camera.up.set(0,1,0);camera.lookAt(lookTarget);
 clouds.forEach(c=>{c.position.x=c.userData.x+Math.sin(t*c.userData.speed+c.userData.phase)*.8;c.position.y=9+Math.sin(t*.15+c.userData.phase)*.12;});
 waterGlints.children.forEach((g,i)=>{g.material.opacity=.08+.12*(.5+.5*Math.sin(t*.55+i*1.7));});
 const nightFactor=1-THREE.MathUtils.smoothstep(dayBlend,.32,.58);witches.forEach((w,i)=>{const speed=i===0?.19:-.155;const a=t*speed+i*Math.PI;const radius=i===0?7.3:9.1;const x=Math.cos(a)*radius-.5,z=Math.sin(a)*radius-1.5,y=4.5+Math.sin(a*2+i)*1.1;w.position.set(x,y,z);w.material.opacity=nightFactor;w.visible=nightFactor>.015;w.material.rotation=-Math.sin(a)*.13;const tangent=a+(speed>0?Math.PI/2:-Math.PI/2);const angle=((tangent%(Math.PI*2))+(Math.PI*2))%(Math.PI*2);const row=angle<Math.PI/4||angle>=7*Math.PI/4?1:angle<3*Math.PI/4?2:angle<5*Math.PI/4?3:0;const frame=Math.floor(t/0.15)%3;setWitchFrame(w,witchTextures[i],frame,row);});
