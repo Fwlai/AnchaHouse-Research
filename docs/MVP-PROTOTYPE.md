@@ -1,46 +1,39 @@
-# Ancha House: first playable prototype
+# Main menu shell and visual foundation
 
-## What exists now
+## Current direction
 
-The repository includes a self-contained browser prototype in `index.html`. It is deliberately dependency-free so it can be opened locally on a phone or desktop browser without installing a framework.
+Ancha House starts with its main menu and presentation layer, not a disposable playable prototype. The actual game scene will be built later, once the visual direction and project structure are agreed.
 
-### Included
-- A scrollable top-down fantasy castle courtyard with walls, towers, a central gate, paths, trees, and a small garden.
-- A placeholder player character with four-direction movement.
-- Keyboard controls: WASD or arrow keys.
-- On-screen directional controls for touchscreens.
-- Collision against the outer walls, castle building, and towers.
-- A small interaction button / Space key with contextual placeholder messages.
-- Responsive canvas rendering with pixelated presentation.
+## Current menu shell
 
-### Not included yet
-- Multiplayer, accounts, server, persistence, chat, or Telegram integration.
-- The final character sprites, licensed art, sound, or music.
-- Interior rooms, floors, inventory, minigames, or a real door transition.
-- The uploaded 3D castle model or the rotating 3D main menu.
+The root `index.html` now defines the initial layout:
+- Dark fantasy title screen with the castle presentation area on the left and navigation on the right.
+- Responsive desktop and mobile layout.
+- Main menu entries reserved for Enter the House, Characters, Settings, and Credits & Sources.
+- Modal placeholders so buttons have a defined interaction without pretending those systems already exist.
+- A Three.js GLB loading stage configured to load `assets/castle_3d_model.glb`, frame the model automatically, light it, and rotate it slowly. Pointer dragging can rotate the model manually.
+- A music toggle placeholder that does not claim to play audio before a track is selected.
 
-## Run it
+## Important asset status
 
-Open `index.html` in a modern browser. No build step or package installation is needed. On Android, download the repository files and open the HTML file in a browser, or serve the folder using any simple local HTTP server.
+The supplied `castle_3d_model.glb` is not yet stored in this repository. The menu expects it at `assets/castle_3d_model.glb`. Until that exact asset is added there, the page displays a clear missing-model notice. Do not replace it with a fabricated castle or an unrelated model.
 
-## Controls
+## Not implemented
 
-| Input | Action |
-| --- | --- |
-| WASD / arrow keys | Move |
-| Space | Interact |
-| On-screen arrows | Move on touchscreens |
-| INTERACT button | Interact |
+- No movement prototype, game world, multiplayer, accounts, chat, or persistence.
+- No real character selection, settings, audio playback, or game entry transition.
+- No Stendhal assets copied into the repository.
+- No final art or licensing decisions.
 
-## Technical direction
+## Next work
 
-This is a first playable sketch, not the production architecture. Keep the game loop, world data, collision rules, and rendering easy to replace as the project grows. Before adding multiplayer, define a small authoritative server protocol and decide how player positions, identity, reconnects, and chat are validated. Do not treat client-sent positions as trusted.
+1. Add the exact supplied GLB to `assets/castle_3d_model.glb` using a suitable large-file transfer method.
+2. Inspect the model's scale, orientation, origin, materials, and visual quality, then tune the camera and lighting around the actual model.
+3. Agree on the title-screen composition, type, palette, and menu behavior before building the world.
+4. Investigate whether Stendhal contains an appropriate 3D castle model, and compare its actual license and suitability rather than assuming it does.
+5. Review the witch-on-a-broom concept and source an approved sprite/illustration for the menu.
+6. Once the menu is established, design the game scene and asset pipeline. Multiplayer comes later.
 
-## Next milestones
+## Implementation note
 
-1. Test this prototype on Android and desktop; fix movement/collision issues.
-2. Split rendering, map data, player input, and interactions into separate modules once the first scene is accepted.
-3. Review the supplied 3D castle model and decide whether it belongs in the menu, while keeping the actual game world 2D.
-4. Audit and select assets with verified license/attribution details.
-5. Add interior transitions and a real map format.
-6. Design multiplayer architecture and deployment before implementing networking.
+Three.js and GLTFLoader are currently loaded from jsDelivr. The GLB is intended to remain a local project asset. For reliable local testing, serve the project over HTTP rather than opening the HTML as a `file://` URL.

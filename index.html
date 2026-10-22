@@ -2,138 +2,160 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name="theme-color" content="#17151e">
-<title>Ancha House · First Walkable Prototype</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#100f17">
+<title>Ancha House</title>
 <style>
-:root{color-scheme:dark;--ink:#f3e8d0;--muted:#b9ad9c;--panel:#211e2a;--line:#645365}
-*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#17151e;color:var(--ink);font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
-#app{position:relative;width:100%;height:100%;isolation:isolate}canvas{display:block;width:100%;height:100%;image-rendering:pixelated;touch-action:none}
-.hud{position:absolute;z-index:2;left:12px;top:12px;padding:10px 12px;background:#17151edb;border:1px solid var(--line);box-shadow:4px 4px 0 #0d0c12;max-width:min(75vw,360px)}
-.brand{font-size:13px;letter-spacing:.14em;color:#e9c78b}.subtitle{font-size:10px;color:var(--muted);margin-top:5px;line-height:1.5}
-.status{position:absolute;z-index:2;right:12px;top:12px;padding:8px 10px;background:#17151edb;border:1px solid var(--line);font-size:10px;color:#d8d0c2}
-.toast{position:absolute;z-index:3;left:50%;bottom:92px;transform:translateX(-50%);width:max-content;max-width:calc(100vw - 28px);padding:10px 14px;text-align:center;background:#17151ef2;border:1px solid #b99a6b;font-size:11px;line-height:1.5;display:none}
-.controls{position:absolute;z-index:2;bottom:15px;left:15px;display:grid;grid-template-columns:42px 42px 42px;grid-template-rows:42px 42px 42px;gap:4px;touch-action:none}
-.controls button{border:1px solid #8b7a81;background:#211e2add;color:var(--ink);font-size:17px;border-radius:3px;touch-action:none;user-select:none}
-.controls button:active{background:#6c5264}.up{grid-column:2}.left{grid-column:1;grid-row:2}.down{grid-column:2;grid-row:2}.right{grid-column:3;grid-row:2}
-.action{position:absolute;z-index:2;right:15px;bottom:20px;width:76px;height:52px;border:1px solid #b99a6b;background:#332737ed;color:#f3e8d0;font:11px inherit;letter-spacing:.08em}
-.help{position:absolute;z-index:2;right:12px;bottom:12px;transform:translateY(-64px);font-size:10px;color:#d1c4b5;text-align:right;text-shadow:1px 1px #17151e;line-height:1.7}
-@media(min-width:760px){.controls{opacity:.68}.help{font-size:11px}}
+:root{color-scheme:dark;--paper:#eee3d0;--muted:#a79aaa;--gold:#d8b879;--line:#66546b;--panel:#191622}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#100f17;color:var(--paper);font-family:Georgia,"Times New Roman",serif}
+body{min-height:100svh;overflow:hidden}
+#screen{position:relative;min-height:100svh;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(290px,.8fr);background:radial-gradient(ellipse at 35% 48%,#35263d 0%,#1b1725 42%,#100f17 78%);isolation:isolate}
+#screen:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.18;background-image:linear-gradient(#a98eaf11 1px,transparent 1px),linear-gradient(90deg,#a98eaf11 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(90deg,#000,transparent 90%)}
+#scene{position:relative;min-height:100svh;overflow:hidden;display:grid;place-items:center}
+#scene:after{content:"";position:absolute;inset:8% 4%;border:1px solid #bba0bb24;pointer-events:none}
+#model-frame{position:absolute;inset:4% 0 4% 0;display:grid;place-items:center}
+#castle-view{width:100%;height:100%;display:block;outline:none}
+#model-note{position:absolute;bottom:24px;left:24px;max-width:300px;color:#b6a7bd;font:11px/1.7 ui-monospace,monospace;letter-spacing:.04em}
+#model-note strong{display:block;color:#d8b879;font-weight:normal;letter-spacing:.15em;margin-bottom:4px}
+#menu{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(28px,6vw,88px);padding-left:clamp(24px,4vw,64px);border-left:1px solid #bba0bb24;background:linear-gradient(90deg,#100f1720,#100f17a8)}
+.eyebrow{font:10px/1.6 ui-monospace,monospace;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+h1{font-size:clamp(42px,5.8vw,82px);font-weight:normal;line-height:.9;letter-spacing:-.055em;margin:17px 0 18px;text-wrap:balance}
+h1 span{display:block;color:#c9a9c9;font-style:italic;font-size:.78em;margin-top:10px}
+.intro{max-width:290px;font-size:14px;line-height:1.8;color:#b8adbd;margin:0 0 36px}
+nav{display:flex;flex-direction:column;align-items:stretch;gap:10px;width:min(100%,280px)}
+.menu-button{position:relative;display:flex;align-items:center;gap:14px;min-height:50px;padding:0 17px;border:1px solid #7c667f;background:#211c2bc9;color:var(--paper);text-align:left;font:12px ui-monospace,monospace;letter-spacing:.14em;cursor:pointer;transition:background .18s,border-color .18s,transform .18s}
+.menu-button .index{color:var(--gold);font-size:10px}
+.menu-button:hover,.menu-button:focus-visible{outline:none;background:#49334d;border-color:#d8b879;transform:translateX(3px)}
+.menu-button.primary{background:#59405c;border-color:#c7a66e}
+.menu-button.primary:hover{background:#725378}
+.footer{display:flex;gap:20px;align-items:center;margin-top:38px;color:#80748a;font:9px ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}
+.footer button{border:0;background:none;padding:0;color:#b8a4c1;font:inherit;letter-spacing:inherit;cursor:pointer}
+.footer button:hover{color:var(--gold)}
+#dialog{position:absolute;z-index:5;inset:0;display:none;place-items:center;background:#09080dd9;padding:20px}
+#dialog.open{display:grid}
+.dialog-card{width:min(440px,100%);border:1px solid #806b85;background:#1a1623;padding:26px;box-shadow:0 18px 80px #0009}
+.dialog-card h2{font-weight:normal;margin:0 0 12px;font-size:25px}
+.dialog-card p{color:#b8adbd;font:12px/1.8 ui-monospace,monospace}
+.dialog-card button{margin-top:10px;padding:10px 15px;border:1px solid #b99a6b;background:#382b40;color:var(--paper);font:11px ui-monospace,monospace;letter-spacing:.1em}
+#model-warning{position:absolute;top:18px;left:18px;max-width:260px;padding:8px 10px;background:#15111ddd;border:1px solid #806b85;color:#cbbdd0;font:10px/1.6 ui-monospace,monospace;display:none}
+@media(max-width:760px){
+ body{overflow:auto}
+ #screen{min-height:100svh;grid-template-columns:1fr;grid-template-rows:minmax(36svh,44svh) auto}
+ #scene{min-height:36svh}
+ #scene:after{inset:12px}
+ #model-frame{inset:0}
+ #model-note{left:18px;bottom:15px;font-size:9px}
+ #menu{border-left:0;border-top:1px solid #bba0bb24;padding:28px 26px 24px;justify-content:flex-start;align-items:center;text-align:center;background:linear-gradient(180deg,#100f1730,#100f17cc)}
+ h1{font-size:54px;margin:12px 0}
+ .intro{margin-bottom:22px;font-size:12px}
+ nav{width:min(100%,360px);gap:8px}
+ .menu-button{min-height:46px}
+ .footer{margin-top:24px}
+}
+@media(prefers-reduced-motion:reduce){.menu-button{transition:none}}
 </style>
 </head>
 <body>
-<div id="app">
-<canvas id="world" aria-label="Ancha House playable top-down castle prototype"></canvas>
-<div class="hud"><div class="brand">ANCHA HOUSE</div><div class="subtitle">A little world to call home · prototype 0.1</div></div>
-<div class="status" id="status">X 0 · Y 0</div>
-<div class="toast" id="toast" role="status"></div>
-<div class="controls" aria-label="Movement controls">
-<button class="up" data-dir="up" aria-label="Move up">▲</button>
-<button class="left" data-dir="left" aria-label="Move left">◀</button>
-<button class="down" data-dir="down" aria-label="Move down">▼</button>
-<button class="right" data-dir="right" aria-label="Move right">▶</button>
+<main id="screen">
+<section id="scene" aria-label="Castle presentation">
+  <div id="model-frame"><canvas id="castle-view" aria-label="Three-dimensional castle model display"></canvas></div>
+  <div id="model-note"><strong>THE HOUSE AWAITS</strong><span id="scene-caption">A place between the forest and the stars.</span></div>
+  <div id="model-warning">Castle model not loaded. Place the supplied model at <code>assets/castle_3d_model.glb</code>.</div>
+</section>
+<section id="menu" aria-label="Main menu">
+  <div class="eyebrow">A small world for familiar souls</div>
+  <h1>Ancha <span>House</span></h1>
+  <p class="intro">Beyond the old walls, a quiet place to gather, wander, and make stories together.</p>
+  <nav aria-label="Main menu">
+    <button class="menu-button primary" data-panel="enter"><span class="index">01</span><span>ENTER THE HOUSE</span></button>
+    <button class="menu-button" data-panel="characters"><span class="index">02</span><span>CHARACTERS</span></button>
+    <button class="menu-button" data-panel="settings"><span class="index">03</span><span>SETTINGS</span></button>
+    <button class="menu-button" data-panel="credits"><span class="index">04</span><span>CREDITS &amp; SOURCES</span></button>
+  </nav>
+  <div class="footer"><span>EARLY DESIGN SHELL</span><button id="music-toggle" type="button" aria-pressed="false">MUSIC: OFF</button><span>v0.1</span></div>
+</section>
+<div id="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
+  <div class="dialog-card"><div class="eyebrow">ANCHA HOUSE</div><h2 id="dialog-title">Not ready yet</h2><p id="dialog-copy">This screen is a structural placeholder. We will connect it to the actual game after the menu and visual direction are established.</p><button id="dialog-close" type="button">BACK TO MENU</button></div>
 </div>
-<div class="help">WASD / ARROWS TO MOVE<br>SPACE TO INTERACT</div>
-<button class="action" id="interact">INTERACT</button>
-</div>
+</main>
 <script>
 (() => {
-'use strict';
-const canvas=document.getElementById('world'),ctx=canvas.getContext('2d');
-const status=document.getElementById('status'),toast=document.getElementById('toast');
-const W=960,H=640,T=32;
-let vw=innerWidth,vh=innerHeight,dpr=Math.min(devicePixelRatio||1,2),last=0,toastUntil=0;
-const keys=new Set(),touch=new Set();
-const player={x:480,y:470,r:9,speed:150,face:'down',step:0};
-const world={w:1600,h:1120};
-function resize(){vw=innerWidth;vh=innerHeight;dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.round(vw*dpr);canvas.height=Math.round(vh*dpr);canvas.style.width=vw+'px';canvas.style.height=vh+'px';ctx.imageSmoothingEnabled=false}
-addEventListener('resize',resize);resize();
-function rect(x,y,w,h,c){ctx.fillStyle=c;ctx.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))}
-function box(x,y,w,h,base,edge='#251d2b'){rect(x,y,w,h,edge);rect(x+3,y+3,w-6,h-6,base)}
-function drawTree(x,y){rect(x-3,y+8,6,11,'#493326');rect(x-12,y-2,24,19,'#243e32');rect(x-9,y-7,18,17,'#31533c');rect(x-5,y-11,10,10,'#416348');rect(x-7,y+1,5,5,'#52734a')}
-function drawFlowers(x,y){for(let i=0;i<5;i++){rect(x+(i%3)*5,y+Math.floor(i/3)*6,3,3,['#d6b879','#a67aab','#e5c7bd'][i%3])}}
-function drawWorld(){rect(0,0,world.w,world.h,'#344d3b');
- // grass texture
- for(let y=0;y<world.h;y+=T){for(let x=0;x<world.w;x+=T){if(((x*13+y*7)%11)<3)rect(x+5,y+8,3,2,'#3b5740');if(((x*3+y*17)%19)<2)rect(x+22,y+21,2,3,'#293f32')}}
- // outer wall and path
- box(100,90,1400,940,'#66564b','#342a32');rect(116,106,1368,908,'#344b39');
- // walkways
- rect(116,430,1368,94,'#8c775f');rect(118,434,1364,4,'#b19a78');rect(118,515,1364,4,'#5e4b45');
- rect(390,106,90,324,'#8c775f');rect(394,108,4,318,'#b19a78');
- // castle gardens
- rect(550,565,460,280,'#456045');rect(558,573,444,264,'#38523d');
- for(let x=580;x<980;x+=64){drawFlowers(x,602);drawFlowers(x,785)}
- for(let y=620;y<790;y+=52){drawFlowers(578,y);drawFlowers(970,y)}
- // garden paths
- rect(742,574,32,260,'#8c775f');rect(568,686,430,28,'#8c775f');
- // castle main building
- box(520,150,560,300,'#b5a18a','#342632');
- rect(540,170,520,260,'#8b7569');rect(552,182,496,236,'#b6a18b');
- // stone courses
- for(let y=200;y<420;y+=28){rect(552,y,496,2,'#9b8777');for(let x=552+(y%2?20:0);x<1048;x+=70)rect(x,y,2,28,'#9b8777')}
- // battlements
- for(let x=520;x<1080;x+=38){rect(x,136,24,24,'#c5b098');rect(x+3,139,18,18,'#9a8474')}
- // towers
- for(const [x,y] of [[490,132],[1030,132],[490,392],[1030,392]]){box(x,y,82,82,'#a18a7a','#342632');rect(x+8,y+8,66,66,'#b6a18b');for(let bx=x;bx<x+82;bx+=26)rect(bx, y-8,17,18,'#c5b098');}
- // roof shapes
- ctx.fillStyle='#75434a';ctx.beginPath();ctx.moveTo(512,158);ctx.lineTo(550,104);ctx.lineTo(588,158);ctx.closePath();ctx.fill();
- ctx.fillStyle='#75434a';ctx.beginPath();ctx.moveTo(1012,158);ctx.lineTo(1050,104);ctx.lineTo(1088,158);ctx.closePath();ctx.fill();
- // windows
- for(const x of [600,670,740,810,880,950]){rect(x,230,24,40,'#3a303d');rect(x+4,234,16,32,'#d1ad77');rect(x+10,234,3,32,'#6e5360');rect(x,250,24,3,'#3a303d');}
- // central gate
- rect(730,344,140,92,'#3a2933');rect(741,355,118,81,'#65454a');rect(754,365,92,71,'#342632');
- ctx.fillStyle='#342632';ctx.beginPath();ctx.arc(800,365,46,Math.PI,0);ctx.fill();rect(754,365,92,71,'#342632');
- rect(765,378,70,58,'#a27654');rect(772,384,56,52,'#543840');
- // bridge and entrance
- rect(760,436,80,91,'#8b775f');for(let y=444;y<520;y+=16)rect(760,y,80,2,'#b39b7a');
- // paths to castle
- rect(758,526,84,56,'#8c775f');
- // trees around perimeter and rocks
- for(const [x,y] of [[180,180],[240,250],[320,160],[1350,180],[1410,260],[1330,350],[180,600],[260,740],[1380,650],[1450,820],[330,900],[1250,920],[430,750],[1160,580]])drawTree(x,y);
- for(const [x,y] of [[210,330],[300,560],[1280,450],[1180,850],[360,300],[1220,300]]){rect(x,y,15,8,'#817e73');rect(x+3,y-3,10,4,'#aaa091')}
- // wall crenels, opening at south gate
- for(let x=100;x<1500;x+=32){if(x>744&&x<856)continue;rect(x,78,20,18,'#887464');rect(x,1020,20,18,'#887464')}
- for(let y=100;y<1020;y+=32){rect(88,y,18,20,'#887464');rect(1494,y,18,20,'#887464')}
-}
-function blocked(x,y){if(x<112||y<104||x>1488||y>1010)return true;
- // castle body with entrance opening
- if(x>518&&x<1082&&y>148&&y<448){if(x>752&&x<848&&y>340&&y<448)return false;return true}
- // towers protrude
- for(const [tx,ty] of [[490,132],[1030,132],[490,392],[1030,392]])if(x>tx&&x<tx+82&&y>ty&&y<ty+82)return true;
- return false}
-function showToast(s){toast.textContent=s;toast.style.display='block';toastUntil=performance.now()+2400}
-function interact(){const d=Math.hypot(player.x-800,player.y-400);if(d<90)showToast('The castle gate is sealed for now. The next build will open the halls.');else if(player.x>550&&player.x<1010&&player.y>565&&player.y<845)showToast('A quiet garden. Room for secrets, flowers, and friends.');else showToast('Nothing to interact with here yet. Keep exploring.')}
-document.getElementById('interact').addEventListener('click',interact);
-addEventListener('keydown',e=>{const k=e.key.toLowerCase();if(['arrowup','arrowdown','arrowleft','arrowright',' '].includes(k))e.preventDefault();keys.add(k);if(k===' '&&!e.repeat)interact()});
-addEventListener('keyup',e=>keys.delete(e.key.toLowerCase()));
-document.querySelectorAll('[data-dir]').forEach(b=>{const d=b.dataset.dir;const on=e=>{e.preventDefault();touch.add(d)};const off=e=>{e.preventDefault();touch.delete(d)};b.addEventListener('pointerdown',on);b.addEventListener('pointerup',off);b.addEventListener('pointercancel',off);b.addEventListener('lostpointercapture',off);b.addEventListener('contextmenu',e=>e.preventDefault())});
-function drawPlayer(){const x=player.x,y=player.y;
- // shadow
- rect(x-7,y+7,14,4,'#1b2926');
- // cloak
- rect(x-7,y-7,14,17,'#443451');rect(x-5,y-9,10,12,'#695070');rect(x-4,y+2,8,8,'#32273d');
- // face and hood
- rect(x-5,y-12,10,9,'#d0a47c');rect(x-7,y-14,14,5,'#302638');rect(x-6,y-17,12,5,'#302638');
- if(player.face==='left')rect(x-5,y-8,2,2,'#17151e');else if(player.face==='right')rect(x+3,y-8,2,2,'#17151e');else rect(x-2,y-8,4,2,'#17151e');
- const swing=Math.floor(player.step)%2?2:0;rect(x-5,y+9,4,4,'#b9a28d');rect(x+1,y+9+(player.step? swing:0),4,4,'#b9a28d');
-}
-function frame(now){const dt=Math.min((now-last)/1000||0,0.035);last=now;
- let dx=0,dy=0;
- if(keys.has('w')||keys.has('arrowup')||touch.has('up'))dy--;
- if(keys.has('s')||keys.has('arrowdown')||touch.has('down'))dy++;
- if(keys.has('a')||keys.has('arrowleft')||touch.has('left'))dx--;
- if(keys.has('d')||keys.has('arrowright')||touch.has('right'))dx++;
- if(dx||dy){const n=Math.hypot(dx,dy);dx/=n;dy/=n;player.face=Math.abs(dx)>Math.abs(dy)?(dx<0?'left':'right'):(dy<0?'up':'down');player.step+=dt*10;
- const nx=player.x+dx*player.speed*dt,ny=player.y+dy*player.speed*dt;
- if(!blocked(nx,player.y)&&!blocked(nx,player.y+5)&&!blocked(nx,player.y-5))player.x=nx;
- if(!blocked(player.x,ny)&&!blocked(player.x+5,ny)&&!blocked(player.x-5,ny))player.y=ny;
- }else player.step=0;
- const camX=Math.max(0,Math.min(world.w-vw,player.x-vw/2)),camY=Math.max(0,Math.min(world.h-vh,player.y-vh/2));
- ctx.setTransform(dpr,0,0,dpr,0,0);rect(0,0,vw,vh,'#17151e');ctx.save();ctx.translate(-Math.floor(camX),-Math.floor(camY));drawWorld();drawPlayer();ctx.restore();
- status.textContent='X '+Math.round(player.x)+' · Y '+Math.round(player.y);
- if(now>toastUntil)toast.style.display='none';
- requestAnimationFrame(frame)}
-requestAnimationFrame(frame);
+  const dialog=document.getElementById('dialog');
+  const title=document.getElementById('dialog-title');
+  const copy=document.getElementById('dialog-copy');
+  const panels={
+    enter:['The house is being prepared','The entry point is reserved here. The next stage is to connect this menu to the real game scene, not to a throwaway movement demo.'],
+    characters:['Characters','This section will hold the character selection and the final approved sprite sheets. No temporary character art is being committed here.'],
+    settings:['Settings','Audio, display, language, and accessibility settings will live here once the actual game systems exist.'],
+    credits:['Credits & sources','This section will list each selected asset, its creator, source, license, required attribution, and any modifications.']
+  };
+  document.querySelectorAll('[data-panel]').forEach(button=>button.addEventListener('click',()=>{
+    const data=panels[button.dataset.panel];title.textContent=data[0];copy.textContent=data[1];dialog.classList.add('open');
+  }));
+  document.getElementById('dialog-close').addEventListener('click',()=>dialog.classList.remove('open'));
+  dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.classList.remove('open')});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')dialog.classList.remove('open')});
+  const music=document.getElementById('music-toggle');
+  music.addEventListener('click',()=>{
+    const enabled=music.getAttribute('aria-pressed')!=='true';
+    music.setAttribute('aria-pressed',String(enabled));
+    music.textContent='MUSIC: '+(enabled?'ON':'OFF');
+    if(enabled){music.textContent='MUSIC: ON · TRACK NOT ADDED';}
+  });
+  // Three.js loads from a CDN; the model itself remains a local project asset.
+  const warning=document.getElementById('model-warning');
+  import('https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js').then(async THREE=>{
+    const {GLTFLoader}=await import('https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/loaders/GLTFLoader.js');
+    const canvas=document.getElementById('castle-view');
+    const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
+    renderer.setClearColor(0x000000,0);
+    renderer.outputColorSpace=THREE.SRGBColorSpace;
+    renderer.toneMapping=THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure=1.25;
+    const scene=new THREE.Scene();
+    const camera=new THREE.PerspectiveCamera(32,1,0.1,1000);
+    camera.position.set(5,4,8);
+    scene.add(new THREE.HemisphereLight(0xcbb8ff,0x312333,2.2));
+    const key=new THREE.DirectionalLight(0xffdfad,3.2);key.position.set(4,8,5);scene.add(key);
+    const rim=new THREE.DirectionalLight(0x9b83df,2.2);rim.position.set(-5,3,-4);scene.add(rim);
+    let castle=null,dragging=false,lastX=0,autoRotate=true;
+    const resize=()=>{
+      const w=canvas.clientWidth||1,h=canvas.clientHeight||1;
+      renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();
+    };
+    new ResizeObserver(resize).observe(canvas);resize();
+    try{
+      const gltf=await new GLTFLoader().loadAsync('assets/castle_3d_model.glb');
+      castle=gltf.scene;
+      const bounds=new THREE.Box3().setFromObject(castle);
+      const size=bounds.getSize(new THREE.Vector3());
+      const center=bounds.getCenter(new THREE.Vector3());
+      castle.position.sub(center);
+      const maxDim=Math.max(size.x,size.y,size.z)||1;
+      castle.scale.setScalar(4.5/maxDim);
+      scene.add(castle);
+      const scaledBounds=new THREE.Box3().setFromObject(castle);
+      const scaledSize=scaledBounds.getSize(new THREE.Vector3());
+      const dist=Math.max(scaledSize.x,scaledSize.y,scaledSize.z)*1.8;
+      camera.position.set(dist*.9,dist*.58,dist*1.35);
+      camera.lookAt(0,0,0);
+      document.getElementById('scene-caption').textContent='The castle model, turning slowly in the dark.';
+    }catch(error){
+      warning.style.display='block';
+      document.getElementById('scene-caption').textContent='The 3D stage is ready for the supplied castle model.';
+    }
+    canvas.addEventListener('pointerdown',e=>{dragging=true;lastX=e.clientX;autoRotate=false;canvas.setPointerCapture(e.pointerId)});
+    canvas.addEventListener('pointermove',e=>{if(!dragging||!castle)return;castle.rotation.y+=(e.clientX-lastX)*.008;lastX=e.clientX});
+    const stop=()=>{dragging=false};canvas.addEventListener('pointerup',stop);canvas.addEventListener('pointercancel',stop);
+    let previous=performance.now();
+    function render(now){const dt=Math.min((now-previous)/1000,.05);previous=now;if(castle&&autoRotate)castle.rotation.y+=dt*.13;renderer.render(scene,camera);requestAnimationFrame(render)}
+    requestAnimationFrame(render);
+  }).catch(()=>{
+    warning.style.display='block';
+    document.getElementById('scene-caption').textContent='The 3D stage is ready for the supplied castle model.';
+  });
 })();
 </script>
 </body>
