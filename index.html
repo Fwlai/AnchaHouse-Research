@@ -57,7 +57,7 @@ renderer.domElement.addEventListener('pointerdown',e=>{dragging=true;pointerX=e.
 renderer.domElement.addEventListener('pointermove',e=>{if(!dragging)return;const dx=e.clientX-pointerX,dy=e.clientY-pointerY;pointerX=e.clientX;pointerY=e.clientY;targetYaw=THREE.MathUtils.clamp(targetYaw+dx*.006,-.72,.72);targetPitch=THREE.MathUtils.clamp(targetPitch+dy*.003,-.18,.24);});
 const endDrag=()=>{dragging=false;};renderer.domElement.addEventListener('pointerup',endDrag);renderer.domElement.addEventListener('pointercancel',endDrag);
 const clock=new THREE.Clock();const lookTarget=new THREE.Vector3(0,2.5,0);
-function render(){requestAnimationFrame(render);const t=clock.getElapsedTime(),dt=Math.min(clock.getDelta(),.04);
+function render(){requestAnimationFrame(render);const dt=Math.min(clock.getDelta(),.04),t=clock.elapsedTime;
 // One full day/night cycle takes 12 minutes, with long twilight transitions.
 const phase=(t/720*Math.PI*2-Math.PI/2);dayBlend=(Math.sin(phase)+1)/2;
 const night=new THREE.Color('#111a39'),dawn=new THREE.Color('#d28d83'),day=new THREE.Color('#77b5df'),dusk=new THREE.Color('#df8b72');let skyColor;
