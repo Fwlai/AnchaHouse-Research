@@ -102,9 +102,9 @@ function setWitchFrame(sprite,texture,frame,row){
   sprite.material.map=texture;
   sprite.material.needsUpdate=true;
 }
-let yaw=0,pitch=0,targetYaw=0,targetPitch=0,dragging=false,pointerX=0,pointerY=0,dayBlend=0;
+let yaw=0,pitch=0,targetYaw=0,targetPitch=0,dragging=false,pointerX=0,pointerY=0,orbitDirection=1,dayBlend=0;
 renderer.domElement.addEventListener('pointerdown',e=>{dragging=true;pointerX=e.clientX;pointerY=e.clientY;renderer.domElement.setPointerCapture(e.pointerId);});
-renderer.domElement.addEventListener('pointermove',e=>{if(!dragging)return;const dx=e.clientX-pointerX,dy=e.clientY-pointerY;pointerX=e.clientX;pointerY=e.clientY;targetYaw+=dx*.0045;const daylightLimit=THREE.MathUtils.lerp(.10,.62,dayBlend);targetPitch=THREE.MathUtils.clamp(targetPitch+dy*.0024,-.16,daylightLimit);});
+renderer.domElement.addEventListener('pointermove',e=>{if(!dragging)return;const dx=e.clientX-pointerX,dy=e.clientY-pointerY;pointerX=e.clientX;pointerY=e.clientY;if(Math.abs(dx)>0.1)orbitDirection=Math.sign(dx);targetYaw+=dx*.0045;targetPitch=THREE.MathUtils.clamp(targetPitch+dy*.0024,-.16,.34);});
 const endDrag=()=>{dragging=false;};renderer.domElement.addEventListener('pointerup',endDrag);renderer.domElement.addEventListener('pointercancel',endDrag);
 const clock=new THREE.Clock();const lookTarget=new THREE.Vector3(0,2.2,0);const cameraTarget=new THREE.Vector3(-4.5,6.4,18.5);
 function render(){requestAnimationFrame(render);const dt=Math.min(clock.getDelta(),.04),t=clock.elapsedTime;
@@ -115,8 +115,8 @@ if(dayBlend<.25)skyColor=night.clone().lerp(dawn,dayBlend/.25);else if(dayBlend<
 scene.background.copy(skyColor);skyMaterial.uniforms.topColor.value.copy(new THREE.Color('#090f28').lerp(new THREE.Color('#78b8e6'),dayBlend));skyMaterial.uniforms.horizonColor.value.copy(skyColor);skyMaterial.uniforms.lowColor.value.copy(new THREE.Color('#10162e').lerp(new THREE.Color('#d7a39a'),dayBlend*.7));scene.fog.color.copy(skyColor);starField.visible=dayBlend<.98;starField.children.forEach(star=>{star.material.opacity=THREE.MathUtils.clamp(1-dayBlend*1.15,0,1);});
 key.color.copy(new THREE.Color('#a7c7ff').lerp(new THREE.Color('#fff0cf'),dayBlend));key.intensity=.45+2.85*dayBlend;fill.intensity=1.25;scene.children.find(o=>o.isHemisphereLight).intensity=.65+1.6*dayBlend;
 const starsVisible=1-dayBlend; // sparse tiny square stars fade away in daylight
-const pitchLimit=THREE.MathUtils.lerp(.10,.62,THREE.MathUtils.smoothstep(dayBlend,.12,.82));targetPitch=THREE.MathUtils.clamp(targetPitch,-.16,pitchLimit);if(!dragging){targetYaw+=dt*.13;targetPitch=THREE.MathUtils.damp(targetPitch,0,.035,dt);}
-yaw=THREE.MathUtils.damp(yaw,targetYaw+(!dragging?Math.sin(t*.18)*.018:0),5.5,dt);pitch=THREE.MathUtils.damp(pitch,targetPitch,5.5,dt);
+const pitchLimit=THREE.MathUtils.lerp(.10,.62,THREE.MathUtils.smoothstep(dayBlend,.12,.82));targetPitch=THREE.MathUtils.clamp(targetPitch,-.16,pitchLimit);if(!dragging){targetYaw+=dt*.13*orbitDirection;}
+yaw=THREE.MathUtils.damp(yaw,targetYaw,5.5,dt);pitch=THREE.MathUtils.damp(pitch,targetPitch,5.5,dt);
 world.rotation.y=yaw;world.rotation.x=pitch;
 cameraTarget.set(-4.5-yaw*.35,6.4+pitch*1.8,18.5-Math.abs(yaw)*.45);camera.position.x=THREE.MathUtils.damp(camera.position.x,cameraTarget.x,1.15,dt);camera.position.y=THREE.MathUtils.damp(camera.position.y,cameraTarget.y,1.15,dt);camera.position.z=THREE.MathUtils.damp(camera.position.z,cameraTarget.z,1.15,dt);lookTarget.set(-4.5+yaw*.25,1.1+pitch*1.2,0);camera.lookAt(lookTarget);
 clouds.forEach(c=>{c.position.x=c.userData.x+Math.sin(t*c.userData.speed+c.userData.phase)*.8;c.position.y=9+Math.sin(t*.15+c.userData.phase)*.12;});
