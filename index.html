@@ -21,7 +21,7 @@ import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 const host=document.querySelector('#stage'),error=document.querySelector('#error');
 const scene=new THREE.Scene();scene.background=new THREE.Color('#10172f');scene.fog=new THREE.Fog('#10172f',42,100);
-const camera=new THREE.PerspectiveCamera(37,innerWidth/innerHeight,.1,180);camera.position.set(-4.5,7.4,25.5);
+const camera=new THREE.PerspectiveCamera(37,innerWidth/innerHeight,.1,180);camera.position.set(-4.5,6.4,18.5);
 const renderer=new THREE.WebGLRenderer({antialias:false,alpha:false,powerPreference:'high-performance'});renderer.setPixelRatio(1);renderer.setSize(Math.max(480,Math.floor(innerWidth*.62)),Math.max(270,Math.floor(innerHeight*.62)),false);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.NoToneMapping;renderer.toneMappingExposure=1;host.appendChild(renderer.domElement);
 scene.add(new THREE.HemisphereLight(0xd9e9ff,0x536049,2.1));
 const key=new THREE.DirectionalLight(0xffe7bf,3.3);key.position.set(-8,15,9);scene.add(key);
@@ -54,7 +54,7 @@ const shore=new THREE.Group();island.add(shore);
 // Uneven blocks and boulders sit in the wide sandy shelf, not on top of the grass edge.
 const rockMats=[stone,stone2,mat('#555d64'),mat('#a0a096')];for(const cluster of [{x:-13.1,z:-4.8},{x:-12.7,z:5.6},{x:7.9,z:-6.2},{x:10.4,z:3.6},{x:1.8,z:9.2},{x:-4.6,z:-9.1}]){for(let k=0;k<2;k++){const w=.3+Math.random()*.45,h=.2+Math.random()*.32,d=.28+Math.random()*.42;const rock=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),rockMats[Math.floor(Math.random()*rockMats.length)]);rock.position.set(cluster.x+(Math.random()-.5)*.65,-.465+h/2,cluster.z+(Math.random()-.5)*.65);rock.rotation.y=Math.random()*Math.PI;shore.add(rock);}}
 const castleRoot=new THREE.Group();island.add(castleRoot);let castle=null;
-new GLTFLoader().load('./assets/castle_3d_model.glb',g=>{castle=g.scene;castle.updateMatrixWorld(true);const bounds=new THREE.Box3().setFromObject(castle);const center=bounds.getCenter(new THREE.Vector3()),size=bounds.getSize(new THREE.Vector3());const longest=Math.max(size.x,size.y,size.z);castle.position.set(-center.x,-bounds.min.y,-center.z);castle.traverse(o=>{if(!o.isMesh)return;o.castShadow=false;o.receiveShadow=false;const materials=Array.isArray(o.material)?o.material:[o.material];for(const m of materials){if(!m)continue;if('roughness' in m)m.roughness=Math.max(m.roughness??0,0.78);if('metalness' in m)m.metalness=0;m.needsUpdate=true;}});const visual=new THREE.Group();visual.scale.setScalar(10.2/longest);visual.add(castle);castleRoot.add(visual);},undefined,e=>{error.style.display='block';error.textContent='Castle model failed to load. Check assets/castle_3d_model.glb and hosting.';});
+new GLTFLoader().load('./assets/castle_3d_model.glb',g=>{castle=g.scene;castle.updateMatrixWorld(true);const bounds=new THREE.Box3().setFromObject(castle);const center=bounds.getCenter(new THREE.Vector3()),size=bounds.getSize(new THREE.Vector3());const longest=Math.max(size.x,size.y,size.z);castle.position.set(-center.x,-bounds.min.y,-center.z);castle.traverse(o=>{if(!o.isMesh)return;o.castShadow=false;o.receiveShadow=false;});const visual=new THREE.Group();visual.scale.setScalar(10.2/longest);visual.add(castle);castleRoot.add(visual);},undefined,e=>{error.style.display='block';error.textContent='Castle model failed to load. Check assets/castle_3d_model.glb and hosting.';});
 castleRoot.position.set(-7.2,-.435,-.2);
 const skyMaterial=new THREE.ShaderMaterial({
   side:THREE.BackSide,depthWrite:false,
@@ -105,7 +105,7 @@ let yaw=0,pitch=0,targetYaw=0,targetPitch=0,dragging=false,pointerX=0,pointerY=0
 renderer.domElement.addEventListener('pointerdown',e=>{dragging=true;pointerX=e.clientX;pointerY=e.clientY;renderer.domElement.setPointerCapture(e.pointerId);});
 renderer.domElement.addEventListener('pointermove',e=>{if(!dragging)return;const dx=e.clientX-pointerX,dy=e.clientY-pointerY;pointerX=e.clientX;pointerY=e.clientY;targetYaw=THREE.MathUtils.clamp(targetYaw+dx*.0045,-1.65,1.65);const daylightLimit=THREE.MathUtils.lerp(.10,.62,dayBlend);targetPitch=THREE.MathUtils.clamp(targetPitch+dy*.0024,-.16,daylightLimit);});
 const endDrag=()=>{dragging=false;};renderer.domElement.addEventListener('pointerup',endDrag);renderer.domElement.addEventListener('pointercancel',endDrag);
-const clock=new THREE.Clock();const lookTarget=new THREE.Vector3(0,2.2,0);const cameraTarget=new THREE.Vector3(-4.5,7.4,25.5);
+const clock=new THREE.Clock();const lookTarget=new THREE.Vector3(0,2.2,0);const cameraTarget=new THREE.Vector3(-4.5,6.4,18.5);
 function render(){requestAnimationFrame(render);const dt=Math.min(clock.getDelta(),.04),t=clock.elapsedTime;
 // One complete day/night cycle takes four minutes, so the menu never feels static for long.
 const phase=(t/240*Math.PI*2-Math.PI/2);dayBlend=(Math.sin(phase)+1)/2;
@@ -114,15 +114,15 @@ if(dayBlend<.25)skyColor=night.clone().lerp(dawn,dayBlend/.25);else if(dayBlend<
 scene.background.copy(skyColor);skyMaterial.uniforms.topColor.value.copy(new THREE.Color('#090f28').lerp(new THREE.Color('#78b8e6'),dayBlend));skyMaterial.uniforms.horizonColor.value.copy(skyColor);skyMaterial.uniforms.lowColor.value.copy(new THREE.Color('#10162e').lerp(new THREE.Color('#d7a39a'),dayBlend*.7));scene.fog.color.copy(skyColor);starField.visible=dayBlend<.98;starField.children.forEach(star=>{star.material.opacity=THREE.MathUtils.clamp(1-dayBlend*1.15,0,1);});
 key.color.copy(new THREE.Color('#a7c7ff').lerp(new THREE.Color('#fff0cf'),dayBlend));key.intensity=.45+2.85*dayBlend;fill.intensity=1.25;scene.children.find(o=>o.isHemisphereLight).intensity=.65+1.6*dayBlend;
 const starsVisible=1-dayBlend; // sparse tiny square stars fade away in daylight
-const pitchLimit=THREE.MathUtils.lerp(.10,.62,THREE.MathUtils.smoothstep(dayBlend,.12,.82));targetPitch=THREE.MathUtils.clamp(targetPitch,-.16,pitchLimit);if(!dragging){targetYaw=THREE.MathUtils.damp(targetYaw,0,.8,dt);targetPitch=THREE.MathUtils.damp(targetPitch,0,.8,dt);}
+const pitchLimit=THREE.MathUtils.lerp(.10,.62,THREE.MathUtils.smoothstep(dayBlend,.12,.82));targetPitch=THREE.MathUtils.clamp(targetPitch,-.16,pitchLimit);if(!dragging){targetYaw=THREE.MathUtils.damp(targetYaw,0,.035,dt);targetPitch=THREE.MathUtils.damp(targetPitch,0,.035,dt);}
 yaw=THREE.MathUtils.damp(yaw,targetYaw+(!dragging?Math.sin(t*.18)*.018:0),5.5,dt);pitch=THREE.MathUtils.damp(pitch,targetPitch,5.5,dt);
 world.rotation.y=yaw;world.rotation.x=pitch;
-cameraTarget.set(-4.5-yaw*.9,7.4+pitch*2.4,25.5-Math.abs(yaw)*1.1);camera.position.x=THREE.MathUtils.damp(camera.position.x,cameraTarget.x,2.8,dt);camera.position.y=THREE.MathUtils.damp(camera.position.y,cameraTarget.y,2.8,dt);camera.position.z=THREE.MathUtils.damp(camera.position.z,cameraTarget.z,2.4,dt);lookTarget.set(-4.5+yaw*.25,1.1+pitch*1.2,0);camera.lookAt(lookTarget);
+cameraTarget.set(-4.5-yaw*.35,6.4+pitch*1.8,18.5-Math.abs(yaw)*.45);camera.position.x=THREE.MathUtils.damp(camera.position.x,cameraTarget.x,1.15,dt);camera.position.y=THREE.MathUtils.damp(camera.position.y,cameraTarget.y,1.15,dt);camera.position.z=THREE.MathUtils.damp(camera.position.z,cameraTarget.z,1.15,dt);lookTarget.set(-4.5+yaw*.25,1.1+pitch*1.2,0);camera.lookAt(lookTarget);
 clouds.forEach(c=>{c.position.x=c.userData.x+Math.sin(t*c.userData.speed+c.userData.phase)*.8;c.position.y=9+Math.sin(t*.15+c.userData.phase)*.12;});
 waterGlints.children.forEach((g,i)=>{g.material.opacity=.08+.12*(.5+.5*Math.sin(t*.55+i*1.7));});
 const nightFactor=1-THREE.MathUtils.smoothstep(dayBlend,.025,.19);witches.forEach((w,i)=>{const speed=i===0?.19:-.155;const a=t*speed+i*Math.PI;const radius=i===0?7.3:9.1;const x=Math.cos(a)*radius-.5,z=Math.sin(a)*radius-1.5,y=4.5+Math.sin(a*2+i)*1.1;w.position.set(x,y,z);w.material.opacity=nightFactor;w.visible=nightFactor>.015;w.material.rotation=-Math.sin(a)*.13;const tangent=a+(speed>0?Math.PI/2:-Math.PI/2);const angle=((tangent%(Math.PI*2))+(Math.PI*2))%(Math.PI*2);const row=angle<Math.PI/4||angle>=7*Math.PI/4?1:angle<3*Math.PI/4?2:angle<5*Math.PI/4?3:0;const frame=Math.floor(t/0.15)%3;setWitchFrame(w,witchTextures[i],frame,row);});
 renderer.render(scene,camera);}
-function resize(){camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setPixelRatio(1);renderer.setSize(Math.max(320,Math.floor(innerWidth*.42)),Math.max(180,Math.floor(innerHeight*.42)),false);}
+function resize(){camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setPixelRatio(1);renderer.setSize(Math.max(480,Math.floor(innerWidth*.62)),Math.max(270,Math.floor(innerHeight*.62)),false);}
 addEventListener('resize',resize);render();
 </script>
 </body>
