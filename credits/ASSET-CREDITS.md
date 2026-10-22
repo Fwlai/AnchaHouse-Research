@@ -26,7 +26,7 @@ For every selected asset, record:
 - Original source URL: https://sketchfab.com/3d-models/castle-3d-model-23eb94cac33d4099b7185a81bdc038e4
 - Creator: JoshGarber (https://sketchfab.com/JoshGarber)
 - License stated by the original source and inside the file metadata: Creative Commons Attribution 4.0 (CC BY 4.0), http://creativecommons.org/licenses/by/4.0/
-- Required attribution text: "Castle 3D Model" by JoshGarber, licensed under CC BY 4.0.
+- Required attribution text: “Castle 3D Model” (https://skfb.ly/ooxSL) by JoshGarber is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 - Modifications made: none to the file; the menu scales and re-centers it at runtime.
 - Verification status: Verified against the Sketchfab download page and the glTF asset metadata.
 - Intended use: 3D castle in the main menu.
@@ -38,11 +38,11 @@ For every selected asset, record:
 - Creators: Svetlana Kushnariova (Cabbit) and Jordan Irwin (AntumDeluge)
 - License stated by the original source: OpenGameArt.org Attribution (OGA BY) 3.0 or later, and Creative Commons Attribution (CC BY) 3.0 or later
 - Required attribution text: "Witch on Broomstick" by Svetlana Kushnariova (Cabbit) and Jordan Irwin (AntumDeluge), OGA-BY 3.0 / CC BY 3.0, https://opengameart.org/node/86131. Based on work by Svetlana Kushnariova (see `sources.md`).
-- Modifications made: none to the files; the menu animates the 24x32 sheets in code.
+- Modifications made: no supplied sprite sheet is currently wired into the rebuilt menu; the current menu uses a tiny procedural pixel-art placeholder texture.
 - Source-file or license-document path: `assets/sprites/witch-on-broomstick/LICENSE-*.txt`, `README.txt`, `sources.md`
-- Verification status: Verified from the supplied pack documentation.
+- Verification status: Source pack and license notes inspected; integration into the menu is still pending.
 - Intended use: pixel witches flying around the castle in the main menu.
-- Notes: sheet layout is 3 columns x 4 rows, rows N/E/S/W in the NESW files.
+- Notes: sheet layout is 3 columns x 4 rows, rows N/E/S/W in the NESW files. Use the original NESW sheets for Stendhal-style directions, and preserve the supplied license/source files when integrating them.
 
 ### Pixel ground tiles
 - Drawn procedurally in `index.html` (original work for this project, no third-party art).
