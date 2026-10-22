@@ -1,0 +1,46 @@
+name: Validate research repository
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-docs:
+    name: Check required project documentation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Verify required files
+        shell: bash
+        run: |
+          set -euo pipefail
+          required_files=(
+            "README.md"
+            "docs/PROJECT-PLAN.md"
+            "docs/STENDHAL-TECHNICAL-NOTES.md"
+            "credits/ASSET-CREDITS.md"
+          )
+          for file in "${required_files[@]}"; do
+            if [[ ! -s "$file" ]]; then
+              echo "::error file=$file::Required file is missing or empty"
+              exit 1
+            fi
+            echo "OK: $file"
+          done
+
+      - name: Check project separation and asset review policy
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q "PixelTest" README.md
+          grep -q "license" credits/ASSET-CREDITS.md
+          grep -q "source" credits/ASSET-CREDITS.md
+          echo "Project boundaries and asset tracking notes found."
