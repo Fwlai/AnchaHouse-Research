@@ -12,7 +12,7 @@
 </head>
 <body>
 <div id="stage"></div>
-<div id="menu" aria-label="Main menu"><div id="slots"><button class="slot" aria-label="Menu slot 1"></button><button class="slot" aria-label="Menu slot 2"></button><button class="slot" aria-label="Menu slot 3"></button><button class="slot" aria-label="Menu slot 4"></button><button class="slot" aria-label="Menu slot 5"></button></div></div>
+<div id="menu" aria-label="Main menu"><div id="slots"><button class="slot" aria-label="Menu slot 1"></button><button class="slot" aria-label="Menu slot 2"></button><button class="slot" aria-label="Menu slot 3"></button><button class="slot" aria-label="Menu slot 4"></button><button class="slot" aria-label="Toggle fullscreen" title="Toggle fullscreen"></button></div></div>
 
 <div id="landscape"><div class="inner"><span class="phone">▯</span><strong>Rotate your device</strong><br>This experience is designed for landscape mode.</div></div>
 <div id="error"></div>
@@ -20,6 +20,7 @@
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 const host=document.querySelector('#stage'),error=document.querySelector('#error');
+const fullscreenButton=document.querySelector('.slot[aria-label="Toggle fullscreen"]');fullscreenButton.addEventListener('click',async()=>{try{if(document.fullscreenElement){await document.exitFullscreen();}else if(document.documentElement.requestFullscreen){await document.documentElement.requestFullscreen();}else{fullscreenButton.blur();}}catch(e){error.textContent='Fullscreen is not supported by this browser. Use Chrome menu > Add to Home screen for an app-like view.';error.style.display='block';}});document.addEventListener('fullscreenchange',()=>{fullscreenButton.setAttribute('aria-label',document.fullscreenElement?'Exit fullscreen':'Toggle fullscreen');resize();});
 const scene=new THREE.Scene();scene.background=new THREE.Color('#10172f');scene.fog=new THREE.Fog('#10172f',42,100);
 const camera=new THREE.PerspectiveCamera(37,innerWidth/innerHeight,.1,180);camera.position.set(-4.5,6.4,18.5);
 const renderer=new THREE.WebGLRenderer({antialias:false,alpha:false,powerPreference:'high-performance'});renderer.setPixelRatio(1);renderer.setSize(Math.max(480,Math.floor(innerWidth*.62)),Math.max(270,Math.floor(innerHeight*.62)),false);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.NoToneMapping;renderer.toneMappingExposure=1;host.appendChild(renderer.domElement);
@@ -49,7 +50,7 @@ let placedTrees=0;for(let tries=0;tries<2400&&placedTrees<8;tries++){const x=(Ma
 const shrubGroup=new THREE.Group();island.add(shrubGroup);let placedShrubs=0;for(let tries=0;tries<1400&&placedShrubs<14;tries++){const x=(Math.random()-.5)*27,z=(Math.random()-.5)*19;if(!onGrass(x,z)|| (Math.abs(x+7.2)<5.8&&z>-.8&&z<7.2) || Math.hypot(x+7.2,z+.2)<6.4)continue;const s=.35+Math.random()*.45;const bush=new THREE.Group();bush.position.set(x,-.435,z);const a=new THREE.Mesh(new THREE.BoxGeometry(.75*s,.42*s,.65*s),leafA);a.position.y=.21*s;bush.add(a);const b=new THREE.Mesh(new THREE.BoxGeometry(.43*s,.36*s,.48*s),Math.random()>.5?leafB:leafC);b.position.set(.25*s,.49*s,0);bush.add(b);shrubGroup.add(bush);placedShrubs++;}
 const paving=new THREE.Group();island.add(paving);
 function tileFloor(w,h,cols,rows,x0,z0,sizeX,sizeZ){for(let z=0;z<rows;z++)for(let x=0;x<cols;x++){const m=Math.random()>.58?stone2:stone;const t=new THREE.Mesh(new THREE.BoxGeometry(sizeX-.055,.09,sizeZ-.055),m);t.position.set(x0+x*sizeX,-.425,z0+z*sizeZ);paving.add(t);if(Math.random()>.82){const seam=new THREE.Mesh(new THREE.BoxGeometry(sizeX*.12,.012,sizeZ*.12),mat('#62696b'));seam.position.set(t.position.x,-.365,t.position.z);paving.add(seam);}}}
-tileFloor(1,1,13,11,-13.4,-5.4,1,1);
+// Castle paving disabled: keep the ground beneath the castle completely clear.
 const shore=new THREE.Group();island.add(shore);
 // Uneven blocks and boulders sit in the wide sandy shelf, not on top of the grass edge.
 const rockMats=[stone,stone2,mat('#555d64'),mat('#a0a096')];for(const cluster of [{x:-13.1,z:-4.8},{x:-12.7,z:5.6},{x:7.9,z:-6.2},{x:10.4,z:3.6},{x:1.8,z:9.2},{x:-4.6,z:-9.1}]){for(let k=0;k<2;k++){const w=.3+Math.random()*.45,h=.2+Math.random()*.32,d=.28+Math.random()*.42;const rock=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),rockMats[Math.floor(Math.random()*rockMats.length)]);rock.position.set(cluster.x+(Math.random()-.5)*.65,-.465+h/2,cluster.z+(Math.random()-.5)*.65);rock.rotation.y=Math.random()*Math.PI;shore.add(rock);}}
@@ -122,7 +123,7 @@ clouds.forEach(c=>{c.position.x=c.userData.x+Math.sin(t*c.userData.speed+c.userD
 waterGlints.children.forEach((g,i)=>{g.material.opacity=.08+.12*(.5+.5*Math.sin(t*.55+i*1.7));});
 const nightFactor=1-THREE.MathUtils.smoothstep(dayBlend,.025,.19);witches.forEach((w,i)=>{const speed=i===0?.19:-.155;const a=t*speed+i*Math.PI;const radius=i===0?7.3:9.1;const x=Math.cos(a)*radius-.5,z=Math.sin(a)*radius-1.5,y=4.5+Math.sin(a*2+i)*1.1;w.position.set(x,y,z);w.material.opacity=nightFactor;w.visible=nightFactor>.015;w.material.rotation=-Math.sin(a)*.13;const tangent=a+(speed>0?Math.PI/2:-Math.PI/2);const angle=((tangent%(Math.PI*2))+(Math.PI*2))%(Math.PI*2);const row=angle<Math.PI/4||angle>=7*Math.PI/4?1:angle<3*Math.PI/4?2:angle<5*Math.PI/4?3:0;const frame=Math.floor(t/0.15)%3;setWitchFrame(w,witchTextures[i],frame,row);});
 renderer.render(scene,camera);}
-function resize(){camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setPixelRatio(1);renderer.setSize(Math.max(480,Math.floor(innerWidth*.62)),Math.max(270,Math.floor(innerHeight*.62)),false);}
+function resize(){camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setPixelRatio(1);renderer.setSize(innerWidth,innerHeight);}
 addEventListener('resize',resize);render();
 </script>
 </body>
