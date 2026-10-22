@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#17151e">
+<title>Ancha House · First Walkable Prototype</title>
+<style>
+:root{color-scheme:dark;--ink:#f3e8d0;--muted:#b9ad9c;--panel:#211e2a;--line:#645365}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#17151e;color:var(--ink);font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+#app{position:relative;width:100%;height:100%;isolation:isolate}canvas{display:block;width:100%;height:100%;image-rendering:pixelated;touch-action:none}
+.hud{position:absolute;z-index:2;left:12px;top:12px;padding:10px 12px;background:#17151edb;border:1px solid var(--line);box-shadow:4px 4px 0 #0d0c12;max-width:min(75vw,360px)}
+.brand{font-size:13px;letter-spacing:.14em;color:#e9c78b}.subtitle{font-size:10px;color:var(--muted);margin-top:5px;line-height:1.5}
+.status{position:absolute;z-index:2;right:12px;top:12px;padding:8px 10px;background:#17151edb;border:1px solid var(--line);font-size:10px;color:#d8d0c2}
+.toast{position:absolute;z-index:3;left:50%;bottom:92px;transform:translateX(-50%);width:max-content;max-width:calc(100vw - 28px);padding:10px 14px;text-align:center;background:#17151ef2;border:1px solid #b99a6b;font-size:11px;line-height:1.5;display:none}
+.controls{position:absolute;z-index:2;bottom:15px;left:15px;display:grid;grid-template-columns:42px 42px 42px;grid-template-rows:42px 42px 42px;gap:4px;touch-action:none}
+.controls button{border:1px solid #8b7a81;background:#211e2add;color:var(--ink);font-size:17px;border-radius:3px;touch-action:none;user-select:none}
+.controls button:active{background:#6c5264}.up{grid-column:2}.left{grid-column:1;grid-row:2}.down{grid-column:2;grid-row:2}.right{grid-column:3;grid-row:2}
+.action{position:absolute;z-index:2;right:15px;bottom:20px;width:76px;height:52px;border:1px solid #b99a6b;background:#332737ed;color:#f3e8d0;font:11px inherit;letter-spacing:.08em}
+.help{position:absolute;z-index:2;right:12px;bottom:12px;transform:translateY(-64px);font-size:10px;color:#d1c4b5;text-align:right;text-shadow:1px 1px #17151e;line-height:1.7}
+@media(min-width:760px){.controls{opacity:.68}.help{font-size:11px}}
+</style>
+</head>
+<body>
+<div id="app">
+<canvas id="world" aria-label="Ancha House playable top-down castle prototype"></canvas>
+<div class="hud"><div class="brand">ANCHA HOUSE</div><div class="subtitle">A little world to call home · prototype 0.1</div></div>
+<div class="status" id="status">X 0 · Y 0</div>
+<div class="toast" id="toast" role="status"></div>
+<div class="controls" aria-label="Movement controls">
+<button class="up" data-dir="up" aria-label="Move up">▲</button>
+<button class="left" data-dir="left" aria-label="Move left">◀</button>
+<button class="down" data-dir="down" aria-label="Move down">▼</button>
+<button class="right" data-dir="right" aria-label="Move right">▶</button>
+</div>
+<div class="help">WASD / ARROWS TO MOVE<br>SPACE TO INTERACT</div>
+<button class="action" id="interact">INTERACT</button>
+</div>
+<script>
+(() => {
+'use strict';
+const canvas=document.getElementById('world'),ctx=canvas.getContext('2d');
+const status=document.getElementById('status'),toast=document.getElementById('toast');
+const W=960,H=640,T=32;
+let vw=innerWidth,vh=innerHeight,dpr=Math.min(devicePixelRatio||1,2),last=0,toastUntil=0;
+const keys=new Set(),touch=new Set();
+const player={x:480,y:470,r:9,speed:150,face:'down',step:0};
+const world={w:1600,h:1120};
+function resize(){vw=innerWidth;vh=innerHeight;dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.round(vw*dpr);canvas.height=Math.round(vh*dpr);canvas.style.width=vw+'px';canvas.style.height=vh+'px';ctx.imageSmoothingEnabled=false}
+addEventListener('resize',resize);resize();
+function rect(x,y,w,h,c){ctx.fillStyle=c;ctx.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(h))}
+function box(x,y,w,h,base,edge='#251d2b'){rect(x,y,w,h,edge);rect(x+3,y+3,w-6,h-6,base)}
+function drawTree(x,y){rect(x-3,y+8,6,11,'#493326');rect(x-12,y-2,24,19,'#243e32');rect(x-9,y-7,18,17,'#31533c');rect(x-5,y-11,10,10,'#416348');rect(x-7,y+1,5,5,'#52734a')}
+function drawFlowers(x,y){for(let i=0;i<5;i++){rect(x+(i%3)*5,y+Math.floor(i/3)*6,3,3,['#d6b879','#a67aab','#e5c7bd'][i%3])}}
+function drawWorld(){rect(0,0,world.w,world.h,'#344d3b');
+ // grass texture
+ for(let y=0;y<world.h;y+=T){for(let x=0;x<world.w;x+=T){if(((x*13+y*7)%11)<3)rect(x+5,y+8,3,2,'#3b5740');if(((x*3+y*17)%19)<2)rect(x+22,y+21,2,3,'#293f32')}}
+ // outer wall and path
+ box(100,90,1400,940,'#66564b','#342a32');rect(116,106,1368,908,'#344b39');
+ // walkways
+ rect(116,430,1368,94,'#8c775f');rect(118,434,1364,4,'#b19a78');rect(118,515,1364,4,'#5e4b45');
+ rect(390,106,90,324,'#8c775f');rect(394,108,4,318,'#b19a78');
+ // castle gardens
+ rect(550,565,460,280,'#456045');rect(558,573,444,264,'#38523d');
+ for(let x=580;x<980;x+=64){drawFlowers(x,602);drawFlowers(x,785)}
+ for(let y=620;y<790;y+=52){drawFlowers(578,y);drawFlowers(970,y)}
+ // garden paths
+ rect(742,574,32,260,'#8c775f');rect(568,686,430,28,'#8c775f');
+ // castle main building
+ box(520,150,560,300,'#b5a18a','#342632');
+ rect(540,170,520,260,'#8b7569');rect(552,182,496,236,'#b6a18b');
+ // stone courses
+ for(let y=200;y<420;y+=28){rect(552,y,496,2,'#9b8777');for(let x=552+(y%2?20:0);x<1048;x+=70)rect(x,y,2,28,'#9b8777')}
+ // battlements
+ for(let x=520;x<1080;x+=38){rect(x,136,24,24,'#c5b098');rect(x+3,139,18,18,'#9a8474')}
+ // towers
+ for(const [x,y] of [[490,132],[1030,132],[490,392],[1030,392]]){box(x,y,82,82,'#a18a7a','#342632');rect(x+8,y+8,66,66,'#b6a18b');for(let bx=x;bx<x+82;bx+=26)rect(bx, y-8,17,18,'#c5b098');}
+ // roof shapes
+ ctx.fillStyle='#75434a';ctx.beginPath();ctx.moveTo(512,158);ctx.lineTo(550,104);ctx.lineTo(588,158);ctx.closePath();ctx.fill();
+ ctx.fillStyle='#75434a';ctx.beginPath();ctx.moveTo(1012,158);ctx.lineTo(1050,104);ctx.lineTo(1088,158);ctx.closePath();ctx.fill();
+ // windows
+ for(const x of [600,670,740,810,880,950]){rect(x,230,24,40,'#3a303d');rect(x+4,234,16,32,'#d1ad77');rect(x+10,234,3,32,'#6e5360');rect(x,250,24,3,'#3a303d');}
+ // central gate
+ rect(730,344,140,92,'#3a2933');rect(741,355,118,81,'#65454a');rect(754,365,92,71,'#342632');
+ ctx.fillStyle='#342632';ctx.beginPath();ctx.arc(800,365,46,Math.PI,0);ctx.fill();rect(754,365,92,71,'#342632');
+ rect(765,378,70,58,'#a27654');rect(772,384,56,52,'#543840');
+ // bridge and entrance
+ rect(760,436,80,91,'#8b775f');for(let y=444;y<520;y+=16)rect(760,y,80,2,'#b39b7a');
+ // paths to castle
+ rect(758,526,84,56,'#8c775f');
+ // trees around perimeter and rocks
+ for(const [x,y] of [[180,180],[240,250],[320,160],[1350,180],[1410,260],[1330,350],[180,600],[260,740],[1380,650],[1450,820],[330,900],[1250,920],[430,750],[1160,580]])drawTree(x,y);
+ for(const [x,y] of [[210,330],[300,560],[1280,450],[1180,850],[360,300],[1220,300]]){rect(x,y,15,8,'#817e73');rect(x+3,y-3,10,4,'#aaa091')}
+ // wall crenels, opening at south gate
+ for(let x=100;x<1500;x+=32){if(x>744&&x<856)continue;rect(x,78,20,18,'#887464');rect(x,1020,20,18,'#887464')}
+ for(let y=100;y<1020;y+=32){rect(88,y,18,20,'#887464');rect(1494,y,18,20,'#887464')}
+}
+function blocked(x,y){if(x<112||y<104||x>1488||y>1010)return true;
+ // castle body with entrance opening
+ if(x>518&&x<1082&&y>148&&y<448){if(x>752&&x<848&&y>340&&y<448)return false;return true}
+ // towers protrude
+ for(const [tx,ty] of [[490,132],[1030,132],[490,392],[1030,392]])if(x>tx&&x<tx+82&&y>ty&&y<ty+82)return true;
+ return false}
+function showToast(s){toast.textContent=s;toast.style.display='block';toastUntil=performance.now()+2400}
+function interact(){const d=Math.hypot(player.x-800,player.y-400);if(d<90)showToast('The castle gate is sealed for now. The next build will open the halls.');else if(player.x>550&&player.x<1010&&player.y>565&&player.y<845)showToast('A quiet garden. Room for secrets, flowers, and friends.');else showToast('Nothing to interact with here yet. Keep exploring.')}
+document.getElementById('interact').addEventListener('click',interact);
+addEventListener('keydown',e=>{const k=e.key.toLowerCase();if(['arrowup','arrowdown','arrowleft','arrowright',' '].includes(k))e.preventDefault();keys.add(k);if(k===' '&&!e.repeat)interact()});
+addEventListener('keyup',e=>keys.delete(e.key.toLowerCase()));
+document.querySelectorAll('[data-dir]').forEach(b=>{const d=b.dataset.dir;const on=e=>{e.preventDefault();touch.add(d)};const off=e=>{e.preventDefault();touch.delete(d)};b.addEventListener('pointerdown',on);b.addEventListener('pointerup',off);b.addEventListener('pointercancel',off);b.addEventListener('lostpointercapture',off);b.addEventListener('contextmenu',e=>e.preventDefault())});
+function drawPlayer(){const x=player.x,y=player.y;
+ // shadow
+ rect(x-7,y+7,14,4,'#1b2926');
+ // cloak
+ rect(x-7,y-7,14,17,'#443451');rect(x-5,y-9,10,12,'#695070');rect(x-4,y+2,8,8,'#32273d');
+ // face and hood
+ rect(x-5,y-12,10,9,'#d0a47c');rect(x-7,y-14,14,5,'#302638');rect(x-6,y-17,12,5,'#302638');
+ if(player.face==='left')rect(x-5,y-8,2,2,'#17151e');else if(player.face==='right')rect(x+3,y-8,2,2,'#17151e');else rect(x-2,y-8,4,2,'#17151e');
+ const swing=Math.floor(player.step)%2?2:0;rect(x-5,y+9,4,4,'#b9a28d');rect(x+1,y+9+(player.step? swing:0),4,4,'#b9a28d');
+}
+function frame(now){const dt=Math.min((now-last)/1000||0,0.035);last=now;
+ let dx=0,dy=0;
+ if(keys.has('w')||keys.has('arrowup')||touch.has('up'))dy--;
+ if(keys.has('s')||keys.has('arrowdown')||touch.has('down'))dy++;
+ if(keys.has('a')||keys.has('arrowleft')||touch.has('left'))dx--;
+ if(keys.has('d')||keys.has('arrowright')||touch.has('right'))dx++;
+ if(dx||dy){const n=Math.hypot(dx,dy);dx/=n;dy/=n;player.face=Math.abs(dx)>Math.abs(dy)?(dx<0?'left':'right'):(dy<0?'up':'down');player.step+=dt*10;
+ const nx=player.x+dx*player.speed*dt,ny=player.y+dy*player.speed*dt;
+ if(!blocked(nx,player.y)&&!blocked(nx,player.y+5)&&!blocked(nx,player.y-5))player.x=nx;
+ if(!blocked(player.x,ny)&&!blocked(player.x+5,ny)&&!blocked(player.x-5,ny))player.y=ny;
+ }else player.step=0;
+ const camX=Math.max(0,Math.min(world.w-vw,player.x-vw/2)),camY=Math.max(0,Math.min(world.h-vh,player.y-vh/2));
+ ctx.setTransform(dpr,0,0,dpr,0,0);rect(0,0,vw,vh,'#17151e');ctx.save();ctx.translate(-Math.floor(camX),-Math.floor(camY));drawWorld();drawPlayer();ctx.restore();
+ status.textContent='X '+Math.round(player.x)+' · Y '+Math.round(player.y);
+ if(now>toastUntil)toast.style.display='none';
+ requestAnimationFrame(frame)}
+requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
