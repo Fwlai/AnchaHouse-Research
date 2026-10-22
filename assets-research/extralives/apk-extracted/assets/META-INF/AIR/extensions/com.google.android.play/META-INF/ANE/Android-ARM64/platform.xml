@@ -1,0 +1,20 @@
+<platform xmlns="http://ns.adobe.com/air/extension/33.1">
+	<copyright>2024 // distriqt</copyright>
+	<packagedDependencies>
+        <packagedDependency>app-update-2.1.0.jar</packagedDependency>
+        <packagedDependency>app-update-ktx-2.1.0.jar</packagedDependency>
+        <packagedDependency>asset-delivery-2.2.1.jar</packagedDependency>
+        <packagedDependency>asset-delivery-ktx-2.2.1.jar</packagedDependency>
+        <packagedDependency>core-common-2.0.3.jar</packagedDependency>
+        <packagedDependency>feature-delivery-2.1.0.jar</packagedDependency>
+        <packagedDependency>feature-delivery-ktx-2.1.0.jar</packagedDependency>
+        <packagedDependency>review-2.0.1.jar</packagedDependency>
+        <packagedDependency>review-ktx-2.0.1.jar</packagedDependency>
+	</packagedDependencies>
+	<packagedResources>
+		<packagedResource>
+			<packageName>com.google.android.play.corecommon</packageName>
+			<folderName>core-common-2.0.3-res</folderName>
+		</packagedResource>
+	</packagedResources>
+</platform>

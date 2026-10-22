@@ -1,0 +1,40 @@
+<extension xmlns="http://ns.adobe.com/air/extension/33.1">
+	<id>com.google.android.play</id>
+	<versionNumber>2.0.303</versionNumber>
+	<platforms>
+
+		<platform name="Android-ARM">
+			<applicationDeployment>
+				<nativeLibrary>com.google.android.play.android.jar</nativeLibrary>
+				<initializer>com.distriqt.extension.play.PlayExtension</initializer>
+				<finalizer>com.distriqt.extension.play.PlayExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="Android-ARM64">
+			<applicationDeployment>
+				<nativeLibrary>com.google.android.play.android.jar</nativeLibrary>
+				<initializer>com.distriqt.extension.play.PlayExtension</initializer>
+				<finalizer>com.distriqt.extension.play.PlayExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="Android-x86">
+			<applicationDeployment>
+				<nativeLibrary>com.google.android.play.android.jar</nativeLibrary>
+				<initializer>com.distriqt.extension.play.PlayExtension</initializer>
+				<finalizer>com.distriqt.extension.play.PlayExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="Android-x64">
+			<applicationDeployment>
+				<nativeLibrary>com.google.android.play.android.jar</nativeLibrary>
+				<initializer>com.distriqt.extension.play.PlayExtension</initializer>
+				<finalizer>com.distriqt.extension.play.PlayExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+
+		<platform name="default"> 
+			<applicationDeployment /> 
+		</platform>
+		
+	</platforms>
+</extension>

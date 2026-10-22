@@ -1,0 +1,7 @@
+<platform xmlns="http://ns.adobe.com/air/extension/33.1">
+	<packagedDependencies>
+        <packagedDependency>billing-6.2.1.jar</packagedDependency>
+	</packagedDependencies>
+	<packagedResources>
+	</packagedResources>
+</platform>

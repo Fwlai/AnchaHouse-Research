@@ -1,0 +1,4257 @@
+Manifest-Version: 1.0
+
+Name: AndroidManifest.xml
+SHA-256-Digest: ChbjLawr5K1f6kAZ7QgClxF51FLw/3ajl5jCeESOSpU=
+
+Name: assets/Characters.txt
+SHA-256-Digest: estIL8T1QKM70t84LMMejwqzkvT/ToMuc3YpC3zsbsE=
+
+Name: assets/Frames.txt
+SHA-256-Digest: hQ51OWWQfHPmnfrl5eL3cmxUBfKWq4B49a5KdY2VZTg=
+
+Name: assets/Game-app.xml
+SHA-256-Digest: NTq/eT8rs550lT+PhPqptWu91YBIR5YY9LHybDyfj98=
+
+Name: assets/Game.swf
+SHA-256-Digest: F/LiOzFEcSXiSHAJ9GS1uh3KhjwxEhylijgFAq3odms=
+
+Name: assets/META-INF/AIR/application.xml
+SHA-256-Digest: NTq/eT8rs550lT+PhPqptWu91YBIR5YY9LHybDyfj98=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_255
+SHA-256-Digest: tnoFvXjzYYya/s3jKQtEAPt8Ynp1djaJxdKLrS/m7qQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_27
+SHA-256-Digest: ///f/4AePROmm/dPnEEw2AJyj24wtLf5Gxe5MJR4E7A=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_30
+SHA-256-Digest: dGB5dTcfnFyqHE0Q5XIUuRM/cwFwcnsS0woDLnr9lqE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_31
+SHA-256-Digest: R1HrfnnCkihxxqtJGuG8vxHEnrj1zL2JJg7wZiRbdBA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_34
+SHA-256-Digest: UVa6e+X2tp3fDcWiCtU7wPjT4Ixuv7CSjUX5h94C6yY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_350
+SHA-256-Digest: ITzIBAHsgj5ZjlOnvCmitg6rbiv0SEZ6VtWKhL4uu38=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_351
+SHA-256-Digest: fsq5b75arqUymgEuR7KYYyrB/XpgbyA+MCAMOOcNhmY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_352
+SHA-256-Digest: es2EiEl+JP/QoOOnhbYdh8e/9vHA6AByOxgnEF3ZdTU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_358
+SHA-256-Digest: J62js3/8F7hJTdeORBjNzaIpYw1v0PfCwR+qtl9K4sw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_359
+SHA-256-Digest: 3CZbtj3KjP5QgZcfHWgz9hCJosSIrLWdKDxROd9VMDw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_36
+SHA-256-Digest: CyuB9whplxX5LOqYIU6z6zP1GOeeYaN82L5mfCGHcQw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_372
+SHA-256-Digest: bHx3iu7y7q5EnuBn9VrlaIUO3oUFsjVkZNGYyf7w4+w=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_373
+SHA-256-Digest: YzQzg/vaxYyZkbfG2AmjRZ2hztH7BN+TGuZAm/mbn9E=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_375
+SHA-256-Digest: X2BpMjFSFAhCPSrs4WSjhvh/h5G3n8Mcd89wuyXdhEM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_380
+SHA-256-Digest: SSwPojNQQaXCAtldeyxDyiGlEORabpZSs7JuQXhVIbM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_381
+SHA-256-Digest: CicwK5fAEmYd67GG3Ulk3e4fzwe7ufwSE7FJBJ1wHQ8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_385
+SHA-256-Digest: LrAD3ngoBCd1bAQfw8gibroFqrzRj5Cx2y/7DHNL67U=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_39
+SHA-256-Digest: VFpQeKo3MlZ/lSB4II8KH3hzo9si6MVhASuiFWq/pCk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_43
+SHA-256-Digest: u0WLl6c67wG7D4sp2UE3ANsikk2Dq8lisIcj1RXzHs0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_44
+SHA-256-Digest: onWTf2R+sP16PoTCv9DIGO7oyfbuPX2cqqBA+IF72MM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_49
+SHA-256-Digest: ZU0eJ80/JK5rLUDSXYbYNzysCJKYjA26fMLmqNhBdU0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_505
+SHA-256-Digest: zD1Q8+9Ezrxmhb5NEPYW5dvnGJHQyFoGoYiznP4NjAc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_506
+SHA-256-Digest: 5v94ixRanHNsflEuM7NKMkcNe/qrt/yMUBl9iqVml4A=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_52
+SHA-256-Digest: fd3JRVqbBtZ3ZnuVNyE1NPf1hAb9tK1yBADVJEroz/U=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_54
+SHA-256-Digest: y09LgnJQg4Pu5mmZeQ+RJO5m2MjIZ7jLHQnp6X6GL4A=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_55
+SHA-256-Digest: fmD4oQUO0/cMJ/6FfHsIKVrFoue5KHS7rt38yi2FL1M=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_58
+SHA-256-Digest: /Qg2yxH1mYwuvLTFj4o6YXR/GyeiIQAz72CiUZEOXvw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_595
+SHA-256-Digest: AoT2TRhIbc7aNEe5RZkJ+Hey2CBQQZWsW46IrnzU7VM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_61
+SHA-256-Digest: etNM1ravvwd5FPT9EeU33PmmhagE2N59RGdAZNraA/4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_62
+SHA-256-Digest: wao/wQCYc0uJDYUo4mwpZH6LrhIp7sQUPdH1Iscy0To=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_63
+SHA-256-Digest: pQrCDj66bcOy+z4nNbymqf42j+SpLWlvV5+54lUDVfs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_64
+SHA-256-Digest: 5Mx6TILBbJsrXrA7BDeebp2APYvlXzc5xtmgIqPVoT0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_66
+SHA-256-Digest: nZFivlZbIYy3urQd7YOdCxSCzPnNbCztrGr2iSgtMlM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_675
+SHA-256-Digest: J1SVyYqlTHyHdr6MkhALCGTGebQMutivf1u9FeKUp/0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_676
+SHA-256-Digest: IWo11rSJT1VtvvdkzRa8FW7aV6FArZ3vNla5wWnOuQw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_679
+SHA-256-Digest: OJj0R+fYxJJIaaq/pXbGZvh5JpELhuR+Z/+41O/syL8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_7
+SHA-256-Digest: OrBP6V687v3dUWNuGuJAcj74dZE3soAp1aJAZN+hUdI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_81
+SHA-256-Digest: ANr9d70CmJgBHyI9bOsbEpx92QF5DguWgfZUfQXfzHc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_84
+SHA-256-Digest: d2YHPidIjyo5YCt0xFSWkJz5LhH1Q6wWjqByv9uD8Ug=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_855
+SHA-256-Digest: m3RCplKxJeW9ivkoELvssGN9sugAMK//0PwXY3kpyyk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_856
+SHA-256-Digest: wMNyrtOn7wo+azK77wmjU/lCxVLTVlRk7384+RBaUf4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_90
+SHA-256-Digest: Shxm1rCs5zgVArvlCUr4toxG1ThJ3WWIFfX6PIv6B3s=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_91
+SHA-256-Digest: 1AS9xohT5F8B8ExZH5WOsx85X6czmeA/FYRHIgIxSFY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_94
+SHA-256-Digest: PGrCt61zUOQyTMIW5ubH0/kySVLM1AVVhsTrK5Gnsy4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_95
+SHA-256-Digest: iS8Nefw7sxxb+qKED7YgdK5Z772dpmV5auR/e80c3qk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_971
+SHA-256-Digest: tZ96nB07XW7mj/TKo1Vgno/Bc7jQc7TiBbnR8UIS7D4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_972
+SHA-256-Digest: xX0c6S0aPN/zYeaVxXFV0zeS8757hDQ3UctIUaWfDeY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberAlternateFor
+ matsProto_995
+SHA-256-Digest: VWbzWam+6Zx1jh50I+1BwztG5H0CgD9baB4GBo76Py4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_800
+SHA-256-Digest: 24+sNb2jyuTNjsKiLLQgpw9qpE+xOtxx8MXR7FPZP9g=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_808
+SHA-256-Digest: 1Z6+K8Vl8WJHG9v4IXGC6UFtLz21X3VWGfOeLmgNtQg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_870
+SHA-256-Digest: OsZr1swzCCtwcUqVBdqqknRqEE9CAsMzAZ4d84cc3Hw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_878
+SHA-256-Digest: 9+7LCAtmfwYGIz2nJd5DYRx4H1rGOiZtbUmkbFaeaLE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_881
+SHA-256-Digest: 7uPHgxluK+mVJtN0fupDZlyv/PPaZ4sCglDGalJI7vE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_882
+SHA-256-Digest: AqBITewkAdNcSVxeuvGVnDwBhSrbD6RTHiRkK6mZ1n4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_883
+SHA-256-Digest: ejjngHlgI17yRn7yipEAmyiPIaHJJRA+ZqcY0Tsd0Ks=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_888
+SHA-256-Digest: IqVcfKZlwqTmPHQ1t5uvcLfHatOEvGnrVsfGhe85tTA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_979
+SHA-256-Digest: sAwAWVBiViTGUS2pxSM4XjL3l8/Fdq214pXFEBw9X6o=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_AC
+SHA-256-Digest: NdYD6y5l+q7G829zlqGU501yqsf6wvN6hPPHUmBS/TA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_AD
+SHA-256-Digest: 7xYBO3ItQtG0li5kr5MN4uUqzP6eXIKF0Y4VrBZRmsE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_AE
+SHA-256-Digest: OZOR4LSLaiExIZmC4dxS3KOJpKBAX0JEvWPvwYqSN7w=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_AF
+SHA-256-Digest: Z9ffQqk3gvhe99bdMzUi0ycXC8dbVjvkcGxCXYs6n9Y=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_AG
+SHA-256-Digest: eK1L2LZ5PmFjZ2m61R4gYm0VGBti6mw39mEs9Fe9TPI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_AI
+SHA-256-Digest: VbQy8JRekQR+YUxdZB4Zu4Rdsk3WnLzQUwoAjPnU9Z4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_AL
+SHA-256-Digest: WULtxDHeFWtK2X3MHJF5i8rM3PceCHblHUzBVRHM6h4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_AM
+SHA-256-Digest: Y13/67NpiKu2ZOpel+hzh9UFOl5TmMwIvTVnGB/wh5g=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_AO
+SHA-256-Digest: HrtNcG1On1F3fKDaLWIPjvUaIoGVb9C9NYa6ErRfgaI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_AR
+SHA-256-Digest: mroz48ipTDsA9N+LGHW7jiz4hNg9HILnpvH+rl8fTxI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_AS
+SHA-256-Digest: 5gT0rYLn3jg6xv5hmqQ+gC9q5vKv9NmtzC0WW5Hafls=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_AT
+SHA-256-Digest: yVgA7xyRU2Gc85Q/mtbdnBr5U8cIubQ04ODg/fEQVW8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_AU
+SHA-256-Digest: 0AK2fiysNVSBPxNS1Lqa+dtajXzv/EyFWw5/OItTYnk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_AW
+SHA-256-Digest: qGqiw/pHr9zXir16IQy6I05IptbiRKhG2r4b7m3N35I=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_AX
+SHA-256-Digest: xRpVE7s6YnHMeHzQNGZRWrrpH/GlOyysMm2a05tneEY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_AZ
+SHA-256-Digest: CegjjOsrRkvLPFt0nWO8vniQW4sOy9dO/vM2XFRQ5iM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BA
+SHA-256-Digest: 76aZrHMlG7rIfUvBvLm5yabb4BFrtqjfnv9KyiziU/s=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BB
+SHA-256-Digest: uU8iiB2wyBgBo5dGtXtIX2BdbSoiQJ5a4sdOyM/Ipgo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BD
+SHA-256-Digest: dwzC3GuAO2GqiUbghZgVT2OGsiwx94yNnOWwGJV7eK8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BE
+SHA-256-Digest: 5PVdLjTsIXShhdJ6qjIahC4P9U8ueY1RNsgW+U2/ubo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BF
+SHA-256-Digest: vCbAaDfWdcubjPh2dQmuILMwWJh1gmm75btLcBL82cM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BG
+SHA-256-Digest: e4+AypjT3CHiKbtuSxLeAItp49Frm5Nq1y9whX5aCP4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BH
+SHA-256-Digest: zcVmsdstBqqPJd0OzgVPV7H8MYbnMiDzKsnxfVXxt4Y=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BI
+SHA-256-Digest: xGX0XARbE9wvc3uQrfRbVeYjBOJJHbyXJ+FlVCN/i7o=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BJ
+SHA-256-Digest: Vi4e3kobQr8yNbF8s0GpRXxJm8mnCx3GS+XEAErrnWE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BL
+SHA-256-Digest: 92qkzZn13BDfgpM0aWRYX3EZNR2G+Ss/PxOSHKIxHlw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BM
+SHA-256-Digest: 4N51NVajKMe+3FiwuX4/U6jPjqnkGN4GAVimmNamskc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BN
+SHA-256-Digest: SquWUUpihs44DzlF4mmdKIp20csNW8cNx+n0k7MduAc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BO
+SHA-256-Digest: wOVx7H0cz9LEggOuozyyrMsRe8VtUIc3b4yNbj1hqps=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BQ
+SHA-256-Digest: F6LPNERdgagoUydxqeuKQKU0k4k0W9rlMMLnAG2Mf/U=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BR
+SHA-256-Digest: IL0z16CETJUkGZW1nxAWzq4/4FDWFUv18ese6y2mceY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BS
+SHA-256-Digest: f6hnXXeT9HnGRHF+xu9CN8O30nt3jC/pZrS32tarUtQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BT
+SHA-256-Digest: erQP0JdqmmJyImjA88fJOAachTzhI2rMgeaAeCfYz2o=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BW
+SHA-256-Digest: vgFBpGXBp/qWIraLowoEjlS4fUaL8fMnN92hBSShsUU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BY
+SHA-256-Digest: c0xC9niYce3r1CVASimJwCR1Cr5G+p0ml8h4mNEf/mE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_BZ
+SHA-256-Digest: Oz9fi5pMjIly5+JH25M6nc/Y4TigWpnWRTYshsMxtTE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CA
+SHA-256-Digest: P9TQR7eHkiZHUU8pyofIyFoR+8oRhxyZzJJnXi9stYA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CC
+SHA-256-Digest: 5DHFMUtXgyhqsMtozEOxFuVOE1T9poirJye0nAJEShE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CD
+SHA-256-Digest: LPLSFmF1vscmsBkP5D9KYbJ24cLtq6W0+qB8B51nFi0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CF
+SHA-256-Digest: yNPcILZTHvATktjZHgX3NtUk8m5B1pAnSYBcMs6XMVA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CG
+SHA-256-Digest: p7OWPiVCYNqz9HphNtalNLTLH0nlwqt1gcnHUmQdbmQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CH
+SHA-256-Digest: D62HuP/M6zzhixtVWeZRFikBidxNoanPZMTGjrqELnI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CI
+SHA-256-Digest: DEuF8M42SsIDV0sHb8MXQ7/1Yb60Z01Xn722EyCNLQI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CK
+SHA-256-Digest: hVn0jrmbXxLqcI2Q2Ad+H7kPQvXcRQHOzAg3IyWJqPQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CL
+SHA-256-Digest: JSnFFsi1yqbytPZblOB+q2qNAjGC9cbPp0i+VR1ir7w=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CM
+SHA-256-Digest: Nmoe2YFmwMHVzrqNMG+vSZCxTPeSuqNOe9TM67PJpiI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CN
+SHA-256-Digest: M3cNPuMvCJ3Wh9ajlhVl5Fi8iHjPQFz8MfB827r7EIY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CO
+SHA-256-Digest: qQUkFTSszPRd1yYTmO+Tqy6UP+wrj/OvNyltoG3yEVc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CR
+SHA-256-Digest: vod99BuxrFl67IrX/ZCzfCORw3kmcUTZVbfaHBFaqeY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CU
+SHA-256-Digest: H3emgzHh8u5v63CSvUrAW9CkpjcYt86w+ltjDyKtLYc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CV
+SHA-256-Digest: n8YmBHR7pOeUzjM6w9ExETPTk+y/ygfYzjFGZXEi+S4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CW
+SHA-256-Digest: 8iypwLfwedaSV8bxKWIqDzzSuErSIWt3TXhtbWFclv4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CX
+SHA-256-Digest: FFye1afhC+Nef6bzGysURI7DrkCcW7osm4Dlm1CN81w=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CY
+SHA-256-Digest: zrxKQW5jYSEwQwl33mKV/fSsUXvztxtVdfzqWXxod6o=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_CZ
+SHA-256-Digest: 4KCersh5jX0ZxUuh04IjsyBJ44QtdT/vdrFpWsFnbkE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_DE
+SHA-256-Digest: T3CzKkdzR+zyglE4yojy9vNEuK/upaeKSWuEFTKDmbY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_DJ
+SHA-256-Digest: 35DHjZoKrXN8jthY1Is9ACsxFivdGYgJcxEon0Pu3xs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_DK
+SHA-256-Digest: 0CQreNhrd8l6c9Z6JESR7oMPIs2VpTRH0lc11+r5DZI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_DM
+SHA-256-Digest: xH3dbEPENKkM7j9MCd3higVC2RW3X3xru8MUJ8vRNhY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_DO
+SHA-256-Digest: +nVQKA7Y1aG3x58vIeT+EwPzbtseprTHZXPY8B44n/Y=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_DZ
+SHA-256-Digest: 8n6jXD3YPSMDfKuhDLP4zsijLYDoTqnyFQ/BesqFw5k=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_EC
+SHA-256-Digest: 2rVo6DQn+clZK/jhtyUw8yUGBp4ZxohFW/JYoIlQ4Vk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_EE
+SHA-256-Digest: /iASA2vvZkkGR+9iCrFetTQHAs/jrq3+DiZ5z/Et4QM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_EG
+SHA-256-Digest: RuBpQel5wWQ2OkflsDpDvI00kYhkSONvByvtbFyJJxI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_EH
+SHA-256-Digest: nuCy0jyCQK3VXENnjMr/jWVLiXeLHvmOCbVjzVz1w8w=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_ER
+SHA-256-Digest: qnw48Ij3SABlRXwLJhOqh4F73vQv+3h31enVYEogCS4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_ES
+SHA-256-Digest: 2K48hOmrQHe1eAUIbnRYkTL1k/66DbNUlaH9Csn0bow=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_ET
+SHA-256-Digest: zs/wApeQJHWhQ8fKi4nmkjCWxZBb+XQPEvex3qmiZSo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_FI
+SHA-256-Digest: clL49ZaWhOuElAztXhsWLiKjfgbqFgPNQBK6B+1vlhU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_FJ
+SHA-256-Digest: UTbon17fufo5M6fIkolKmI/YivOWunRreTk7ZDR7d4U=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_FK
+SHA-256-Digest: Z4w9N0EQstTqPRj260kjWyE7NvdZjBLixfZya4nT1nM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_FM
+SHA-256-Digest: uXZ95Zqv3pL5RnXoq2x9sNzdU3szoLTlHmM0SlB7B2E=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_FO
+SHA-256-Digest: tnoN5zDsOMceqn8vfXcEsvcT7mK88fFQN4WNa7bIv44=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_FR
+SHA-256-Digest: Gg6P5VxOdZjpWAEzeLg7wiMdQjU4+3me1JvG8ZH16e4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GA
+SHA-256-Digest: PyCkOOxPJHKfo4/p2IME08FvKTcHcxPZepEfmgSiyf8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GB
+SHA-256-Digest: iXImGQQWti186OGYqYkbyYNLL/SQdz1fFNwYSrfPZrI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GD
+SHA-256-Digest: qOjifq3XhK/+TWuy1FK7zdp6v4K5oMKSPpRVB/kh4EM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GE
+SHA-256-Digest: tKZlE17GVEYpTWNv4lPL+kzuClWZjRJAAhbcCdLum8A=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GF
+SHA-256-Digest: /YnZgjicbb+uAf2ooSGx8btytGTgi8EUCuSRWCabCfE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GG
+SHA-256-Digest: CZLiTuCoLYTU5s6jn2HMPxocZHWvNsmeOxxd88x2AbY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GH
+SHA-256-Digest: UT3Cuxthf0DIGC8Fe754dy7E5ia9k+iPuxjMd/Oa6Vg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GI
+SHA-256-Digest: Y5nEOetJc+SRXe8CtcMQmpnCc7yG5jegIP0qCxQo/h4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GL
+SHA-256-Digest: U5n5MvSjnaEheacYAus8ZKVtGLsFF1zd0IlgCDKtLWA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GM
+SHA-256-Digest: 6QeEzT8uiRo3THl/ibX6wpoZsJRL97XeFvnGllgTeH8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GN
+SHA-256-Digest: u0ALH+JXd2m+Xa0FMwqe4Jk3vnGt6aKvQs7CPBExfcc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GP
+SHA-256-Digest: BIA8sIVQthIMYjA0XCBIV44G2/7awscnBMC9CiGZbgg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GQ
+SHA-256-Digest: bzmozD9fP+fsHF5S/aD9+k3xtKLU1673pnQojn66msg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GR
+SHA-256-Digest: vNP572SZsOOukkEWzaxRIfTycT6rV29O1u2QFA1a6Xw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GT
+SHA-256-Digest: M8xwSdMxT55IW9GPAmECTdgjB2Q8HC1SoSo2BQHMutg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GU
+SHA-256-Digest: +nmWd/6B2QcoLqsz8PiuRjwrJAOel20DkKeC+a8srdQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GW
+SHA-256-Digest: aMGCr2gbE/JE2i6VaU03355I5gFm/wLHrlsZ4xKHK8A=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_GY
+SHA-256-Digest: NM2ceuP2cUPDDHnEDQ3g9CsN0FYt3hwmeswNv6X/VIk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_HK
+SHA-256-Digest: qH7OAtN1ZD8uc9JOibPk2ykvcErbJzfyDSJUb5Y+Y/o=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_HN
+SHA-256-Digest: QMxpAIxN7ozX5RbFxrpp5u026zaMSvXfg3HsixM+PVA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_HR
+SHA-256-Digest: /rhCoAEkpJw5W3xo2TR+abton4nSQAo5kHtp3VsS9Co=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_HT
+SHA-256-Digest: o6EfCfzdfaQqHPRIxXaZjZbFiXV0G7wIx6BfyZsF5Pw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_HU
+SHA-256-Digest: HtSO9CxEHDsXBC50RH6uNDAeW+sR1FPiZO9+cNGR8LM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_ID
+SHA-256-Digest: e5EVpg1tiH1EZa8kUSmkaXa6urStOooPaDIz7HRg2CI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_IE
+SHA-256-Digest: VjddLG3CQbr+w1JwIfALCqxmGugBMbN5bsWFUEZAWBU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_IL
+SHA-256-Digest: 9hvqmvSXnvh2D7TzgvhpnQ/ztX9VII8ZjrdXdGc/Bvg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_IM
+SHA-256-Digest: e5uFfmePIis5JKX6kdeY9aRF7XCmV8NDZwtz0n3Ab1c=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_IN
+SHA-256-Digest: vfCUb49aw4Eprrnb8mwOKsThwNY8IoSS5UpCo9y5CjM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_IO
+SHA-256-Digest: m1uChM9ry1sTNGKDFs1JWsNdMpoABjjyIkhMkGfy1sY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_IQ
+SHA-256-Digest: JWOOo5OovfFBWjP+oPzNBdoe+KQnNTd7T2iFuCUep64=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_IR
+SHA-256-Digest: Frh5uVH6j6TQdiAlvZA2EyFqiPhNGkLecP78onPwXhU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_IS
+SHA-256-Digest: vMtolUmM+a6sz2P34wYmk2w7/phk0vts6QZpPP0Hta0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_IT
+SHA-256-Digest: JzcgJNy0k50T4spgncg6jPXO6EPvJCrEvBI4iJT+aG4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_JE
+SHA-256-Digest: uoANC/JYTI+lddIv2pNnc6SfCK901Djv4EeCgUvjNUc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_JM
+SHA-256-Digest: XkSee0Nm1FSOyuG0uGudmYhC88Mjq8gzy88G4MXimsg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_JO
+SHA-256-Digest: lu4K2bAyBiPi3bRlIcv7dWjv8Kc4NqQQGZts8DIivmE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_JP
+SHA-256-Digest: S2mGiBeISpr3SSZiZ9DVi8F7WGEwhwnd8iq350ReZxA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_KE
+SHA-256-Digest: U0+7IAL66CXmM+0CAgRj7dp4kDdryVI/3W2iNPbLic8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_KG
+SHA-256-Digest: n6l73qutJIC8qxdVsjl1zlQKdvwtCnH1/LV/WMn8nyM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_KH
+SHA-256-Digest: En9d1az6/nirw48jQZHnEiaAtR/T97LhISeIj6ntEr8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_KI
+SHA-256-Digest: l5YnwsJ3hmc7WHSVesBpELHYtynTH05nsHC9s4bjX24=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_KM
+SHA-256-Digest: lGc85RLj6Dtm2mZ1Zrzp+H7RK3vxqLIlwfKoic/vzhg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_KN
+SHA-256-Digest: rbMSrwgwq6QZ32I45gf+XMZVwpiD5GbNkEAa8a9Oa/c=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_KP
+SHA-256-Digest: EHyoCpyzVphfIE6mNuLVfU4gGEnNzwBfejjhnr8VdWo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_KR
+SHA-256-Digest: MmJ5PyhE0Bn39yFN/QkSi1ySu8oT5XabDopP+oZ6GT0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_KW
+SHA-256-Digest: Jtc6I5C8mGhBsll+YiDiqZGeIX8HJ8bblIJreL74yuM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_KY
+SHA-256-Digest: rxrV2fMUqii9kyrRE8Hj9U4UZGGg74qsDwblmVz7veo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_KZ
+SHA-256-Digest: ojZxfEMH7Rkplpnr5P2ETSUqhiqz59z/j8rZm5sX/PY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_LA
+SHA-256-Digest: 719uVTM3Z9SqX6EJFUiNNqFZRPAmbgzJp+Qbn63u70g=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_LB
+SHA-256-Digest: f0X8BIFju3cVMKPiyY1ier1WG5P2fkvaQqxausnKy2M=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_LC
+SHA-256-Digest: JhWQccnSg8fBrVKPfK4qMe17lZYE3bOGToFLgOM/8YQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_LI
+SHA-256-Digest: /3s2BWotIs+5IlogxeSFlQCGPDqOkWYRJm07toYfDkU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_LK
+SHA-256-Digest: vPclP2ijXzaf+rIhjLjpdjAKG1x52oqeB4q3uue7wBs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_LR
+SHA-256-Digest: 4tPogwelPaEnOOCM7kEhp0cb/+CtnAuPzrSM4ypEhGg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_LS
+SHA-256-Digest: J5emBzNbok0GWzyUJH9cmRIq06ZLdaL51UdFSGme3oc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_LT
+SHA-256-Digest: RWTHBoMTKXrp+tQZWu/v8I4qts/Ms88h2qEqfp0hklE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_LU
+SHA-256-Digest: 4/A57ttfyX0fzzTVQZEgJnJNmG41nxUMKjyYKIINc5E=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_LV
+SHA-256-Digest: Ys6v75DZAFDAeoKde3lx0dFhYg0M7g/mHHlJzTyi6oA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_LY
+SHA-256-Digest: TYwU4wM3v2yrDp7L30Fn8uiAbUMHgamfnTiYBqqmJ7Q=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MA
+SHA-256-Digest: jigTh6ukGc21NzvstRI5ksg9lfgmQ9a6Zx3ILEu9Mrs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MC
+SHA-256-Digest: HYNHErMuL5IkFU2mDTwVamPlZIzY7dVcJJykGUu4H/I=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MD
+SHA-256-Digest: DnzsJey+4JHlI0Ry6j9gdc9JkRfKqATeYGZ3Q0VxW9g=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_ME
+SHA-256-Digest: tbGCmRyUtURSuOhnOW4vD7IjS/0V0dJva39AQZc/xXk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MF
+SHA-256-Digest: UF8B4Qn9cnZ6uXpIA2civiYUwQOjpOLLQWlweQSkXlE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MG
+SHA-256-Digest: OQqFUPfQpRVrQ6DQZ16mh+UCnbmzkCDVgrZueIFpGgA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MH
+SHA-256-Digest: 4N4AzYb8hNhx/W5F8esw8cCBO1XEJEx0cJI34ZErCqs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MK
+SHA-256-Digest: AVfN8l3UDXowkofnhnM0ngA49BkMzfx6aZqNQm7BrZA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_ML
+SHA-256-Digest: 5Ze2lR86O9hfq6BVSSwKwqpdHkPLttVHyr7Df5N9Mvc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MM
+SHA-256-Digest: z5e8DQXJdbneseyL+GnYu+wruMtuHqvSLcxyxCCdv5U=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MN
+SHA-256-Digest: QOyOsmmyw3A8/C1W0tIwBxT/IlMYxK2cyBZYQP3LqFw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MO
+SHA-256-Digest: Q2MZ7Yt3Hr5hNuIyi3qMao43P0/58dJbXPS5yUnOWdY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MP
+SHA-256-Digest: /gLpv/wul13vE8UNe/IBeYbi4JTd1TOKE+yKUipWwTI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MQ
+SHA-256-Digest: kuSaYJtWlU3O92uj5EAkxLrDTN5QRw/ruNRtixB5LvM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MR
+SHA-256-Digest: qv4egEdTGR3+VbpjPqAmBpImHiBQqaEJAanSNRnGUrw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MS
+SHA-256-Digest: 3C92K28yBtr779P4aP/aQEscoGtIT4L+KpGp0eQ3WFc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MT
+SHA-256-Digest: wQMITwy+kbvfGTJToYfENaP/WpzhHeqT8W/xpgNkLwg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MU
+SHA-256-Digest: /5HBgWhpG1zEo6zSxPHLvas+YrId8qZCP3unk4gAudo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MV
+SHA-256-Digest: 7KNjWVpEwwZXyqyDpXebfF7HRnV9A5shYQPnmmjOeow=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MW
+SHA-256-Digest: 8pgbf2gfkYx9zG5cX+obrU9qWYgsYJ557KXkYQMcE10=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MX
+SHA-256-Digest: NkfTwP27/Q/smYBq23nkpk2U8UTuwGG90+60BqDegVw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MY
+SHA-256-Digest: HCmFxR5Dp+bfVx5sI4xf03AcBCyJB65hEHH5yA4YSZo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_MZ
+SHA-256-Digest: S/PK/mtc5p3lCFZfqgTOIOJgFA8HhKUVdu3Krov76U4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_NA
+SHA-256-Digest: ApvkGjlkz5BNupx9aMujkRHoN7UPbrwE7KBInQrAEjU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_NC
+SHA-256-Digest: h1tITcFhvA7LALFm8XGn8Te6ERjMFfFfbHlCKyPXHbg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_NE
+SHA-256-Digest: 3/U+mYdcH36WhhCsAEEqEO+gnWLwC6xY66MYqmf5YyA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_NF
+SHA-256-Digest: Gv94RxX6txwxaIGer8nliAXxySPibXz2LQ/bjU1/HQk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_NG
+SHA-256-Digest: sYIKmb14neOX6MG48I510t0rDpPnR9AeCICUPXOuU0U=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_NI
+SHA-256-Digest: tZlzZ3yuNJl+7pH2XyBx1QrGn5wSevVPapYLmME0K5A=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_NL
+SHA-256-Digest: 45/Mxtt6WEBlOADteSaJwU8qukxqOZkZSULhn0xpG9E=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_NO
+SHA-256-Digest: 1B2beMMrp45es8Zfp7z6IdbsFJ7aBOq74i7+9Flp/uE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_NP
+SHA-256-Digest: MBWgTdlq3WGC8hNeEvuNE3WwQJQs/yEIpALMmiWiy9U=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_NR
+SHA-256-Digest: kTpRoX/lafsArAjLaRyAwwdGx92Uyay7s5G6dq8IuCo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_NU
+SHA-256-Digest: ptLRvXwzFq38nhnRosMsGNnHaSdZhee23QXl3Zlb61s=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_NZ
+SHA-256-Digest: 36RCH9Xb+kQg9gx4zeUtTvRpyIp3BIt//q/JEnX9v3I=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_OM
+SHA-256-Digest: 5wGuTmwhDXhoNe/sg8LU4mehsUVwGUEms8XPfg9k4hg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_PA
+SHA-256-Digest: eGhZg5ImGAmBDB2dw/zQ8KnYz0vtRH6uUDAiUd079BQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_PE
+SHA-256-Digest: SaHF/dfMJPYOeskLVba4taIkaftHlJoZe6umYbCW0go=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_PF
+SHA-256-Digest: 958PN02yDV+/ee+IeTih/NsCl4JIp9bugQb15POiwl8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_PG
+SHA-256-Digest: KMF9nsx82+89QMr2jQoPYYoqdxnB9vkVxLh+lirFDhA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_PH
+SHA-256-Digest: 0DndgqTiSU66xvKj8p2uRa7ztf88mV5yml9/4kgcR6A=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_PK
+SHA-256-Digest: idYfbQIjidCtevLszaeyXSeODp/Z/piPmccZetUw05A=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_PL
+SHA-256-Digest: DmepRvZ3BFpca0E84omkc9IFCeRV7mqrgm/fNAl1js8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_PM
+SHA-256-Digest: jlxdGhuoF0BMJUkgBZl6EJrC8OAHLoqz2uKM+CldkWQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_PR
+SHA-256-Digest: s6F63vwpupb7jeITq4nWOeSY4l3Rt7e662v/NlNWZuU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_PS
+SHA-256-Digest: LO2oTt99Vd878/BBG99RixLhr3Jit8CGCsqFurcMId8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_PT
+SHA-256-Digest: Msjpd+vSI+NTgHueqiQfIQO2isIli92G/l6a5n8qQhw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_PW
+SHA-256-Digest: 9hvQS+lNp6CJb+AFzVNCoX6FGi0w9Om7psYTolyZxkQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_PY
+SHA-256-Digest: eHxzrl5fWZXiiLiO2Y7oXqtAi6rDIxPKqdt427TZG0c=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_QA
+SHA-256-Digest: 6C4ZknjL3HbIVIK9spho/8nn8gAyu9p/Mx8M0dn7L04=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_RE
+SHA-256-Digest: Lf3AvUkrXvX/3Afdrsis4UOpy2KY51icRUxocTS8Qxc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_RO
+SHA-256-Digest: MWi4cYKWR6GJRhp8ysWN2UBeoDX/jmSOnZorlP2kmog=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_RS
+SHA-256-Digest: a6ypB4UU+jFEr4TayrbK3u4zBguNbBp3CAAKHoy53LU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_RU
+SHA-256-Digest: g406tmR9Z0ibEpxUl5nVbEHXorOEOCVUclaGC413Cxs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_RW
+SHA-256-Digest: o5PYXjQiulx4OaF6Yzrnq8vI3ga6wl88Jfxd0vQ4w4Q=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SA
+SHA-256-Digest: L7paMEsfNOsvMbAozBVaZSQ4LCADAzaBWspeje9rJQo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SB
+SHA-256-Digest: hV8mxctg8cp0QXoPoLOiULZw/l0ys+AaN2lC5k7tNW0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SC
+SHA-256-Digest: ICi6QXuwefwaQtW0MKyH/9twqTezfQllQhhFMUCTviU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SD
+SHA-256-Digest: esd6YUhWdrvUZn07HOiQayerYcH4sCuoh4Tmo1vVZOc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SE
+SHA-256-Digest: tLw8iEDBzCBUETiua6K9NyQowXTrGeEt2yW++gnZw+I=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SG
+SHA-256-Digest: Gv1EYD70MQkLejC7wzf3jbcJ2lYlXktRwLvZ74RHV8I=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SH
+SHA-256-Digest: iH8808ugatVqZKz99HPSjZK4g7ldNHbhPJZG48cZOBk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SI
+SHA-256-Digest: CfhB6CjVkChsdMzwCLK67ZLGjNHjRcVTf1l+CfGXuWI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SJ
+SHA-256-Digest: 2DOK6GffsGrCsVsaGncFn3mzZceRMDS++a6cEXH6TuE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SK
+SHA-256-Digest: Fs6Hf4TDFCPa9FyFkCMVkHNt8Rkd0yZ3b41h9lvUjZM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SL
+SHA-256-Digest: yu5JhR40yFKe+eOSB5ms9cxWONnCirRDQbBc8rCt/oI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SM
+SHA-256-Digest: fmxpw5j6WtAXuNH1dp1xI+aC8SYoq5NnB4KbMO7S3HE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SN
+SHA-256-Digest: h4ZVojYoqTWwdy4Qc/MRPQ5UJtcwEsoJmrFJ88thoUg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SO
+SHA-256-Digest: 8sF4JhC+01Q9Zu//wuYPS60rzn6iqJHrINPhQJLXtFw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SR
+SHA-256-Digest: YFyPNXWm4k/gbhepAnlpc/nemIt+CGZeXYkxCxK+UJM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SS
+SHA-256-Digest: SHF3MTet4Ns6H9NAd14Ye/MWpj22DFzgtvn0DRlWf0w=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_ST
+SHA-256-Digest: b+1E1G94UJrqH1EmpoXv7ke4bK4lNYR+0E/SFXLWcUc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SV
+SHA-256-Digest: v32vZsauFOOnWTqrio1xP6kx0T04ULW7TX3t6gpmHEc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SX
+SHA-256-Digest: OgxLp+j0FtBEmHbFMtwLJFOR4wMcWEIt2p2JEXhoU2Q=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SY
+SHA-256-Digest: WyLrotMzK2xghWB73OQky0avGH4Q3evOC7jdhpiKLSg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_SZ
+SHA-256-Digest: gE2SXZssJzrqPi1DOwVKIqN+EtKXGCv40KwYyTgkcAE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_TA
+SHA-256-Digest: 86FMjdq7+q5p1wqW06o7WBz7MJKh5su0mZ1EFrPMRj0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_TC
+SHA-256-Digest: pVthlu+vCXwBB+vFA9GSCGBCeiLWWgUARqxbDEr8NrU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_TD
+SHA-256-Digest: oWfvbykdkk/i+ZOZF13ZoXBesgW/QVCg5e1/MENzvzM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_TG
+SHA-256-Digest: eyb+qqG+XYsr4m8m96kn33kv8CHCR2xzLWGpVklKeFI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_TH
+SHA-256-Digest: hZQo9j+PdWChqmHf0TGcUDamRMEpOuR/SvviKniGoTo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_TJ
+SHA-256-Digest: QFibXY6w4HFAY5ef3UIO2VWr9NvhGx07+mVx+XMhbSQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_TK
+SHA-256-Digest: AYsmbNoF5xuOAh4zrvCPFHJScr2df8heygvLQ+X1bY0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_TL
+SHA-256-Digest: ds+YCxlM7csIe92NUfFCkDUnuI2uOjuY53l3xGPTG80=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_TM
+SHA-256-Digest: qJEx5AgGATrHGotZkvfUJnujSDYMZQiJrfA0CkFAcqU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_TN
+SHA-256-Digest: 1TAz+HMyFA7uMb2FpKvLY2eOGxwbm8ojU121xDZ0vOM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_TO
+SHA-256-Digest: 1ZQeyxhawcSuWlTllxgclDYOTCiufKfy1o3cDxyB9cQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_TR
+SHA-256-Digest: d1LsxGeohK+6gI0lKrsqpE2A43lXWVhJIGEMmGC/UBo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_TT
+SHA-256-Digest: Yd8E8t4XaefRvhbb7bYRbOZ2jQCvqldaJNYTGkhCI1U=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_TV
+SHA-256-Digest: 1DOQJBshQFhyYS2yaYpv6YUoOKJDr78U2XsHZ7a/r7M=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_TW
+SHA-256-Digest: Js22Hqfsc5B7BwMoFS/+gYnLR7bQzy7Pv+rZY5tI4kw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_TZ
+SHA-256-Digest: nZ0E/Haz7XQi3LGLNND14D3fSoEPjadGDMG0kxxWu40=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_UA
+SHA-256-Digest: 6v++81StU2H9BbLsDHmOoe+8teI/6oxSwpfVgEHeqP0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_UG
+SHA-256-Digest: rUFEI/zeDy+dF3yDg83xpU931rGrLMmflD/cMPZnqq4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_US
+SHA-256-Digest: w0LVTuRYstJCs4u1dpdlwSWPTy7Nyt1U7XtH/CfaEdI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_UY
+SHA-256-Digest: M7/Wid1KhUE3A2+AJt3DExnhBhjp98PebK3fTvdVY4g=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_UZ
+SHA-256-Digest: LcWtyrACgyomxIL3SKtBqfwbm9hs51eck2EiT2iLoT4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_VA
+SHA-256-Digest: BYWHltWDoRZlX6Hy+7UKMIgJ48Opi59HUyKZTxSz2zM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_VC
+SHA-256-Digest: MJzbG4UvUZ4DaLBQe7q7ANmJ54vsN9LvWQN2Gga2yeI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_VE
+SHA-256-Digest: azaP3mgJXnZI54LDxFL22ssr4T5n7zkVvegho5YOhjw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_VG
+SHA-256-Digest: k+tYKNpvkvJJ6WcxBAV/VfCYe1VbEC3eO7+vJeMduHM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_VI
+SHA-256-Digest: 618YGgQf4QsAdqaI+Du/Vem8rbANaYWwLQFrTK/7a0s=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_VN
+SHA-256-Digest: WfyLp39QveuEM7LoE53ulS1+MaaoVujPz+rLFogcsWE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_VU
+SHA-256-Digest: oPXjRPH9Q5bE+RzCbZ+Ib08X7C96Uqg9P/ysdbVacY0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_WF
+SHA-256-Digest: wu+ajgdNGv5JPBKF16wLheduIoKOa7slNLJR2HgXweA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_WS
+SHA-256-Digest: NqLMRk5NE1aJVMgW4TOgqLcU10D/FNYb/WNB8BoQVbQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_XK
+SHA-256-Digest: fFx07R+0kVsAXmSwGQMVhDXBoNPQNw4lxlQWMgv1SoA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_YE
+SHA-256-Digest: Z6vaeGCChaJ+noJBa4qW9ZIDNIbAgUmFr+eCilZgLzg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_YT
+SHA-256-Digest: XXEJ1y0B6JM2k54GmPFlullWibjgQ/RXraYdcf3rVZk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_ZA
+SHA-256-Digest: 7B6FbXLFgqZupoEYUeZ7bOjFAM1YA8HqeiPw+2GY0JY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_ZM
+SHA-256-Digest: EGTK4iyZ0L1M8zh28fjfrRWq5YNtYXzvu0fGZFYMClk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/PhoneNumberMetadataProt
+ o_ZW
+SHA-256-Digest: O/5WJ3wmN8n4fpH1hzIp+MF2ww89VmqzX1pAmFA/ecY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_AC
+SHA-256-Digest: KCTkZzgoAFpAZq5taFQvsmDWQ6zT/QZG40n9DKx3ivQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_AD
+SHA-256-Digest: pr251Vo8iaruKT9PW5wa2SCh0q6aQeQvdVLpplYE/7A=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_AE
+SHA-256-Digest: H0TsCjRu2qqcWTBsEI3TqH/TjsOkuBRQQ+29/uvX5pw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_AF
+SHA-256-Digest: OattNXMAPpBxV7PSMV4VkkThpqtef5IJvl/9DV2z1wo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_AG
+SHA-256-Digest: W0jrOnZnf1Dpz5cIgw9b4taKmM6GIvsW1YxoMXrJ7H8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_AI
+SHA-256-Digest: tnfU3o3Nivd6Qlf3Yc5nhVjrvQAXbTcC9zNLy8L2BEc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_AL
+SHA-256-Digest: afWjde96eZocbPemStjBC+JxAMganpclYBAZ3pctQP8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_AM
+SHA-256-Digest: 9JS8IyA/bjPBrxk7TAZy0eUUN0G2rFj2l/E2FBg1TqQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_AO
+SHA-256-Digest: eeCS2sJGIGy1D/JgHGlrvhM/XFD2Akcm78VDOSQLxVM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_AR
+SHA-256-Digest: JPeOkfLIYsBIPcdxjEGUjjEtcRL+0jCpXtZjQj/uoB0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_AS
+SHA-256-Digest: JUn5OLCm+ypYh84PTR7ftqtiRgaxlLgFUPZr0f2oCeg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_AT
+SHA-256-Digest: IqEX5mtb/ypahOkdytXxtRg0fsZrXHOg4wOaPFXLBjs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_AU
+SHA-256-Digest: aoygAe566VCvmmJNPbcJYlI7LGX+6JpDu6BVIQg0qXo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_AW
+SHA-256-Digest: VL4X2e8CppwgQqZT6G4TcPR3fCZ7G+OOvTaJ8QfqeuI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_AX
+SHA-256-Digest: hQtwdcf1TsPKWOpFqCxWRD5zN6VVFgubI9UAAF1kNuk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_AZ
+SHA-256-Digest: 5sAhcNfOSfdFtJ47THPsGnb0Jnq4+xqNwFIWoQtHLsQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BA
+SHA-256-Digest: WkCaWDEpErSDCsyZ7dpxtBldaOJQbe0WUbX7VibTAl0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BB
+SHA-256-Digest: YPTxPee8aKhoBS9Jj1nH63/hwJuQMf21o6FZUA2SJ9g=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BD
+SHA-256-Digest: Yh9+naX51fBIK+WKtceg2bDUAi1ZK91fJ887Im8o3S8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BE
+SHA-256-Digest: rgN5gKXsA519QSSw+eCyuu4PKJEmEz4J3zEp5gOGkMA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BF
+SHA-256-Digest: nwaTAyRiwEjnh30khYVumTuVeK7XEnftZBUwwp+a1N8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BG
+SHA-256-Digest: acZD+RNDJ3paxrZ5grf7aOw2F3UMNz6LD77bGmIMbSs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BH
+SHA-256-Digest: DyobanhRcv9MXn78aq0Ol1J5g2sYdhjxDMTUBvfhCrs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BI
+SHA-256-Digest: mXN3D4QfEKXn06s2a7ZSdvVKH6whO1Go/VtIq/R/VD8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BJ
+SHA-256-Digest: oWvQvgzB2JSx/FoRqt73rynwT9TUHJVBXfZ4kTgaxko=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BL
+SHA-256-Digest: KJ7+tLwZOeZegbff2ockaXUO8asadvxbwqeRuUyksMg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BM
+SHA-256-Digest: 8qUAp980IT5YRiOqXncPyRSdDqPysmDEzqh6+WDdcF4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BN
+SHA-256-Digest: NZ7Acbou9/KLJvkmA06F21XV4yssuYsLb87v0j7BK5w=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BO
+SHA-256-Digest: w6AzTbroLpmkhLsDWpttYs+EtmEBFw/ozbinxXcXmmE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BQ
+SHA-256-Digest: 6/cVTAdDyol6mNvlRz07l/5deAiYji2R31ucoWRnW7E=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BR
+SHA-256-Digest: Uq2Pno6AGuSC0NyXZr2U8AVtjry3AEv95pmGtSii8/c=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BS
+SHA-256-Digest: orLpgBsteV5IN0XePtr02iqshi8W1MOb60iY4S5MIeM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BT
+SHA-256-Digest: QRmtWMk5YcoXiaTSoDZoUTDK1ScrSTLlH+LyO1euAZY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BW
+SHA-256-Digest: XTfahHr2ko2cVCKQNA3zN+fZHzYec4P9r6f9Gk9o9L4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BY
+SHA-256-Digest: lyEqzQU6uoCOkGS8Dudcez5AuXUk4q/ESFDb75J3VYA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_BZ
+SHA-256-Digest: U8F8ariVUmGJBLBhIy22aoReHIpUs4byHO1Xleez990=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CA
+SHA-256-Digest: noXEH10V8F6HIGKWHyUIAjazP0ovU7/KreM8Oqep2HM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CC
+SHA-256-Digest: VaJeDrB0qgatVfexsyDBcWDCtbQPpGnd9lrDBEZbajw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CD
+SHA-256-Digest: hC1Kb+jwZi6hj0zaipUnavTc3veQ+kTHN8vqQFUL1ZY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CF
+SHA-256-Digest: ZWojo15fgL0tPo4G3YT6O3SGXdaIGtTSriSFcoCZFHk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CG
+SHA-256-Digest: NYVZLGgfyiXXd+jtn/12QPPYx6opHe3fSjMwn6Un5Ts=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CH
+SHA-256-Digest: 2Js09P6YWlxF+eFmzX+a2KbUXy3KtjokaEOsNDBzkRs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CI
+SHA-256-Digest: xLHg+wUPni12O00aVh6C1EwbQerd6t9pFGOoHajr8ZY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CK
+SHA-256-Digest: xFdYKW0BOSHbhfbM56IBEpfHyG07W2Ujf3Sd4gMgRFw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CL
+SHA-256-Digest: R2+O8A1DxWq3wOn7p3ga0DXx0IVULbSrjVeGTScnHp8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CM
+SHA-256-Digest: XYplp2iq8gO4/SmYJZy55sjyYF1//XB4obvHMipZbeA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CN
+SHA-256-Digest: 4KPyHTQiF5AOPVIJc2lmx7+z5c+xOQUHJq2XGw965fQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CO
+SHA-256-Digest: 0xnTE4aAsq1uc+JBoa6g4CpYuzH7HrwNCVc8N8YfpFk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CR
+SHA-256-Digest: aLTA2LD/+mCOZB7wNGOBinoj0zKBWQ4tKuZdRk+I9Jo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CU
+SHA-256-Digest: 2w7MsvidT9VLana+yNQiwvZ6xWahM8x0HUjH3ekFSiY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CV
+SHA-256-Digest: eDNavtTm5j420Jbuzv9CospU8/15zoVVymhiZy50Y2c=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CW
+SHA-256-Digest: 6ye17WwyA3S/cb57JV0RyKSt65vRxRYwnfOe0qzg7r0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CX
+SHA-256-Digest: fkjmY1Y+SDKXOAoyvUsebm6EuATXlHueDRhVVLEPm8k=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CY
+SHA-256-Digest: 8oXO08ERgAr4fmGkalMX90IjhBfHx6mvY+JsDgRP/1o=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_CZ
+SHA-256-Digest: doci/8ohk3cOBhQTmdNKv6Ql6FlzLOoPc2HXFKhLVps=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_DE
+SHA-256-Digest: 4p2ASIEB9e0UJuCik73oarnQBknuM076Jqjb9CLT6iY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_DJ
+SHA-256-Digest: g6upTLJP8gqrEV5YM+m09prEKIsPusTPJog99WE1EFk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_DK
+SHA-256-Digest: X8nV2Jl9HWgYPEF+aum8An7LMfRVb8291xeMtLZB+CQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_DM
+SHA-256-Digest: inV5WSqjf+LAsNKo9bEs+eLUIx/CvLevY8/umPWEkhw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_DO
+SHA-256-Digest: 5N64Sml5T2xef8OC9luPFsWq1s7SjK+Sgx7nH/kWS5o=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_DZ
+SHA-256-Digest: blB6STcfeY1xZih7TjXO5OuU2FdQCfQ+PmsOQhdCIuk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_EC
+SHA-256-Digest: WzDNRLMBrrPH3JFlSRQn4nwbH5NflWDjoOZ/oA2+a30=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_EE
+SHA-256-Digest: pUJgVLBsU/y1NMAGkJevv0e7ESBXEzsFI9bsX2o462o=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_EG
+SHA-256-Digest: U5aaEg+VYzmRwnPDYpCacsWjzJgm8CNleFK5rybuH/0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_EH
+SHA-256-Digest: JAZ8lz1+LJWXSxpnIAIdtuWmybkqAAa0U1GHR/qH6fk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_ER
+SHA-256-Digest: uyJITxZML3pQ/Rf4rqLNA1VsfrKIf684v/lIjC/YcCM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_ES
+SHA-256-Digest: 8BnwUH55JB+K+LefE/Jn/zkWIXxfIqSr3VZg09QO1Jg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_ET
+SHA-256-Digest: +4Nqh/M9ucl1DEsPKgiVZ5nv52HKIe10vmQQSLcjy/k=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_FI
+SHA-256-Digest: kvBRTXmFLfscLuIFgCNVpPYkUmGkmpawsQbw8RlmI7o=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_FJ
+SHA-256-Digest: yahLGDGe7zT5sY36bHWPkWu6vcHUHgHAJA0EbiGwp70=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_FK
+SHA-256-Digest: 9uBjseyKw+9jXL2fGTJWJMqFa5IvNDpAtAcHySBKFEg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_FM
+SHA-256-Digest: VZOgjhAs2Wwq199e7Qol0Hjf1tSfepUokBkVCPqAv0o=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_FO
+SHA-256-Digest: 2fZJdllZ0jzY424iNgp/e1ViR0vqb0pEjsylZ3+o+Ms=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_FR
+SHA-256-Digest: Ce8RhDK0Tl5h6cC1aGt/kf2IF1ZBZ6uwzeP9gPOOH7I=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_GA
+SHA-256-Digest: /l4Bi4y1jhuitxaSiH57bm6Dn08C4efRIa7C/LMrass=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_GB
+SHA-256-Digest: vJs29gv41JyGGV8aTivwBPN0EJRp6VKXFb6c8XWVytw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_GD
+SHA-256-Digest: 26gnyXOSULQuE02jKox/hfvN+hEGQ6MfTtGI9VLDJ4o=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_GE
+SHA-256-Digest: v2rsISgcbMoQIEGW2S6LUFcAktWTNhlaUX9eYO2v9F8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_GF
+SHA-256-Digest: dexkWB4NbSwVTtm4zu/xf08MU48mf9SVZ315zLn3pr0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_GG
+SHA-256-Digest: mtOLEFPboiXKDGIAn5HYwuROb1ZuaQDnPYV1pOu5o2s=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_GH
+SHA-256-Digest: x6l2gn+KW93cn3xEY60TDRcfjmpWBg+frTgcLCTqb9o=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_GI
+SHA-256-Digest: YNCdGv6PruCBaFZJIs8nr0Uq8st91X0HGiJSDeIHEAg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_GL
+SHA-256-Digest: BKSJXjK0z2m67yrJwwR+Kfvta+NLZ/wQw5yzOsc7/qg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_GM
+SHA-256-Digest: 3qAfE/R35j4orA9kcsuqOqlqaaO3Uo532ikoOHiTHuA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_GN
+SHA-256-Digest: KcZJ6b1014cHWGvfYWnoBYRmDVtE7v8FLogUlB4bKes=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_GP
+SHA-256-Digest: axf3TipSiSiqpFVZg7//HLR4NdFAWnr8Rb3N862A6jk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_GR
+SHA-256-Digest: ajhVeMA2HLNnzK5LnNQOKWgPhwRYOessSZEXtYpnplY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_GT
+SHA-256-Digest: REfeeuUkSjMx5w2ZwN9VQ/VBoAtiMH5tvlGWr66rnn4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_GU
+SHA-256-Digest: 1lsa2YjDhOjqydUrYSRO6XNJHu4oM7vGdvgldPS78IE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_GW
+SHA-256-Digest: BhcnDETb7hH+Pe/8Lg2fDLiISiLkBOPt7ZnZEc5uKKY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_GY
+SHA-256-Digest: UNg//UxtKEG7TqtmPn+Kj+Q81kOXzA9yxNnV+yjb2vs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_HK
+SHA-256-Digest: N8E7hxl0Cdm8hRl0wnA4LNnk345YlZCgT5+tp6hikG0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_HN
+SHA-256-Digest: cQMVk51M2i8W9yHdbAjhr79E/qXR31792ber2XgEgCM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_HR
+SHA-256-Digest: dC9MekshDclJ9ieTig9TaXBJsT9mQv4djQRfB3Uyh+w=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_HT
+SHA-256-Digest: x8dLo196n6bv1RPDqBolJIvvE4YNIRteKhBY2fVB8JM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_HU
+SHA-256-Digest: s77RRbqY08hHh9oHlqA95G7scxisXxQOgDlEoIQSqzk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_ID
+SHA-256-Digest: 3UJh5/Igbw1QrHKEp4K/GH8A2TPLibHkai7fxeusBN0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_IE
+SHA-256-Digest: l7oGDZXub2SOCu5fBRMuYVKd5yRGYAJqyBoRy/rIsgc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_IL
+SHA-256-Digest: QxlHV1o32Msq2bqYI5mKNhGneaBfQoK1icMLmrDT0Kk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_IM
+SHA-256-Digest: 81iF/TaLk+y7X/OeqpI0fi+KZSajW3+ulbQ1noSXdAo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_IN
+SHA-256-Digest: sK3CAkA0uyI3YhYSpdE4j/gpDnAuUzCPn13Ls//eED4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_IQ
+SHA-256-Digest: P7sSjCoGrGIPHoMDUJLkU234Gwdb9FdcPUMMV7ilPbY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_IR
+SHA-256-Digest: pjW7HoNENpqAxZedfPvotppKACjVwCrwZQqifL8tAcw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_IS
+SHA-256-Digest: 6ZHzqPmkw8y5cdP2nnGHfOahePqbg6wfsn7HtD6L5bs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_IT
+SHA-256-Digest: YRbGwA51AhUeTBTWX/82b/CXu8RT4D2I1x6QzAu4drc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_JE
+SHA-256-Digest: DdZhjWkfdRomN269eQxQi1HYgp1aXumDn1AoIN05V/M=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_JM
+SHA-256-Digest: HfVQ6zZiC8LO8ChfcAZJrrX5fPpCaK7/DY3xX30mbiI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_JO
+SHA-256-Digest: 4ToG4YW055my8BD0um/BR9lYwyn/gHkGVmN+K3kg3so=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_JP
+SHA-256-Digest: Kcjw01Bo7T83yMhsf7spyWoYOJFIoDMMZ61T3U7XBmE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_KE
+SHA-256-Digest: E3TXJi8qZbNSLhO1skpadXzLDOtvgCEcj5FLR2MlVu0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_KG
+SHA-256-Digest: u89pDBc55pSRp5/KIGTME3Wi49hVMCvhAEMQDniTS5o=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_KH
+SHA-256-Digest: LI+Bup6FZ8/Tlw7ngViBrweaMts4zuozauBCh4a6gRE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_KI
+SHA-256-Digest: EKuJJESOefTwmOR8d/KhTP4iaBMitXa21RvpRIyb450=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_KM
+SHA-256-Digest: ZRxVEeebFWj6l72q3P25eTet0UZYNpDgStM0yVglSJw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_KN
+SHA-256-Digest: B73PQlTuxnm41Yn1O/oNqmZ1/MIbAb6xHyO7CEspoFI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_KP
+SHA-256-Digest: PtIqrgkdKbzMvSnNuQf1l40dgElwHaJ26Q1HbWPN0Gs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_KR
+SHA-256-Digest: 7QbOWE/wPtBJck6171ugo86A9eW6LqgiulDodtd+1yM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_KW
+SHA-256-Digest: vid6g7x++aKTBjYl/EzLjxmH+IyP4ySSnRLqfuXxFqg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_KY
+SHA-256-Digest: DoAX+mnveZ7tb0aXczSjBcbZDa8EWuIdiVk9/Xt52O4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_KZ
+SHA-256-Digest: 6ixMcLqzaeNMTBcLe3TzN8LU3zNL/mQjKY/TQx+CGSM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_LA
+SHA-256-Digest: M+/ERJ/Wu9sj5L9mKtWp1iBEFfPvLKRxOXMAzcXG94A=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_LB
+SHA-256-Digest: W3uQibdUioniO9VF3TwEVXu3noZRAkBuA1h1oCHNTUM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_LC
+SHA-256-Digest: aMxt9Pt1jTLLFzKeLcYkwtNpax9D561G0EanvkFR8LQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_LI
+SHA-256-Digest: 9FY/X5ee0E+027HeSRLohBz/a/1L85tUB3RDaY6wLWQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_LK
+SHA-256-Digest: NKbd4gJVb1C/vnB5V4tEc0n1gTT4CPpE7bzmdwrzDOs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_LR
+SHA-256-Digest: Qz+LPiJyPmb1DeAsHviGSmTU9VVO+rsVK78DHkICO8Y=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_LS
+SHA-256-Digest: jl1w2OaDSPP4QQj/rFas+eEtB559yIO/kw0kwJCdcjY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_LT
+SHA-256-Digest: InbW065aUt+/Z4skXsRMBtuSJ3UmW8DkQ5taQ2yVG18=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_LU
+SHA-256-Digest: 8yVL4MPGDLqk2dVakOVlqzqkkDVh03CPic2jUlJdq3A=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_LV
+SHA-256-Digest: fOpRsW/wriVnQErRZA9TE0+Z22/77jwzFI+Vz24bqAc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_LY
+SHA-256-Digest: e+A21HZgkIDSCqaU41N6ZGgI8vP7GzBl2SkozXXUfBs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MA
+SHA-256-Digest: aF00LSYHh+ianEQXHgt00RZWdeYX+l3pxo4Yld0BCSY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MC
+SHA-256-Digest: g6CsZdJ0xYhojHQOCQiEe6eOLbExbCm6jj2xEWtq9Iw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MD
+SHA-256-Digest: es4BrVC7fRWRfvyck1HUxlfZNbeeYe7dro7cwIpIeLg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_ME
+SHA-256-Digest: kh3cCYfbT4Rrc5d2elY9Nr3fh3qqu4Zxndeox5s6rCU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MF
+SHA-256-Digest: WbEoyy4V6MYT3eTA27RfQaazz0UN3Zg38oy9O+XxEAw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MG
+SHA-256-Digest: V9/raYZVbjYOyJA3lCWkxj25m9l8Mg6/ovBy8usPYfo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MH
+SHA-256-Digest: 2pdanYVOBuynaKKpP/HSSt1qzRQQQa5VsxRm1GvZxrc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MK
+SHA-256-Digest: q56CmIOO58yCoTMhgDm/LPJZNhXrs82ILhw6ERjMwa8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_ML
+SHA-256-Digest: 6kQOZ+oViGk8fwmnCDgrSzlfszYnhevlp8rAufV59tk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MM
+SHA-256-Digest: 4Ph1N7MmFCIAzCHqJCaiwU9jpImYXqHYhgW0fxcTFN0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MN
+SHA-256-Digest: LOx+8UfReriPlqRoxQeZMvkh6EIE8byx7WTalHrofp0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MO
+SHA-256-Digest: W8WSM36ISRPceCH4/pAHVT0+Exw2efPF32UM+o7ezUw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MP
+SHA-256-Digest: O3sNftAgPD4+qoLr/PakN4Q+aJYWhCu0LOwBnHEv4xw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MQ
+SHA-256-Digest: hqhI74Wp+wPl4jHxDGCQjvWtoNe5KY/oYuY5yp3oG5Q=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MR
+SHA-256-Digest: TensiSH6BUzcMD1aMQftLV9eHHHAwwMr7uBui85gfmE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MS
+SHA-256-Digest: JdAX9E+VnhK5GNyPsDpP65RYyn+unrJuvBEN99MMuAo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MT
+SHA-256-Digest: ykDg1qtNmZTwafEgdhca+2H2Co3dgSOo1XnVDbOAPok=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MU
+SHA-256-Digest: EkaChnrOAgPhcNtog816KUPD0lQ882vN1uBNnVMHnms=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MV
+SHA-256-Digest: ath0nq6xIcRGiAHLFdcG2nIAbEWcoflWyg1U4k4pZhE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MW
+SHA-256-Digest: 9rSeCgPpdJSpdqefigkbROvW3VDiAPoMFvBCRtSOgXs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MX
+SHA-256-Digest: +qCaSjEu9aLJe87Kj0jEDcltuyf15pTHqyl8/eJzI7c=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MY
+SHA-256-Digest: A5x6ohBgzvoXwzXVfMEbmmgppT7qa6eYYD9bw7JVrP0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_MZ
+SHA-256-Digest: FhkbP5Y3Hs7dVDP9aJ9N0lzT1kXO/U0HihWlVOGCRsM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_NA
+SHA-256-Digest: XToZEvOLfvB0WgKv0N2WwVgdnSWj0NGbFVuSk+FzMoE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_NC
+SHA-256-Digest: b0dYr4Yy/XO00sbr8ZrKrCWsVBcKgDxuFHIcedezXHs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_NE
+SHA-256-Digest: T+z1rSeE11rdFfISoR2d2GFQVs8+nZVeaw1PJMRo9dA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_NF
+SHA-256-Digest: LAtHNiJSIS9PNiNuiyKa4YvnSP4XCx231aow75D+3QM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_NG
+SHA-256-Digest: hLch7/Pn31AQS78FftnYEZfIK4vgViWFmYkWnGGn2dE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_NI
+SHA-256-Digest: ECnLuaXsuH31XnisiwwbUXc07E0hhIjnSZC/uIhdDHY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_NL
+SHA-256-Digest: ZFQ/u+GUpgZWKDw3X57RWZdthTB1GvolxA0G05j6JzQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_NO
+SHA-256-Digest: 0JXQTpMjY4yDSxsXkp/SDudDVvDxaLXu0TYv/5zpMBE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_NP
+SHA-256-Digest: jfSJGJHMQiDFqGqkYM7NtR7pmQ4q/SXt30/mjSsGuLc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_NR
+SHA-256-Digest: +OuVwdiq8owaEPPlICBPuLJHSqSKqqejCLZfk2fyhOs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_NU
+SHA-256-Digest: gebeyd/PYImhI65BcGJdkuIjdSu8I3Ww4jqpJQkPrf8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_NZ
+SHA-256-Digest: b2JH/qzH1DJjETsdc0EF7t7iOm6onbJFrNwYH4niSGI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_OM
+SHA-256-Digest: NkivTwGbPioBdXjIglv4F0TPEVUdHB+Dp7eMzahK06w=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_PA
+SHA-256-Digest: a/+qhhLijZuRpW5HZjHN9Nbprbe9Hx+aDrKVwKo2oqY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_PE
+SHA-256-Digest: F3Q4Z6t7NjIt2r5WmxAyhmlcxkKZtYLYFA7lYBZrB60=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_PF
+SHA-256-Digest: h+afGdb51lu7iYCe3KPcjryVCz6wpEf6UqdE+/PTRL4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_PG
+SHA-256-Digest: acg7DdawdOZcvc9pyQ7DE5BKLPCXqXS0E01jibdJ6U0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_PH
+SHA-256-Digest: UwIKAK17z1HA3x9YVIaZlYLT7QQAv1WU72QRcb9NYCg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_PK
+SHA-256-Digest: bDnl+aLFQI2kQH3DfHUIvWQddeI0Yc0G95nhwXGiJ+w=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_PL
+SHA-256-Digest: SDBFanfkpbmCA0suNEkjkZYn1+ICRFZSPDDh+5z9FVA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_PM
+SHA-256-Digest: 3f68ilSFShW4BALvOrHFRCOMf3zfuMJCwmv0820DJHE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_PR
+SHA-256-Digest: /jZj44FNpimnhcM9j4LAQqmOWT6fPocNQ9wgFfuB6rU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_PS
+SHA-256-Digest: c+ucmL/1m10UlgtrxDoOdAtMiyMQ+NAQgI8NUPf/Vx0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_PT
+SHA-256-Digest: 5oKqnokpJlg5XQhqDQQPE7jg4TaNF6ApZl6W/Flneho=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_PW
+SHA-256-Digest: t8DpcnuSw0CAKhweqjWscG5QcCBW3S2yHwn8hhKzA4Y=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_PY
+SHA-256-Digest: GZmZCjn9Iie+/E5uRADpkyjLdNcGmDWE+6R0VM0f4sw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_QA
+SHA-256-Digest: dELdUtDmW7ao+vt9fTuSmAWkWGBJeSp50A8qhSfKz30=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_RE
+SHA-256-Digest: u1mkUbDEWT2owayQNkikado8omiUGJcvOT7Qm1SKzKY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_RO
+SHA-256-Digest: DubDd+zbQ0dmelhzqtGEgghBzHEOjrmR95PJ6OBO1PI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_RS
+SHA-256-Digest: Cp7jKhLqgBEpjK0bZaVgDyaTsWewFAbockPJJLN9DGc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_RU
+SHA-256-Digest: s1VW0knTzzX0eKOJrT1Tpe+OHR0QiAxGmfdem9JAtuU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_RW
+SHA-256-Digest: agDQ/XxstAi/SrdYumS6HF+PQ0Iq9cw3kgPQLSiYf70=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SA
+SHA-256-Digest: YB8d6reiDEray7BH0+ZCixyCiCCySqfhdR73pbrFbmE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SB
+SHA-256-Digest: y2eQ1aALwtIn7UJ9WzaYoheN0T6tJyQgjnzaJonVXNA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SC
+SHA-256-Digest: AVdxTjas+K2KEewCeSZvYIyNIQZBJI2C2T+ZT2Nc2gg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SD
+SHA-256-Digest: q725B4Aoj+bz60d1Doj+ETl3cQ0OCwRHWuNPCMWUC8o=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SE
+SHA-256-Digest: LWaREJdE/qRM5krsgYh47RAlSQIiRlF7nNVruEG+JA4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SG
+SHA-256-Digest: XhEbzPNz9ZTeoYIOhzkEUKhM4U4i37ujXUEjnyBy4L4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SH
+SHA-256-Digest: ofy06dHLx64b/YW2UCy9v/XdDzPF1Macv1XDvY9WAtc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SI
+SHA-256-Digest: a8HJ4Xz3flSBvvNYdo0N/yhrM35ANisRtfC9FCAp2hI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SJ
+SHA-256-Digest: u2ZEQXiyS6x6JFEtkXEZ3mRfLGYi0RsyRAVdMZ/0HA4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SK
+SHA-256-Digest: s5IOVKRifLmhCLMNwH0QxPOaRuqs6fogdFIPFUtv/Yw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SL
+SHA-256-Digest: Y88jz7O/bCKuzEOlm1ff8rkV3vmh1jMB/AEz6HpnKOk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SM
+SHA-256-Digest: WAY1uL4SlWV+ahWbBhe9MOFEH1chGnwfp0Ot8aQkRFU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SN
+SHA-256-Digest: BDm5v3B2XZ0C2jbZoekLnTSKCOPBdtiRj6Y+WTmdU6w=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SO
+SHA-256-Digest: rgB1Nx5qqWHmXkt6Gnm8BcC91kJV9+o9l0fh3rgSc8I=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SR
+SHA-256-Digest: tTzvw1JQQlEDOENAoFbDg3SKxHkd2qGcQZyPHVpFIqQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_ST
+SHA-256-Digest: BIrbACSfZ/pOrOdkHW/lP0EvAEgH6FeYBEqltUD4nd8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SV
+SHA-256-Digest: YCWXdYE2Y64SLRA1wrstno54k5OEZJzFHqEtNvFm/zA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SX
+SHA-256-Digest: Ds3MOAJeVzV+FCPUrTuGudYJCSJyRYTWDB1oK45KEbg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SY
+SHA-256-Digest: V35WdB6SMdFA1hnLs3VNHAORIEUYo/PvW70A4CH31bs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_SZ
+SHA-256-Digest: qKjm4YdzreMuQ7y0VRolampzFXirXwsi9BfbAEIdejA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_TC
+SHA-256-Digest: Y+qTMoI7LmXl6oXx8WH9DmfAoFlHDsJU6SLq4Pfu/N8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_TD
+SHA-256-Digest: kUFdnB5qvYoM7c7NsxjVWsig7QLvBLXgFGQWDcweM2I=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_TG
+SHA-256-Digest: /z+OOu7sI5TiFmW+Nw/mPpvvPIKXLXBnIS9H/P+3nc0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_TH
+SHA-256-Digest: /KX8yK1BNv/f2uD9+Oya6qhR9BhOSmVO4FW2/tRmx0k=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_TJ
+SHA-256-Digest: mrFE2WYWO1OXUaYgHDJ4s6vaZdr48u8FrWJzusKR1E8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_TL
+SHA-256-Digest: CRXuLmHo7I7a27y9p0givTTRjWj91BPe6FMLfFxawuY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_TM
+SHA-256-Digest: 1ObmB78pkGobHbMeBUgTNMKg9hPbKDbSmvdrNCbl5KM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_TN
+SHA-256-Digest: 6Zos8x4hRn+LfSIRGV3CmPIQg2NDmNzpdPgcv/XDhbA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_TO
+SHA-256-Digest: 8+z774jIOtSGKSWWtshio9zC3eM3SGs/plYombCp/R4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_TR
+SHA-256-Digest: yyu2L6CdKbvtBpwpQDc+cY9WPWWbBq1Zgn9FrjjnK5M=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_TT
+SHA-256-Digest: +ZBI4G4J/yXf1ew4k1odxxT2pAKpOQ7kqAP5KjKZ1Zs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_TV
+SHA-256-Digest: H4MTYiVuKWH4cRwQjAyBLxrPxKeGPkxN3Cij9Rah/sY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_TW
+SHA-256-Digest: Iqjh3PfiDeokm+26mhXw8qafUCiEojfOpe7fmrYzYi4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_TZ
+SHA-256-Digest: gEHGJT+OPIPDn8iKRZTNaYoZDdaXkq/eB3DjCRPSLJ8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_UA
+SHA-256-Digest: 8CIB99zEBTNxYVh3HnApMClwoReHGCCbFQ1uHV8CVVo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_UG
+SHA-256-Digest: Kkuz/3yrkZlLlTMq0b9xJzkH0VgWDJonUlWvg0U5Klo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_US
+SHA-256-Digest: Ni8WflRvXni80bBhF+weZSTjoBTVi9oSBXiq6Kp1YCI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_UY
+SHA-256-Digest: V1TQzp/5AjR3lUf6SfUXwf4j0fw3HR7XkJMP0L7d4J0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_UZ
+SHA-256-Digest: I1HLqEkzQgWrE3mkGZuoLh6QTEiNhI+/H4SQ6zAAECQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_VA
+SHA-256-Digest: omQojpu8rfzzytBK0seG+o444o6w3153kgiWLYWLFtM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_VC
+SHA-256-Digest: WDtD35tb33MkxgJTKUEF15/Fs8j+q6BSyBvG6pJlZWQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_VE
+SHA-256-Digest: auiuP7wz/KQ5BGcSDED5J6Du0CN+n2xsleFU/CLnl6g=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_VG
+SHA-256-Digest: FGUQf/+t9Mr3RpNqLzbNnzl1dkUpqde68swa6pj92nI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_VI
+SHA-256-Digest: jg76RHaWuImVroj/nrJpPwFxcOZ5H5IqlD8FZH0mEJ8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_VN
+SHA-256-Digest: y1wR0RRlgTArHip7CApmiSn2gMfuQhWSIGJRr/5yYiw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_VU
+SHA-256-Digest: 0dYu1BPSsf2BvCo82St6n7BrUFX7dJlQwNeSgRXe8gg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_WF
+SHA-256-Digest: UiRjEnFFwsp64ktPO+1tcQfI2pQ+Vm88151qWcaXJ7k=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_WS
+SHA-256-Digest: Yp99OXDslFB5E6QrR16tHstJUcKIApsR/wbF4bLkGzg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_XK
+SHA-256-Digest: vFCAt1lpdU6DiV1eyonIXnxedBeTuHAAymRY+ssaJN8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_YE
+SHA-256-Digest: YBcCFKJmcbhn4/erMvsW6xGRDWoL7mp1TKkSC/xU8dE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_YT
+SHA-256-Digest: ObpcLqNsNhEm1AZOgATJHW47BHg9HfzobQoUiV69N00=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_ZA
+SHA-256-Digest: ji4iQkpmXmzgmP2uTSWpMEn406tScQBUKZPJC4DyZFY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_ZM
+SHA-256-Digest: snIwZ1HJjfyL5NhLq/9CC8VBLkQ6orirGU8GhFS8/fw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/com/google/i18n/phonenumbers/data/ShortNumberMetadataProt
+ o_ZW
+SHA-256-Digest: Z4kxmxppelZ5B3tRAKqMF3XBHF0L+dTFinl0S2CJypY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/corenativeextension.android.lib.air.jar
+SHA-256-Digest: rzOuroHR6Q0NKgrzOrM6LP/x5L+F1ljJxTl0iaWWMfc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/corenativeextension.android.lib.jar
+SHA-256-Digest: WqINLmovQyXh4z0KQ9klh0dY6Vm45KvqvnDyl7Rh+FI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/library.swf
+SHA-256-Digest: m+46VQtfXx/8br8LphPJRi511/A1lnZk/hKiTiQQljY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/An
+ droid-ARM64/platform.xml
+SHA-256-Digest: 4Vl3VQqr5RFbwgtpd30wUdjPrgFOv35qa6nU/Byex8k=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/META-INF/ANE/ex
+ tension.xml
+SHA-256-Digest: n9G1VtUTt9aGluB36PUfOi0ODFCGzH+gRF4bQEU3OME=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/catalog.xml
+SHA-256-Digest: Wnz6NqYqVIJbjtU+3COxWk0vzwtJAkFLMnfjzR/NVUk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.Core/library.swf
+SHA-256-Digest: m+46VQtfXx/8br8LphPJRi511/A1lnZk/hKiTiQQljY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.InAppBilling/META-IN
+ F/ANE/Android-ARM64/billing-6.2.1-res/raw/com_android_billingclient_h
+ eterodyne_info
+SHA-256-Digest: Fg0+1BhdWm6/AG+K05M9eTKTHqy9+h19hmELLSvKnwA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.InAppBilling/META-IN
+ F/ANE/Android-ARM64/billing-6.2.1-res/raw/com_android_billingclient_r
+ egistration_info.binarypb
+SHA-256-Digest: 1YmDcmpVjp3/tPqThI9ksd4bJvGLgnvGadDCmALDs3E=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.InAppBilling/META-IN
+ F/ANE/Android-ARM64/billing-6.2.1-res/xml/com_android_billingclient_p
+ henotype.xml
+SHA-256-Digest: YDIVI1nAtOGoywha2qNCTnlyyNfjJ9qTL83jVCmJo94=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.InAppBilling/META-IN
+ F/ANE/Android-ARM64/billing-6.2.1.jar
+SHA-256-Digest: MOBaNCIWnyHdlsHJVEcIgIT4qrEMtFs6GYMKFO87rQI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.InAppBilling/META-IN
+ F/ANE/Android-ARM64/library.swf
+SHA-256-Digest: f//uFrUcxrtY2dz6JipmiD5axQPBmX/pdiZTN+5U8o0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.InAppBilling/META-IN
+ F/ANE/Android-ARM64/platform.xml
+SHA-256-Digest: GBdtaWgjrnIdlP/Z6Cae9JTVNoDCun38c/oYe/oU2do=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.InAppBilling/META-IN
+ F/ANE/extension.xml
+SHA-256-Digest: 83R1pfbJJ5AwtYXGI67wQkxH1OhX00caVULQ2cy47Bs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.InAppBilling/catalog
+ .xml
+SHA-256-Digest: a2WJBXRTbCKRSWU7qtvrDqQm3pvwyjXfYLYqggvkCck=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.InAppBilling/library
+ .swf
+SHA-256-Digest: f//uFrUcxrtY2dz6JipmiD5axQPBmX/pdiZTN+5U8o0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/annotations-4.1.1.4.jar
+SHA-256-Digest: pnutbLDtSsEXww7PVMn4i0Fh//XU+AzP1zZs9aezTeg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/auto-value-annotations-1.8.1.jar
+SHA-256-Digest: N+wJtH1+01qZ0Tkn21yG/JBx9iD5Q+rV11cURpgxCFI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/library.swf
+SHA-256-Digest: TkwBceI82iQJTjh0q/dTWvOIcA026eOeJbHlEOm+0uo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/platform.xml
+SHA-256-Digest: bxP6yiOJGpmS+G+Jj2u2m9Hg5WZgYyZxZlco8FgPdAs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/color/common_g
+ oogle_signin_btn_text_dark.xml
+SHA-256-Digest: cqtwTFRV2wq2Zif0xhgscyYjKEqpUjNkW0pAtJozA/0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/color/common_g
+ oogle_signin_btn_text_light.xml
+SHA-256-Digest: t+2DiUjur2UfcCyTJgn0w+ck2QZsV9d24vc9wjOHy2E=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/color/common_g
+ oogle_signin_btn_tint.xml
+SHA-256-Digest: lCxTKvKgEziyKKiAp0U2pnkQ4Qa0go8dWtx+DwFRFNk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-hdpi-
+ v4/common_full_open_on_phone.png
+SHA-256-Digest: 6OL+z78RHMXvZdu2xzlaWuFqaPfgkic40MgCsm6Gbkk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-hdpi-
+ v4/common_google_signin_btn_icon_dark_normal_background.9.png
+SHA-256-Digest: j8YQ7Rd41s5P4TncV/K5bZG6o9YYu8vQA4uDKthtuNs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-hdpi-
+ v4/common_google_signin_btn_icon_light_normal_background.9.png
+SHA-256-Digest: jpSu1QbsGuP1eEsGRX17D68BLeo+tbY2ydFQl66JUxk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-hdpi-
+ v4/common_google_signin_btn_text_dark_normal_background.9.png
+SHA-256-Digest: BkPeybpxlJcqXceq106CCScgG6ccU+VRMv72BYCYefo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-hdpi-
+ v4/common_google_signin_btn_text_light_normal_background.9.png
+SHA-256-Digest: 2s5GgLo0XYuZG6KeJm4u05HVhyYLHmI3cMNWdR6wEXk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-hdpi-
+ v4/googleg_disabled_color_18.png
+SHA-256-Digest: 9zUICQ0+a7w+Obp2jnGFWq1S7KqszaZ21DoYYAEMxVc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-hdpi-
+ v4/googleg_standard_color_18.png
+SHA-256-Digest: 8iH5YqYslUoRsXNOljH8hTHjS+5VdmX+qGSqQ4biXjk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-mdpi-
+ v4/common_google_signin_btn_icon_dark_normal_background.9.png
+SHA-256-Digest: VKbVaaz3+5DuZFaKggQ7WSwffZJ6gZkoZKJzapdMHB0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-mdpi-
+ v4/common_google_signin_btn_icon_light_normal_background.9.png
+SHA-256-Digest: 3VPfnSa8uWoV625DrDCChxtsWkkIr4Jv71KTQJg86RQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-mdpi-
+ v4/common_google_signin_btn_text_dark_normal_background.9.png
+SHA-256-Digest: 2//4vh6bVeWI6tiD3hkToWDa6UapemIDVOAzyPzT8Ts=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-mdpi-
+ v4/common_google_signin_btn_text_light_normal_background.9.png
+SHA-256-Digest: RG6Xxe0Cie5SBwoOa1zCrw+JeZxqhr2JIZbP6H6AhwI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-mdpi-
+ v4/googleg_disabled_color_18.png
+SHA-256-Digest: fB4WKclfsmA/veq5Oo+/MLnIC+Ee9IPUl/iojo9nvWs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-mdpi-
+ v4/googleg_standard_color_18.png
+SHA-256-Digest: eIo7lHLppG4ba2jZGM0VcZFLcy6TqrAU138gvlN06d4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-xhdpi
+ -v4/common_full_open_on_phone.png
+SHA-256-Digest: 6BbcCZj07pDXtjDxfhb8wuctkQeMUxWtqsS8LaTCJtc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-xhdpi
+ -v4/common_google_signin_btn_icon_dark_normal_background.9.png
+SHA-256-Digest: s3eFySFnFDUkD5ILAHh5UG6E4xa6FXLkcSA9AP8HjuU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-xhdpi
+ -v4/common_google_signin_btn_icon_light_normal_background.9.png
+SHA-256-Digest: Q0ANTASLB2hQC2CAx8s4kZqnQwYQzR/AKChmUyVr2V0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-xhdpi
+ -v4/common_google_signin_btn_text_dark_normal_background.9.png
+SHA-256-Digest: 5eoM4NBDvrVDoqbci6en8hwV66ALswWGtZuCz1raVR8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-xhdpi
+ -v4/common_google_signin_btn_text_light_normal_background.9.png
+SHA-256-Digest: nFFv//XhwcyNRSKvEEmkQXie4SweyQVSdNzfvcBUVgc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-xhdpi
+ -v4/googleg_disabled_color_18.png
+SHA-256-Digest: YINSMDKrXfnmy4Lk/z1Ir3c4kAoumyPZkb6qLrp4Yuk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-xhdpi
+ -v4/googleg_standard_color_18.png
+SHA-256-Digest: kMRGdVJeKQMy99umrbl8evO4KZ5Wz1IR6JPQ4d7EFUc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-xxhdp
+ i-v4/common_google_signin_btn_icon_dark_normal_background.9.png
+SHA-256-Digest: St13iLmkMTaAnpQKST9P41XeAtoNch1vQcyJO8cphq0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-xxhdp
+ i-v4/common_google_signin_btn_icon_light_normal_background.9.png
+SHA-256-Digest: 0m/Dn1qQ2RAYtES6jjXHyb3Zzu3extN+8lRSsSRE798=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-xxhdp
+ i-v4/common_google_signin_btn_text_dark_normal_background.9.png
+SHA-256-Digest: kM53PDbx8yp9DL3p0ddZEu2RpMRQJyTAIfb7heASh2Q=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-xxhdp
+ i-v4/common_google_signin_btn_text_light_normal_background.9.png
+SHA-256-Digest: pTJN58i8tKgIqFa4doj5cT5cIlj/PfkSm3dwMouA6PM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-xxhdp
+ i-v4/googleg_disabled_color_18.png
+SHA-256-Digest: XbOrTTAGO16PpjrimT+D79CvcdZSazoUaPnjv4ka9Yc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable-xxhdp
+ i-v4/googleg_standard_color_18.png
+SHA-256-Digest: VJqBzad2dphA838YTTTrZz/55cBnHGcXKBjpEnN1Pho=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable/commo
+ n_google_signin_btn_icon_dark.xml
+SHA-256-Digest: O0iq99UVU7M9w/EXvNAkitptPEFYlhvNGUA6GEMA6HI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable/commo
+ n_google_signin_btn_icon_dark_focused.xml
+SHA-256-Digest: LRYsZkNExmQB5AcFP9zDQuSXizczPQh3GG+bLwV1AyY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable/commo
+ n_google_signin_btn_icon_dark_normal.xml
+SHA-256-Digest: OSjZO0S3pqYfCeKXPqRw7bBUdctKELjsN2vN8547Nu4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable/commo
+ n_google_signin_btn_icon_disabled.xml
+SHA-256-Digest: UGSPa8Jsxareq/VYSRFV+mZraBvU/KRMFqHDouOoy1g=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable/commo
+ n_google_signin_btn_icon_light.xml
+SHA-256-Digest: JExsE7AWDezy7ydAZz2FTSqWf64JOetTQY5gOiHDOkQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable/commo
+ n_google_signin_btn_icon_light_focused.xml
+SHA-256-Digest: xt6W9c+VNMIeVogzbVu7hYwEnzDZ+Kto5GvqqUMV5TQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable/commo
+ n_google_signin_btn_icon_light_normal.xml
+SHA-256-Digest: T9yz7hvoRu7eA6S6YctXLoRWgT9O9n8zrVXrZSLEZxY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable/commo
+ n_google_signin_btn_text_dark.xml
+SHA-256-Digest: Hvjq11lpqw5G6bYShbo0Sh/KO5/BxWkDTIeR7kZyEzQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable/commo
+ n_google_signin_btn_text_dark_focused.xml
+SHA-256-Digest: xJFc5YCzqCH2qceNNCdpMFTo46ALabW0qxffVyz00oE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable/commo
+ n_google_signin_btn_text_dark_normal.xml
+SHA-256-Digest: dyKUDCB4ByLdiXesMmkDjnLyVu9MPiaqpilaAxZ2W8A=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable/commo
+ n_google_signin_btn_text_disabled.xml
+SHA-256-Digest: +hxmUxKwBe1dd+qeOic/sLAgd0eTC0t16nzKZwndMUI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable/commo
+ n_google_signin_btn_text_light.xml
+SHA-256-Digest: LrANoDKYbUAAS4wRRZj5b7B21zULcZD58uJvRo9gC1g=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable/commo
+ n_google_signin_btn_text_light_focused.xml
+SHA-256-Digest: 1AYaULysPJ3+9PNo3Ajp/k1kHRxh5Nc0tangCMWfKK0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/drawable/commo
+ n_google_signin_btn_text_light_normal.xml
+SHA-256-Digest: Ivk8IIUQygjKwwfbh0oPm3SwAIuu8ADAnn7zjjv8Vbs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-af/valu
+ es.xml
+SHA-256-Digest: eloEW9Zr0he9IW7wlTSrwaCTNxmqTAO90KMHyK42OFs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-am/valu
+ es.xml
+SHA-256-Digest: XfJgxDFJ1YiJoRNQHajOSxQd3W2GPy5IgLYSuegFwfo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-ar/valu
+ es.xml
+SHA-256-Digest: qaUv4Nx9DOyPgFa6wuWhSBLmZgxTkVVD8hAaOhYMkyk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-as/valu
+ es.xml
+SHA-256-Digest: u/ZcRffpzgmyjMuV+zhOgD+0UtteMfn2nZgdu3B7Iv8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-az/valu
+ es.xml
+SHA-256-Digest: dmgobMI63Ez1IM3DvQmU6Dd+G0WYexQfJImzTiXpyuk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-b+sr+La
+ tn/values.xml
+SHA-256-Digest: h3b3m17w3BVuu5Qc1UZ2o5csHVqdP5f8u51QSvitEHs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-be/valu
+ es.xml
+SHA-256-Digest: U7TrkW2JXKCqrl4d8Zhruahk1H3yTyXniCdygXwotyc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-bg/valu
+ es.xml
+SHA-256-Digest: IOwJPUti0nqFb1phvQfgrnYXCRxdh75XhocAcSsWXb4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-bn/valu
+ es.xml
+SHA-256-Digest: /vPNq/mTSvWNWOHU3QVVHr00tGPGJ6Prvj/6eABdWZk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-bs/valu
+ es.xml
+SHA-256-Digest: b/xLXcura3t5VXSIai8HyVnAQerT9Ey1ZvHcrJXyoZ4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-ca/valu
+ es.xml
+SHA-256-Digest: AjvYmxfnqi8meNF66fkGyFRzXYwkZKX8Xkelzfqa3Rw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-cs/valu
+ es.xml
+SHA-256-Digest: 4NjIsCQU7Wpbg7eiOq4svnNrBt9TNkfHhyjUPxlE8wo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-da/valu
+ es.xml
+SHA-256-Digest: duOV2ILtcFNAxLV4s5aoctApRJcrZ9Gj2Oe54/chURo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-de/valu
+ es.xml
+SHA-256-Digest: pjTAfMiNuTko5nbGVaB2CufZO133wTqBMFIfwWBWyRQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-el/valu
+ es.xml
+SHA-256-Digest: /nGY7cEIhWnf9giZl7IV3ksfz0+t6joIo9UK5+jdjvE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-en-rGB/
+ values.xml
+SHA-256-Digest: DCMc6yJnLplaB5wMoEApPeo+6wVfrigzniCFyGxjhR4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-es-rUS/
+ values.xml
+SHA-256-Digest: oQcGXCSJUkF/XB4Pmeummx0fRac5NA74hx4UrtSR6Cs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-es/valu
+ es.xml
+SHA-256-Digest: HPNSCV+YcnzfEJdXQdnK1LOmH92Ne7V2lQ9RxC39tYE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-et/valu
+ es.xml
+SHA-256-Digest: MMfBwCTTO7hOhhVKxLyqdTu7HvKIYtDvec8nLy5FeG4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-eu/valu
+ es.xml
+SHA-256-Digest: 4z+uG19CaF+Q/vHLb+b2A4EF6JW/lioPC3CGIiJ0Jhc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-fa/valu
+ es.xml
+SHA-256-Digest: Wy5fAMSQvxl3XkzQow4/wIFNBEl3f/F83GqF1fzqk6o=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-fi/valu
+ es.xml
+SHA-256-Digest: vHKCjcjnlsd/KMsbTyQzqGv/1liKofcb6NuXqHmGFW0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-fr-rCA/
+ values.xml
+SHA-256-Digest: dYI0PdjsgkZI/A/Fg5JpTUMBmtN7w+ezzZ+K9VYBZ54=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-fr/valu
+ es.xml
+SHA-256-Digest: Z1byhUJ9qIkueTxr/+QwvTKioWO+AsDPaWIjwF6WCsM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-gl/valu
+ es.xml
+SHA-256-Digest: x489UV52rIfLDdO0JS3KgmFaSut8Xd+jG/XfpcBRIhI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-gu/valu
+ es.xml
+SHA-256-Digest: 1spmaOieLFvg3GS4di7NO3r3HhWyr8uy9hP9434q+nc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-hi/valu
+ es.xml
+SHA-256-Digest: mH7KN3GfixLZ88ew6+yza2k9am/xHjWNozS1MP3AOYg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-hr/valu
+ es.xml
+SHA-256-Digest: LSi2xBRy2z4Q5VF+rCgqJhiniF2QCzT2VI2dOVelNA0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-hu/valu
+ es.xml
+SHA-256-Digest: mCh/LMAL5IZg2cky5f/8OgmZl94IujcN/vQNriol6kQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-hy/valu
+ es.xml
+SHA-256-Digest: dUe4d6Yz0wHtYY0uippknauP24Qe5OEja/wSemNmBq8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-in/valu
+ es.xml
+SHA-256-Digest: OZDdFx1VfBFVT5ZyHS7udVuaCVEJPx/09v3aFYyZ7CA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-is/valu
+ es.xml
+SHA-256-Digest: xyioDTg2tO8apLX/+nIEB15K8FYiJBApXmLob5gPu84=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-it/valu
+ es.xml
+SHA-256-Digest: lx2GkEVP2qdMqPJgsJ3LM+TZF6IUE9Qu5fTSHiYGPck=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-iw/valu
+ es.xml
+SHA-256-Digest: cr/OqmE1oI/SAO0oNiQGwNFB3skGSLTEfrQE/LO/qgE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-ja/valu
+ es.xml
+SHA-256-Digest: Ekm8KktMoJBtmKCKHNWGyby4FOGcX/w0tFqm4JHhIps=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-ka/valu
+ es.xml
+SHA-256-Digest: 5XeZ8T1trS1lisXX47cEt/Ja8kIliBup2+u1+omtc4g=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-kk/valu
+ es.xml
+SHA-256-Digest: D0mBH+xoXgeUw29B3Yk5IKlYFt2IkqIsxuo6D6CWy+4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-km/valu
+ es.xml
+SHA-256-Digest: LxEB8SZ9kNUnQCi9XFR7al3bZBcFkvmHuN1K4PH8hdw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-kn/valu
+ es.xml
+SHA-256-Digest: /hWVyC+wwADMzjwWL643h6+P0XJ2j6HFuPHcWOFwr1Y=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-ko/valu
+ es.xml
+SHA-256-Digest: CBLwQCKhSWgxaqdRwk0rHgwvH0Ismz1s1v2ZiYlfkpE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-ky/valu
+ es.xml
+SHA-256-Digest: sH1HEKLSdnYZxHOdjMnfHiybl5tBEkZx6g8iKBt0jeo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-lo/valu
+ es.xml
+SHA-256-Digest: KuihxKvTpSzlO3UkIAARy6eVkw/SKYmGUFtSAVmkl0U=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-lt/valu
+ es.xml
+SHA-256-Digest: RAG06Q3dN/fBCT+tEZk+GTOExM3dLAIxOjRPQWtNWDY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-lv/valu
+ es.xml
+SHA-256-Digest: jF0hpCcEsUMTzmAfn/WVqhPSKrAUbDkB/50UdaHnhJU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-mk/valu
+ es.xml
+SHA-256-Digest: w3YRLSUiZLsYqsFXD/EXd8YdpPaNcRupoUPSxSEKFbw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-ml/valu
+ es.xml
+SHA-256-Digest: P2EutYoNnhtLfJRyktSZGGvCe7XZvdpL551//YxItCs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-mn/valu
+ es.xml
+SHA-256-Digest: 6ALaS6er97UeN8GLfhMdZGvkhKdEe4MyYTduRMAWohY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-mr/valu
+ es.xml
+SHA-256-Digest: gN6LN/YjiZFIzWY9Suo/oWH9nb/iIJB4G+CvIhl0iIM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-ms/valu
+ es.xml
+SHA-256-Digest: 02TyxuwGDz2HkMwo3AB5vA5b+NiIt+SpcNKZCSiHPck=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-my/valu
+ es.xml
+SHA-256-Digest: SEVmXHj9x2X7671ei80l+EByLcELhzzhb8vq+t35CK4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-nb/valu
+ es.xml
+SHA-256-Digest: NYaHDGfhA+cfeQ4pf3kzZ4Dp8uJvuPT16wsVwPUei2Q=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-ne/valu
+ es.xml
+SHA-256-Digest: WG7W74eRQMOgZ/qZ8rl1FuCTtK36F8iI+cKYDbnh+Iw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-nl/valu
+ es.xml
+SHA-256-Digest: CpV4Nsa/mNbDxVWMKuoHMHaeCJ4Anss4u8jkDYvDIMQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-or/valu
+ es.xml
+SHA-256-Digest: Mz/AZKUjm3ZsgCBV3HUhs43CC6KurCbgq6aWwDZQYbg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-pa/valu
+ es.xml
+SHA-256-Digest: OKQ70Jtqkn/6ieBKryixtlMWM0+1jbyDCOH0zynP7j8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-pl/valu
+ es.xml
+SHA-256-Digest: JZk7CTszu21HT38WWGukVQs4JOSxzvH8ACWGkG1Nhy0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-pt-rBR/
+ values.xml
+SHA-256-Digest: pKyMVzB22J8schNEx3dOJvOHsw2cd/TKfhr2tmW6GVo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-pt-rPT/
+ values.xml
+SHA-256-Digest: rZjpXb9GHt5dY961oJ2x7b6XUKfETa3A+0vOmUQ9S5s=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-ro/valu
+ es.xml
+SHA-256-Digest: X+X5tGFPRkTEybbthJLVisUB6xwQz4Zqv8Fyhk91+7g=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-ru/valu
+ es.xml
+SHA-256-Digest: s65fgSpOTxjnAVW+L8iFBGxzTZs4kza0Adf5yW1VJ2o=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-si/valu
+ es.xml
+SHA-256-Digest: 6Bi7j1o1pS8qLFW9CxO7Iu4kSTEG4i6MaDqw2G3/Xtc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-sk/valu
+ es.xml
+SHA-256-Digest: bWXT6Imzp9ZX84iqtv7aayh/Imt2uODKnUUqa42Ibn8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-sl/valu
+ es.xml
+SHA-256-Digest: 7V8Wx+RKKSlm/JuSeWAxhf8TTQ2+PpIC9X8vIHD5eo8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-sq/valu
+ es.xml
+SHA-256-Digest: Sh00MfnBYuaAHfjGnJppd8z7gPKstVA8rf8fyEXfrXY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-sr/valu
+ es.xml
+SHA-256-Digest: +Unmci5sk6CpXdEiWxabs9twKwdUfn71wMIjl9vZc+I=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-sv/valu
+ es.xml
+SHA-256-Digest: ld0QwTcA8azq/3KTmjF+SqBss/NhwaPlF4pBoUavZ6s=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-sw/valu
+ es.xml
+SHA-256-Digest: kSoy7zHbYYfykgk7XqIlmyliAEMPi8iAVk6lrJk1VSc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-ta/valu
+ es.xml
+SHA-256-Digest: E7+Qfs9bLWGvkL+D2DmtJTmQlOprRIxPRj9C7wsADaQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-te/valu
+ es.xml
+SHA-256-Digest: 7d5VBZb7xDSbJYit69fxAYfxz/AvKIH9xC97EILqwws=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-th/valu
+ es.xml
+SHA-256-Digest: 8g/EvUTvLFhazOJrz3n/3O8Gnzsrxu1QgrqCwDzsjn4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-tl/valu
+ es.xml
+SHA-256-Digest: iOHheTzlG/V+AuHzYD59mJYJnIeJcfM20qqIMBlS/fk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-tr/valu
+ es.xml
+SHA-256-Digest: 42La2DVRXoncSy8NO251Q1i3uxpG1lQX/EXJspvXjmU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-uk/valu
+ es.xml
+SHA-256-Digest: JvxT0Zh0IQATNXhRM3kEq38s/RWV95dF49F3HhyYWEQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-ur/valu
+ es.xml
+SHA-256-Digest: +QvXaeRZzMBjk7NSA0aKwgyhEbJvPq/HOsYZmfTdHPQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-uz/valu
+ es.xml
+SHA-256-Digest: d8PxKatPFpI34oeEhDKXd3fdQwL1VQCVMuLeNkefy/c=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-vi/valu
+ es.xml
+SHA-256-Digest: MPJuGRHBDmayP6TmTfzWniBy3bERDm7S0NsmWpzfIlI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-zh-rCN/
+ values.xml
+SHA-256-Digest: uGGffFYlS6EQLA94aHw5m5Pb/2PAKAmE65l5ZOSUOEU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-zh-rHK/
+ values.xml
+SHA-256-Digest: 1vBVh+iyUH17cKbn6brdVuybdBDkwCs6hEjjw9NtJeE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-zh-rTW/
+ values.xml
+SHA-256-Digest: 7aVS8nCuTmeW6Uplu58b+U+oRLIaErBR3m7EAZcH9lQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values-zu/valu
+ es.xml
+SHA-256-Digest: RGYG1GSHx1xh4EFVhlj3oWICw0IyXPMHQAtSgeyK7LA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0-res/values/values.
+ xml
+SHA-256-Digest: ooNvRFqllm5QOTLq0L8lPhvYEYRq/8ceQed7wFBkdZI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-base-18.4.0.jar
+SHA-256-Digest: z2ytZOWFlnkpEbqrtXx6S+2Y34kA8mlfKCdmjaxXMLU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-af/
+ values.xml
+SHA-256-Digest: LFsorBNOmU/2FxizPa4I/QsvXBeWKEuFtPK6oTd8ek4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-am/
+ values.xml
+SHA-256-Digest: 9YQ8YAUeQUrvp5YvOFp1lv3diBcPT65jlrocKnzDt04=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-ar/
+ values.xml
+SHA-256-Digest: dSlXyaecU2gEX/WF6uufa55MWsFE3sjjXdpX7SIIFGc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-as/
+ values.xml
+SHA-256-Digest: jJj4ZRnqUDDvQr0sAK/Use4DloNlvsEMOHtnCeu21oo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-az/
+ values.xml
+SHA-256-Digest: lKAN4goQRJbZv7VPRr4E4N9nQxw9EMBMpXF4gwTijqs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-b+s
+ r+Latn/values.xml
+SHA-256-Digest: KnNLcqRRDYHwrBkEh9RcIqAnZCe9ViGvDwWgfLRAssA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-be/
+ values.xml
+SHA-256-Digest: 7ryDFJaDMPvlHwYCUtrQCyXQcsArcl91Qw9oJ1dAiLM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-bg/
+ values.xml
+SHA-256-Digest: 1EyEaWulkTUB58YU3A2Lfjobe4euJZ2cj/RkTnxCklI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-bn/
+ values.xml
+SHA-256-Digest: 5Wl2ADnmc2pCx2yB2J8g5nBqD6k6l5LYK1lP7kKJYX0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-bs/
+ values.xml
+SHA-256-Digest: 2nWgsweUba+CEKJP8QeUq2iVl500zosUz6khkAWfpaQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-ca/
+ values.xml
+SHA-256-Digest: kNn7r/pmCzNwdxNJU+a2dJ3o4H+tik15CdZF48Fmprk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-cs/
+ values.xml
+SHA-256-Digest: QIVeKVcqD/pk/OOTATn4Be3do41C5Q7+JzyeH645COg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-da/
+ values.xml
+SHA-256-Digest: 9nGylUAsh2Cg2fQIByu3P2S/Am+i2B3uPXMTF/6y8sA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-de/
+ values.xml
+SHA-256-Digest: sGbhRk6saJVtzq3EAGWGbpD6U184oqNJGuc6yp6aySE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-el/
+ values.xml
+SHA-256-Digest: WoJ4Cci2anw8fvzgSQcx1d1RXtx7tCIY0oNHMyJZ0Bc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-en-
+ rGB/values.xml
+SHA-256-Digest: V4QnIxPjaSXQLk8fVrqlN7Ld3fnor4M9zPxsfJcZbYM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-es-
+ rUS/values.xml
+SHA-256-Digest: T/FYB33DrZPb56jPKaSvIXBkaT+bKwwXMKXCTiaH5uA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-es/
+ values.xml
+SHA-256-Digest: kpmXKTKfWHkdIdeI9hfpfRrOnJh8b0H4amgocxGQJvg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-et/
+ values.xml
+SHA-256-Digest: vduoJbfqKsYhV/NPS1iZ2M83GxlxgmcfrolseRpR2O0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-eu/
+ values.xml
+SHA-256-Digest: seR0GCz7SdJHSfKuOIXr3Z2BGWdrk4Bfm2EFMA2i6RQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-fa/
+ values.xml
+SHA-256-Digest: KP+Q0rkNvoyoxVmO6gJuSqSwP5tenLCZst4AcyYKt/M=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-fi/
+ values.xml
+SHA-256-Digest: HzC2eCxuBABVwZnBF42LwiXGQxlRZCcrqHmv9mVDxEA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-fr-
+ rCA/values.xml
+SHA-256-Digest: P9HfwgR1HJhA5qBfh0sSh1Phv4Sw0xbm4Itoxzf35p0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-fr/
+ values.xml
+SHA-256-Digest: nDiTSPAiZC8Bxj7jbBDg2506XCXm6P/uNqjtrpmeM84=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-gl/
+ values.xml
+SHA-256-Digest: FkMyZHdlE5TU4mmad6vtCvTj3l3AscjP9xA8uwhXhNA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-gu/
+ values.xml
+SHA-256-Digest: XbVF4bB0zrOYXuZFsJGVEQQH30C5UyKeS3yjusvuvcs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-hi/
+ values.xml
+SHA-256-Digest: Fe5sumJH75SftHjRxcNX6Y9fk/uAn1gT8NSMOOCVS5o=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-hr/
+ values.xml
+SHA-256-Digest: ZpGqrs1jKHpulL91hVCEfmqvDb7f9fg99c9r+JmwM3k=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-hu/
+ values.xml
+SHA-256-Digest: vAsWsYsQQx2dkOOtjyJMr2GMYNNKbkUeG6JC5Jh0b1Y=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-hy/
+ values.xml
+SHA-256-Digest: mjnsADOGzVhCFI8p/1kylhjolp1vJVvRYRMYKvFNsm8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-in/
+ values.xml
+SHA-256-Digest: 1QIY6C18Tl4mTM6Q7H8GWafZCvCt6dgOR9a03jzw+og=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-is/
+ values.xml
+SHA-256-Digest: ZEUmsRGsx776hvrSVVb/BUzZOHwyi52Gn4ee3/0u+oo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-it/
+ values.xml
+SHA-256-Digest: 61oZGiNLNCx6/GoJ+PLHK9/04cB8klk2ZZWgrU/DpSw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-iw/
+ values.xml
+SHA-256-Digest: 7oV2ew/H4v2dML9BnBZjRCptoUCSL5q6dZ4Wqb8ybaA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-ja/
+ values.xml
+SHA-256-Digest: bitBjkQ6QJS+W/7vz2ikdcG2b9V+Mlg+oKbLTU6w0HA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-ka/
+ values.xml
+SHA-256-Digest: HZbAMHwGhIquY9Vze14g0dqhPTf/I/QBd2GfxeURdT0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-kk/
+ values.xml
+SHA-256-Digest: GjVC2nniBnl9xpEkgQ9Ku3/zBz1YTiCjhnX/dFib/6I=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-km/
+ values.xml
+SHA-256-Digest: yZzrz7v7u8T3g3azICkbjyn4RVY4WHqe0vfXV/G3DK4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-kn/
+ values.xml
+SHA-256-Digest: 0FULhmuTJrRgTkYLH5pqxyaPjY0jVYyNpa+ATBqjJNY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-ko/
+ values.xml
+SHA-256-Digest: a6d2ajiTiXyo10pZm5ienOlwW1d1MY4jeudvAs0hI7A=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-ky/
+ values.xml
+SHA-256-Digest: K0NjRdVwJ3sp6iDvJ2VVoDxUU8Q0bD9W6RIwDYfORYY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-lo/
+ values.xml
+SHA-256-Digest: HccDnTO73TOJZ23Qf6wi0DqE/SaNIs8D70AmkYEPNkA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-lt/
+ values.xml
+SHA-256-Digest: Lco6+/dtbKScfEYO+POC4HQzxFf/QNB9exaFpGWbACw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-lv/
+ values.xml
+SHA-256-Digest: myFyCTT8SUhWHblQxAZBxDzTS7GEKKkX4B0B6Vc0lBs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-mk/
+ values.xml
+SHA-256-Digest: ZrHt6gi7SmGGj34Kf/oCqenZHZSQwO9nLht7gdTuJZU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-ml/
+ values.xml
+SHA-256-Digest: 9eDY8ibeKFWXDf57jdThOAw5A9n5pPhKIOxJ/6/DTHM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-mn/
+ values.xml
+SHA-256-Digest: QpA17niW8RZJfOTX7EZKEcN384xHlsY9wohoX+2N5iI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-mr/
+ values.xml
+SHA-256-Digest: ZOBLL36i0qzcB5e2HsfHDrUUaQMxqv7MZoAk7jBCoCI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-ms/
+ values.xml
+SHA-256-Digest: hUiAsyVOfZsZJOF4o64YzfaThX3Ue1nkc59M7RKT304=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-my/
+ values.xml
+SHA-256-Digest: Pmjx7dE1MDzeuUJ/2W0axsuQeKuOE4t1MJWGS0hxxvw=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-nb/
+ values.xml
+SHA-256-Digest: K6hM+FeZGeBHUonBQPa75mZgyoZQ65fFU9ANowKI620=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-ne/
+ values.xml
+SHA-256-Digest: vD04/byxs4IlSJwbyghPXAIBIj1UOWKB0qcA8OPz35M=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-nl/
+ values.xml
+SHA-256-Digest: nRG0m+XwRslEfaMweN4DVsqNdM2or1xzBd6fpgEEueo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-or/
+ values.xml
+SHA-256-Digest: GlHX5M5TVhNT1HiRSPuDV4z5ivm+GNB9x+lkDX1Uorg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-pa/
+ values.xml
+SHA-256-Digest: zT78hTCDE8MmX7F/womEDfemPWT1F3FppJE2zAlxX+w=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-pl/
+ values.xml
+SHA-256-Digest: 1oZLMF8oN987wRThmb5cPzLqr1xjLggTcDU7TPjJ7U4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-pt-
+ rBR/values.xml
+SHA-256-Digest: OHlXVk07+4JTj6eg4ZW8FV1Vi4w96sBQ38NuI0OR6SA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-pt-
+ rPT/values.xml
+SHA-256-Digest: g4x/L5RhDNdSBu7wSBrLFAr2NHYRqPXWDUeMh2u7jwc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-ro/
+ values.xml
+SHA-256-Digest: xkb+JP64aX8pNC7/Ej9qiR+jSll7S+XXz80YMiESW0E=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-ru/
+ values.xml
+SHA-256-Digest: 5GjifANMclNb2Sk8RDqaM/GDC/2Yp/XJc+sB/IO/fcc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-si/
+ values.xml
+SHA-256-Digest: EgVlBtOPPcWN1qaiUOgZY1YMGC+uAeUodZYyB34YDoo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-sk/
+ values.xml
+SHA-256-Digest: SU7igq3QSx3Q16AAW8/aiXb2KfyGyQaVEaShv95Zzsg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-sl/
+ values.xml
+SHA-256-Digest: Zs05kJH5t2GGdPowPDp4Cc0H710P98LYVE3EIEapxCE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-sq/
+ values.xml
+SHA-256-Digest: d2HyU8DHO0/tlZIUHs2Y0HF40aBQCQqc/W9JMmAd5Gc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-sr/
+ values.xml
+SHA-256-Digest: bmjMwDs3M36iywaITJPJBv+a1QvjiAKDjljJtDwINnA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-sv/
+ values.xml
+SHA-256-Digest: nRKMZInG40F+yEJK6X6jcwqleu4/DiVtVwGtlTKdnDA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-sw/
+ values.xml
+SHA-256-Digest: 1xtoFqfhL4iqJtYgtBbeWx27jW9xHrEcfjsd1v6BzMo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-ta/
+ values.xml
+SHA-256-Digest: +FLK8tYa1SW/WrdcLrFEagtpA02cYlQwCXHa77/x2v8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-te/
+ values.xml
+SHA-256-Digest: u5j+157mjVlt7HyAqdz5qlLgRMORgmoEUajERyvMBTY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-th/
+ values.xml
+SHA-256-Digest: mSsdr9Sh74OiGgqmTrbGwoZd0GW/29UUBvvlAvvyoGM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-tl/
+ values.xml
+SHA-256-Digest: LYkFmzOWNuLBTTnPgyJx1lUp6e916DjlmBRd7wLJyX4=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-tr/
+ values.xml
+SHA-256-Digest: /LdxwEGrkKYTKWKg1zizN3un1vxTCUKaHRR+beabMvk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-uk/
+ values.xml
+SHA-256-Digest: KMXHUtepOjyZqW7d1t5sKPpmJnctuYDPY2F5zfCRZYU=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-ur/
+ values.xml
+SHA-256-Digest: 7Z1/uRAfc6jxspe559Bwp0dU+G13Qh+AMbDY5nq9PCA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-uz/
+ values.xml
+SHA-256-Digest: MvuQOonDHXM03yQDmnMiGF8lvikhWke0VlML8cnJLKY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-vi/
+ values.xml
+SHA-256-Digest: J6SDIcU10nMSjsOwVRgYTv+zHBo8IDgD2m2wm+Sj37U=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-zh-
+ rCN/values.xml
+SHA-256-Digest: gLdIpgo9XrR5baAZgkzo96zF9HMtd/Fk0ErFQTBYl6c=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-zh-
+ rHK/values.xml
+SHA-256-Digest: SFvw5oPjxzPjMkegHDFq7XkoTk0Eo6TW1k5Bdhm3Dtg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-zh-
+ rTW/values.xml
+SHA-256-Digest: 0Czyz/pXXJEQHhY8mShw1uQeBd76QxuUFb3UFrF2Dbo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values-zu/
+ values.xml
+SHA-256-Digest: ak31x4NjCJZa43AapJcP8Ne+l48dGjXjL4EHmSZxWKM=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0-res/values/val
+ ues.xml
+SHA-256-Digest: Sb9jg9lRz4GpvuofhhbRrMdEFct7FPsYRtA47nhu96E=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-basement-18.3.0.jar
+SHA-256-Digest: 1SjxguCyZ1Hbs1tKybKRubgkm6hCYtWutQ7FirJBYYs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-clearcut-17.0.0.jar
+SHA-256-Digest: yWGaIqybBKgQxRmdq7Rr/KnQn/QDqzpD/rU51tB/fV0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-flags-18.0.1.jar
+SHA-256-Digest: J72K6sZBYpf5iaLAE7HXJ1vL48T9gcVI3lfic0uvLAk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-iid-17.0.0.jar
+SHA-256-Digest: 4A3m1kIIfWwxkRhOreKiRHSBmttQdxoA+p4WV2FOjRo=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-measurement-22.0.0.jar
+SHA-256-Digest: c62cBYqdKoQOPZb++tF1EOTL0fWN10PX0jZ69/J2Oc0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-measurement-api-22.0.0-res/xml
+ /ga_ad_services_config.xml
+SHA-256-Digest: 8FkTPvfLgL3el/w9JevCABtfZEtSgplV0ofAd7puykc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-measurement-api-22.0.0.jar
+SHA-256-Digest: U8pyqOXyu1nMxBA7c96zjWtgZT8cT94wHnZ4+OLOTEA=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-measurement-base-22.0.0.jar
+SHA-256-Digest: dXmT0o5gd7gCFudWVjTVCYURtCP5+gxWnsWHpOXUYSQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-measurement-impl-22.0.0.jar
+SHA-256-Digest: 8DJfOzPNMyvsG+YYucADjrrg2DVLlDns6YSVWncgvLI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-measurement-sdk-22.0.0.jar
+SHA-256-Digest: kWLU4LldQNd2ewnt1aAO5i2qoelHMA8bmZEmYwSmbZg=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-measurement-sdk-api-22.0.0.jar
+SHA-256-Digest: vYHtKrlPtvTYb+KPtEPKQ62HVNXn40K2e0zvZiQINY0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-phenotype-17.0.0.jar
+SHA-256-Digest: UUpCrfgkLB5idegbfEy9zJGSwyM4NKx4pG0D0/SyTo0=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-safetynet-18.0.1.jar
+SHA-256-Digest: uMf1r68RfLnMbL0vWF9q3dteodqKCsDOkHVp0PdrSno=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-stats-17.0.3.jar
+SHA-256-Digest: 6DfWdGDudKoJJoAzrVVyBlv6q7SKgSuQ9nOQRjbMapY=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-tagmanager-v4-impl-18.0.4.jar
+SHA-256-Digest: wDxbex7M6YYol9bH4zjXyYVhD7jTeHJMLCZ2V2F7Zgk=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/Android-ARM64/play-services-tasks-18.1.0.jar
+SHA-256-Digest: pXYlnBHrG/Q30yksMMhLHhnZ+uAIaFBGQ11NmN7CihI=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ME
+ TA-INF/ANE/extension.xml
+SHA-256-Digest: drIFOetLgTQFwVo4AXNAoKSwfwI4dHO+Z0VFHHVChf8=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/ca
+ talog.xml
+SHA-256-Digest: jwjoisGMZHgPX9SGxKyO/JhAysla0zpFnmICTC8nthE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.playservices.Base/li
+ brary.swf
+SHA-256-Digest: TkwBceI82iQJTjh0q/dTWvOIcA026eOeJbHlEOm+0uo=
+
+Name: assets/META-INF/AIR/extensions/com.google.android.play/META-INF/
+ ANE/Android-ARM64/app-update-2.1.0.jar
+SHA-256-Digest: XE6GL0wZd1SGBnR1XJ1PlBItrQfaJO7eEhZsTgDic0c=
+
+Name: assets/META-INF/AIR/extensions/com.google.android.play/META-INF/
+ ANE/Android-ARM64/app-update-ktx-2.1.0.jar
+SHA-256-Digest: /JNnARRjsHUn+Y8zOjEJtv9fgycNwAQHP4Kz9iUzVJ8=
+
+Name: assets/META-INF/AIR/extensions/com.google.android.play/META-INF/
+ ANE/Android-ARM64/asset-delivery-2.2.1.jar
+SHA-256-Digest: RD8UtVzchkQu1B8g4b0X7q+qB9MmWpe3YxHBoTSwdoc=
+
+Name: assets/META-INF/AIR/extensions/com.google.android.play/META-INF/
+ ANE/Android-ARM64/asset-delivery-ktx-2.2.1.jar
+SHA-256-Digest: 9/YVaYW0Q1oaf2LIu44EMzCAeoQphrztpLHvadMxhsE=
+
+Name: assets/META-INF/AIR/extensions/com.google.android.play/META-INF/
+ ANE/Android-ARM64/core-common-2.0.3-res/values/values.xml
+SHA-256-Digest: YXNLeWfFQB/5/oIgl3jTgYcs+eSxpTdO5e4+KDCKJ4I=
+
+Name: assets/META-INF/AIR/extensions/com.google.android.play/META-INF/
+ ANE/Android-ARM64/core-common-2.0.3.jar
+SHA-256-Digest: lUMUO5QqaWNWZmlgooaBIQWo4f0v/YcVZgA/DDPJoBM=
+
+Name: assets/META-INF/AIR/extensions/com.google.android.play/META-INF/
+ ANE/Android-ARM64/feature-delivery-2.1.0.jar
+SHA-256-Digest: brFl5+TadTyJ8iOFuT2etmFfuB04Di8n2+ZTpJXTAgY=
+
+Name: assets/META-INF/AIR/extensions/com.google.android.play/META-INF/
+ ANE/Android-ARM64/feature-delivery-ktx-2.1.0.jar
+SHA-256-Digest: X4E6nB8HhBWQu7039Xg6SHXZwWEnJ5JAGq/abXODZn0=
+
+Name: assets/META-INF/AIR/extensions/com.google.android.play/META-INF/
+ ANE/Android-ARM64/library.swf
+SHA-256-Digest: Srn+guiPr30miFPQ9OW6T+b1AZrYiRbFxoKybuVj/0c=
+
+Name: assets/META-INF/AIR/extensions/com.google.android.play/META-INF/
+ ANE/Android-ARM64/platform.xml
+SHA-256-Digest: bNzplgtsziD0eXT2MB2/fRq7K0g4VgyehsNxznu2yyI=
+
+Name: assets/META-INF/AIR/extensions/com.google.android.play/META-INF/
+ ANE/Android-ARM64/review-2.0.1.jar
+SHA-256-Digest: LJUFkeILTJo0bjQRBDGKH6mYWc/PrWs+OvCFQrN7ocE=
+
+Name: assets/META-INF/AIR/extensions/com.google.android.play/META-INF/
+ ANE/Android-ARM64/review-ktx-2.0.1.jar
+SHA-256-Digest: 9d+M9FH0kHRGStHn1KEWJinDSTv7c+NnyHTvGCScXFs=
+
+Name: assets/META-INF/AIR/extensions/com.google.android.play/META-INF/
+ ANE/extension.xml
+SHA-256-Digest: 0J7Wcf4N7YnTWXw8F50CIgUqS3GqdArVGk5u7nFrUr4=
+
+Name: assets/META-INF/AIR/extensions/com.google.android.play/catalog.x
+ ml
+SHA-256-Digest: sB5wD135oX/sE1ScrISFE7l8dqZ6y690NCPcS1y34VM=
+
+Name: assets/META-INF/AIR/extensions/com.google.android.play/library.s
+ wf
+SHA-256-Digest: Srn+guiPr30miFPQ9OW6T+b1AZrYiRbFxoKybuVj/0c=
+
+Name: assets/META-INF/AIR/license.txt
+SHA-256-Digest: 8ibep0BlcVoWTuRYkb6sP8HH1TZ8F5GTJntsoujMcoo=
+
+Name: assets/music/theme01.mp3
+SHA-256-Digest: xyb3FJQ4weDl++gF/ySvcvVVnMfYe8LzxVPdlb3ntTc=
+
+Name: classes.dex
+SHA-256-Digest: B6H83pe19UQVU8u8tXvJESnU62quU9wcq2CJNdn8UKU=
+
+Name: lib/arm64-v8a/libCore.so
+SHA-256-Digest: NNUply9BIcLU6Tsoy7Eu2PKaVH/E4KHDQczNgU/Tv0A=
+
+Name: lib/arm64-v8a/libc++_shared.so
+SHA-256-Digest: IY7MZ3qnnhl085aNLg7NAXLE9RcYjQTr19RcuyhbXQM=
+
+Name: lib/arm64-v8a/libysshared.so
+SHA-256-Digest: yAjhiVpfYlc7kCyQOa/xqMZvJNMj1qdSVYkBl+G6Y+E=
+
+Name: res/color/common_google_signin_btn_text_dark.xml
+SHA-256-Digest: 542egLgZt7+Tii7UpluF3ZiXJOoGtOSwIkyww/DMtuo=
+
+Name: res/color/common_google_signin_btn_text_light.xml
+SHA-256-Digest: KaUKhkaQ45t3Opzng2KYQUIuWV8nAnAXL30gEl5KSD4=
+
+Name: res/color/common_google_signin_btn_tint.xml
+SHA-256-Digest: RAuIDVmUsSGyPf/pw8zAo6EtsznTVGovk4274lcbjew=
+
+Name: res/drawable-hdpi-v4/common_full_open_on_phone.png
+SHA-256-Digest: ylfmr23M+ZbKTS4e24AuhTI7XYf/6GUQu9IVu1zPQ4I=
+
+Name: res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_b
+ ackground.9.png
+SHA-256-Digest: E8KdA3FTrk21PApXXefWfQ8C5oFLDjbOUQ//6XCfU2U=
+
+Name: res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_
+ background.9.png
+SHA-256-Digest: +jLwzb1IGfOv4EK88iAtmT60oR0+4V5jLd9/MEnokVI=
+
+Name: res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_b
+ ackground.9.png
+SHA-256-Digest: eqno++ItPpuxc3sT0onipxe1fxbqAB3yJIZQM53DZcA=
+
+Name: res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_
+ background.9.png
+SHA-256-Digest: G2mldnZW2vF12TZbCQ8EI2bJRhdq0iB9V0k6qW67wWk=
+
+Name: res/drawable-hdpi-v4/googleg_disabled_color_18.png
+SHA-256-Digest: MMLyfVh5kHsXzhJP0p+aZl300INgFRXjj/TW6Clait8=
+
+Name: res/drawable-hdpi-v4/googleg_standard_color_18.png
+SHA-256-Digest: SWzvpNDO6nBDxMPYp4VlkvkX0+bZ/JVSPetX+cOU0Ng=
+
+Name: res/drawable-hdpi-v4/home.png
+SHA-256-Digest: WiQTdg6tYhWSWqPEzgQSJtyo2+1CKQQOuW9DXvqSpO8=
+
+Name: res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_b
+ ackground.9.png
+SHA-256-Digest: 6EmSxBeAomT9XEkSubwDzmOmgThTZLLOTF18BwsjHaQ=
+
+Name: res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_
+ background.9.png
+SHA-256-Digest: tSY5Tnv5lKg4cOefbu/RkGBdHJvl22uj8scWkXUXSRE=
+
+Name: res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_b
+ ackground.9.png
+SHA-256-Digest: Vhx8ZUKGuWQc61JVz+2OMRabGixRIGkHrmVFqJ0Ofck=
+
+Name: res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_
+ background.9.png
+SHA-256-Digest: DhBxZZ4yBoFC5mE40CVDJOghm/Sq7kO9FfiZJ/hkdDU=
+
+Name: res/drawable-mdpi-v4/googleg_disabled_color_18.png
+SHA-256-Digest: cqAgSzydPYL2eRWG6+WICMMb4ZVf/plIHb0hxni/C4M=
+
+Name: res/drawable-mdpi-v4/googleg_standard_color_18.png
+SHA-256-Digest: etcix+ZEyqJA2JV6HhH85PfL6CgEqtg76Dv0/4Cpiqg=
+
+Name: res/drawable-nodpi-v4/splash_landscape.png
+SHA-256-Digest: bWf+fbAjjmaRV6GpEQO1Dr+BKJAzJCzjyu+/fTY2JZo=
+
+Name: res/drawable-nodpi-v4/splash_portrait.png
+SHA-256-Digest: g/qUVCHl5XbLbIteW0tcbVwRgBZtoe19T6DZm9v2vbk=
+
+Name: res/drawable-xhdpi-v4/common_full_open_on_phone.png
+SHA-256-Digest: LfQgOv2rc+jkHcfhTa8Ty2HkslXR9uHlfenPxvrPiL4=
+
+Name: res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_
+ background.9.png
+SHA-256-Digest: QO+HX+ny4QoWkArYIsDb4J4RVui0AelG1v584/Sk78k=
+
+Name: res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal
+ _background.9.png
+SHA-256-Digest: wJ+ZUdcQxMP/QM99OS6DKHwhTsz9tC9pOewyFi63GXE=
+
+Name: res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_
+ background.9.png
+SHA-256-Digest: A839tlYoPsQDaHXfLm1SHndvKF10T7i3l3ZYvfOBRjw=
+
+Name: res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal
+ _background.9.png
+SHA-256-Digest: eFUdBzHv9mUyOMnq480LeQpwKNjtvGrJgzVQkMgGcd4=
+
+Name: res/drawable-xhdpi-v4/googleg_disabled_color_18.png
+SHA-256-Digest: Q0MEaFdsrzSrh9GXPjKs8OtObu0q7SUsyfoGeHLeNPQ=
+
+Name: res/drawable-xhdpi-v4/googleg_standard_color_18.png
+SHA-256-Digest: DCW3GCl5YnJbWnDIHArjrlWZDL8SbsGJgmItNRw2Ztw=
+
+Name: res/drawable-xhdpi-v4/icon.png
+SHA-256-Digest: qTuOvXpHgxX1VQ/ocfPv3+xkZ3Anw5TT/g6C5dLL0FI=
+
+Name: res/drawable-xhdpi-v4/ouya_icon.png
+SHA-256-Digest: Ci8TqyAd3lQwrz6PSHJYgiSY12MTPa60fgLaeApc+cs=
+
+Name: res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal
+ _background.9.png
+SHA-256-Digest: qEPdrftDj986LcfLxj6o08xchM7GpAYc2lfujH+X4cQ=
+
+Name: res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_norma
+ l_background.9.png
+SHA-256-Digest: owcCXHsYApJ0RZ1o1szJ1MQbmmySMzuwABd6DPvcqPk=
+
+Name: res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal
+ _background.9.png
+SHA-256-Digest: KvCHhxuwInY7tCDTX4KZC8D2ZC++cNf0xdlBUjXBCfU=
+
+Name: res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_norma
+ l_background.9.png
+SHA-256-Digest: FvvNSFswc7WlZ7Jx5IsOADy9Z52HD6pJd0QNJTECpUk=
+
+Name: res/drawable-xxhdpi-v4/googleg_disabled_color_18.png
+SHA-256-Digest: 6ZaDSK5lWhkV00KWhfs4ZZhrJegl+y480WN+Zz/STYw=
+
+Name: res/drawable-xxhdpi-v4/googleg_standard_color_18.png
+SHA-256-Digest: bNdBYpWAgtvDFlPAOL3y24u7JfcU2qNyTmPcgppv7Ww=
+
+Name: res/drawable-xxxhdpi-v4/icon.png
+SHA-256-Digest: /jHg05A74r+heNHjpnBqCBpQiZY7d9iHNw6LXkbc+Xw=
+
+Name: res/drawable/air_72px_mobile_eula.png
+SHA-256-Digest: +NpX2pdMsQONdSvau4iCv7j6PJVRWDnk3fV67WtgGSM=
+
+Name: res/drawable/common_google_signin_btn_icon_dark.xml
+SHA-256-Digest: uuMqSPq9atgOfFPPuOGCu6fESGElZxLpRzszIwwlw6Y=
+
+Name: res/drawable/common_google_signin_btn_icon_dark_focused.xml
+SHA-256-Digest: FYGIJcdKHtvmXlmUS/FIAxFE5pMOcq698sT1nEcmkqE=
+
+Name: res/drawable/common_google_signin_btn_icon_dark_normal.xml
+SHA-256-Digest: RF8O0J2hiv0AEoxmiaOXg0R7tRH3sgJ0L2068gc2Kdg=
+
+Name: res/drawable/common_google_signin_btn_icon_disabled.xml
+SHA-256-Digest: NVkoAUtnb9dSVDFP2hMoU0YhLZGK88W/Htax9qyoofg=
+
+Name: res/drawable/common_google_signin_btn_icon_light.xml
+SHA-256-Digest: 419s7bhT+jsOFFnjpvu09tNLmgL8Qa1Yb7DP/q1enLo=
+
+Name: res/drawable/common_google_signin_btn_icon_light_focused.xml
+SHA-256-Digest: ldygvG/yCaa+nVPQ/vWOb55z9N46zaxuc6ijH44Bemk=
+
+Name: res/drawable/common_google_signin_btn_icon_light_normal.xml
+SHA-256-Digest: 8cBVrLIsnxhxocmSMlxId4ZHLc6T8YiZ7hLpVjjGVYI=
+
+Name: res/drawable/common_google_signin_btn_text_dark.xml
+SHA-256-Digest: Ds/XqFNwl4pkIyxOJycfvWuPWXD0P/RnLw8BEqmrTBE=
+
+Name: res/drawable/common_google_signin_btn_text_dark_focused.xml
+SHA-256-Digest: hL9XHSPZ6sJB/iDH3+LMTdoQAciK1uTjHQK7MXvbyPc=
+
+Name: res/drawable/common_google_signin_btn_text_dark_normal.xml
+SHA-256-Digest: HUTJOFjKQ0rkfznGsjAWs3KbA+LfZq34eDxMvGZOI8o=
+
+Name: res/drawable/common_google_signin_btn_text_disabled.xml
+SHA-256-Digest: 3XQ7j78oFInKmv7lqRFaP8TLMjoRC56erfDx1N8SsdU=
+
+Name: res/drawable/common_google_signin_btn_text_light.xml
+SHA-256-Digest: 7HMjWT0eGCOLhLM/weFT+RQSOo4MQx1IUPLKPBEcn7k=
+
+Name: res/drawable/common_google_signin_btn_text_light_focused.xml
+SHA-256-Digest: mLlEYWfnK4RY9m0Mif99ewhjr44XTEsAxFDTgfu0hJo=
+
+Name: res/drawable/common_google_signin_btn_text_light_normal.xml
+SHA-256-Digest: pHmGPlaUGVv+OkG3UGfmY5joEUctJaaOozBsPFgKnQo=
+
+Name: res/drawable/ic_adobe_logo.xml
+SHA-256-Digest: LlcRH2NPKwHEmh0GtPbqfrtua2kuMMtIxRT+pnKVlqM=
+
+Name: res/drawable/ic_adobe_logo_1.xml
+SHA-256-Digest: 31MNjMzFT0Osjkb/Ld653pQU7C+p3t9etuTgUPDCzFg=
+
+Name: res/drawable/ic_adobe_logo_2.xml
+SHA-256-Digest: rBRjVhtW7Q7vcagYxnSReTJhM7JydKBfklxDVRjroos=
+
+Name: res/drawable/ic_adobe_logo_3.xml
+SHA-256-Digest: LzYnqFDGiwEOTP9hPOD4YgPqRnbM905wnsoPV+tXsgg=
+
+Name: res/drawable/ic_adobe_tm_logo.xml
+SHA-256-Digest: kfkfVSxjmHpfT7fIwH6biUNVn9uoD6FrCbtG6QVUWcw=
+
+Name: res/drawable/ic_harman_logo.xml
+SHA-256-Digest: pKL4BWceSDlwxEbPUbABd6r1nHy/ibKG5MvZgA2dZKk=
+
+Name: res/drawable/mp_warning_32x32_n.png
+SHA-256-Digest: k8lI2t4+5nIO6EjL9VG9fCGcAXiv5g321jofUrqTdMM=
+
+Name: res/drawable/splash_landscape.png
+SHA-256-Digest: bWf+fbAjjmaRV6GpEQO1Dr+BKJAzJCzjyu+/fTY2JZo=
+
+Name: res/drawable/splash_portrait.png
+SHA-256-Digest: g/qUVCHl5XbLbIteW0tcbVwRgBZtoe19T6DZm9v2vbk=
+
+Name: res/layout-land/splash_screen_layout.xml
+SHA-256-Digest: VYXhv/XC82abz7nrww1BvakkARcjm7Z2yZPW3/40zDk=
+
+Name: res/layout/activity_static_page.xml
+SHA-256-Digest: bSbGfUAqVnAbkmWZYdN7Vnq7EVY47OMgfBZiO81RULk=
+
+Name: res/layout/expandable_chooser_row.xml
+SHA-256-Digest: JO+2T9ZkXaPtJgE/fDfu5kyLiUwKy6oJmGm/CasqC0w=
+
+Name: res/layout/expandable_multiple_chooser_row.xml
+SHA-256-Digest: 89jYgsa99Vhgjo47EoHw2r3anYS3YjaguFqg/fDvGvI=
+
+Name: res/layout/main.xml
+SHA-256-Digest: Zqwnd4f66eIeRTg2mlnig4DlbCGsXRKbInecNSgKC0c=
+
+Name: res/layout/multiple_file_selection_panel.xml
+SHA-256-Digest: jNEcXEsrtjGAY7qMC6YC/lWvRo5SAgO1fXSdlt6qEEQ=
+
+Name: res/layout/splash_screen_layout.xml
+SHA-256-Digest: qIUAEsAboCHRrYoQY94uYzVOhjMZrdGc2hDZn7tZWw4=
+
+Name: res/layout/ssl_certificate_warning.xml
+SHA-256-Digest: Cu5vDjgo02wW2OL2IjZn7hchkkPyAkHUojSUPAXuZzA=
+
+Name: res/mipmap-hdpi-v4/icon.png
+SHA-256-Digest: XwkSawPe+yt1jCGxeTMO8b8CGDJbmokwlmHpjg2UcKE=
+
+Name: res/mipmap-ldpi-v4/icon.png
+SHA-256-Digest: OjFTV1DEnJ8ZpLuOopDvtd0tIFjQXdtDLd92p5LUvLo=
+
+Name: res/mipmap-mdpi-v4/icon.png
+SHA-256-Digest: wHLOrSO2AGso8aF4AELn9xCFZmH6XIvJRUyW8OKVFAg=
+
+Name: res/mipmap-xhdpi-v4/icon.png
+SHA-256-Digest: 1tqQdrlOuTxppYo9QIeF0QVHnWQFL7aLbHCv1jYfYhw=
+
+Name: res/mipmap-xhdpi-v4/ouya_icon.png
+SHA-256-Digest: WxnKtQE677AXLkzjnqXmvF8b3h9Z2dRgG/lZ5LDDdsg=
+
+Name: res/mipmap-xxhdpi-v4/icon.png
+SHA-256-Digest: WxnKtQE677AXLkzjnqXmvF8b3h9Z2dRgG/lZ5LDDdsg=
+
+Name: res/mipmap-xxxhdpi-v4/icon.png
+SHA-256-Digest: WxnKtQE677AXLkzjnqXmvF8b3h9Z2dRgG/lZ5LDDdsg=
+
+Name: res/raw/adobelogo.gif
+SHA-256-Digest: TOj3YBvQsphWX+erq0oQS+vUSS+wCIUOwbXBTlXRXMY=
+
+Name: res/raw/debuginfo
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: res/raw/icon.jpg
+SHA-256-Digest: txt1V5PM6R5pEax55UHzliJb9ZoxjZifwCBwicpzFEw=
+
+Name: res/raw/rgba8888
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: res/raw/startga.html
+SHA-256-Digest: M7lCcKOPeVW17UQnJ9jCJGYL2rlgjueB1u7Yr7MBBpk=
+
+Name: res/xml/ga_ad_services_config.xml
+SHA-256-Digest: nG3Kb1ud9AsW/oNwf7KhkyvNrX5BwecifWX/XFGK6aQ=
+
+Name: res/xml/provider_paths.xml
+SHA-256-Digest: 6YjKC6/uh0UY7h5rX58dlxafRb77scNpamXQg5/7UfU=
+
+Name: resources.arsc
+SHA-256-Digest: uzsKrE7ojbPUTpbnPanH8F85v9l4E3zhfPNw5GbZKJ0=
+
