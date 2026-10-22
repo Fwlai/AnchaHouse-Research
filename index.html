@@ -105,7 +105,7 @@ function setWitchFrame(sprite,texture,frame,row){
 }
 let yaw=0,pitch=0,targetYaw=0,targetPitch=0,dragging=false,pointerX=0,pointerY=0,orbitDirection=1,dayBlend=0;
 renderer.domElement.addEventListener('pointerdown',e=>{dragging=true;pointerX=e.clientX;pointerY=e.clientY;renderer.domElement.setPointerCapture(e.pointerId);});
-renderer.domElement.addEventListener('pointermove',e=>{if(!dragging)return;const dx=e.clientX-pointerX,dy=e.clientY-pointerY;pointerX=e.clientX;pointerY=e.clientY;if(Math.abs(dx)>0.1)orbitDirection=Math.sign(dx);targetYaw+=dx*.0045;targetPitch=THREE.MathUtils.clamp(targetPitch+dy*.0024,-.16,.34);});
+renderer.domElement.addEventListener('pointermove',e=>{if(!dragging)return;const dx=e.clientX-pointerX,dy=e.clientY-pointerY;pointerX=e.clientX;pointerY=e.clientY;if(Math.abs(dx)>0.1)orbitDirection=Math.sign(dx);targetYaw-=dx*.0045;targetPitch=THREE.MathUtils.clamp(targetPitch-dy*.0024,-.16,.34);});
 const endDrag=()=>{dragging=false;};renderer.domElement.addEventListener('pointerup',endDrag);renderer.domElement.addEventListener('pointercancel',endDrag);
 const clock=new THREE.Clock();const lookTarget=new THREE.Vector3(0,2.2,0);const cameraTarget=new THREE.Vector3(-4.5,6.4,18.5);
 function render(){requestAnimationFrame(render);const dt=Math.min(clock.getDelta(),.04),t=clock.elapsedTime;
