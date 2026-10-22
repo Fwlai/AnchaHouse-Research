@@ -8,9 +8,18 @@ The APK assets directory contains only a small number of top-level files; most v
 |---|---:|---|
 | `assets/Game.swf` | 40,567,300 bytes | code + embedded shapes/bitmaps/sounds |
 | `assets/Characters.txt` | 211,581 bytes | 200 character records |
-| `assets/Frames.txt` | 320,860 bytes | 1,401 animation frame records |
+| `assets/Frames.txt` | 320,860 bytes | 1,401 limb-pose records |
 | `assets/Game-app.xml` | 3,581 bytes | AIR descriptor, version, permissions, extensions |
 | `assets/music/theme01.mp3` | 1,206,159 bytes | external music track |
+
+Canonical data hashes:
+
+| File | SHA-256 |
+|---|---|
+| `Characters.txt` | `7acb482fc4f540a33bd2df382cc31e8f0ab392f4ff4e832e7376290b7cec6ec1` |
+| `Frames.txt` | `850e753965907c73e69dfae5e5e2f7726c5405f296ab8078f5ae4a758d956538` |
+
+Both match the copies in the intact official APK.
 
 The repository's `Game.swf` is corrupt; use the intact official copy described in [SWF-FORMAT-AND-TOOLCHAIN.md](SWF-FORMAT-AND-TOOLCHAIN.md). `Characters.txt` and `Frames.txt` in the repository are readable and were used to verify the schemas below.
 
@@ -68,7 +77,7 @@ Four classes extend `BitmapData`:
 
 ### Record layout (327 fields)
 
-The field order below is taken directly from `LoadedDefaultChars` (line 19723). “coz 1/2” are the two costume/body variants; coz 0 is initialized from defaults and has no file tokens.
+The field order below is taken directly from `LoadedDefaultChars` (line 19717). “coz 1/2” are the two costume/body variants; coz 0 is initialized from defaults and has no file tokens.
 
 | Order | Count | Field | Notes |
 |---:|---:|---|---|
@@ -120,6 +129,18 @@ The file begins with character ID 1:
 
 **Verified:** the schema and record count are consistent with the file and the loader code.
 
+Additional validated properties and anomalies:
+
+- 200 unique, non-empty ASCII names; character identity is the record ordinal.
+- All relationship IDs are `0` or a valid character ID; there are no self-relations.
+- Some relations are non-mutual in the file. `AssumeRelationships` expands them bidirectionally, and later categories overwrite earlier ones for duplicate targets.
+- Body-limb IDs all fit the SWF costume arrays. Hair ID `103` for characters 27 and 94 exceeds the editor limit `89` and is recorded as an anomaly.
+- RGB values are Flash color multipliers (`0.05..2.52`), not 0–255 channels.
+- 127 costume-2 scale values are fractional; the loader casts with `int(...)`, discarding the fraction under standard AS3 coercion (strong inference).
+- Strength/Toughness reach 125 although later stat mutation clamps to 99.
+
+See [CHARACTERS-TXT-ANALYSIS.md](CHARACTERS-TXT-ANALYSIS.md) for field-level semantics, all costume maxima, save overrides, and open questions.
+
 ## `Frames.txt`
 
 ### Container
@@ -144,7 +165,18 @@ For each frame index, and for each limb `1..13`, the loader reads exactly:
 | 6 | D | int | `frameD[frame][limb]` |
 | 7 | F | int | `frameF[frame][limb]` |
 
-These are pose/limb parameters consumed by `GetFrame`, `UpdateCostume`, and `ManageAnimations`. The names are the code's storage names; this document does not assign a stronger geometric meaning to `A/S/D/F` than the code supports.
+These are pose/limb parameters consumed by `GetFrame`, `RenderFrame`, accessory/wound updates, and `ManageAnimations`.
+
+| Field | Verified meaning |
+|---|---|
+| `X/Y` | Local limb offsets before parent/character/camera transforms |
+| `Z` | Limb depth rank used in display depth sorting |
+| `A` | Limb rotation in degrees (multiples of 5 in the canonical data) |
+| `S` | Limb scale percentage |
+| `D` | Direction/flip sign, also used for weapon direction |
+| `F` | Limb subframe selector, not a global frame index |
+
+`F` also selects child bind angle/distance entries when the parent is limb 1 or 2. Frame-derived limb positions feed combat impact geometry. See [FRAMES-TXT-ANALYSIS.md](FRAMES-TXT-ANALYSIS.md) for full ranges, consumers, duplicate frames, and the 1,401-record explanation.
 
 ### Why 1,401 frames
 
@@ -156,7 +188,7 @@ These are pose/limb parameters consumed by `GetFrame`, `UpdateCostume`, and `Man
 - `ManageAnimations` (line 23540) advances that state and selects frame/limb poses.
 - `GetFrame` (line 14572) chooses upper/lower body frames for limbs.
 - `UpdateCostume` (line 16171) applies costume scale, limb IDs, RGB, and accessories.
-- The animation state machine is much larger than the frame file: 1,400 frames are pose data, not 1,400 independent behaviors.
+- The animation state machine is much larger than the frame file: the 1,401 records are pose data, not 1,401 independent behaviors.
 
 ## `SharedObject` save formats
 
@@ -213,4 +245,4 @@ Android manifest additions request network, Wi-Fi/network state, phone state, wa
 
 - **Modding/data:** character and animation data are simple text files and can be parsed independently of the SWF. The schemas above are sufficient to build a validator or converter.
 - **Save compatibility:** save slots are local objects with code-defined fields; changing character schema or frame counts risks breaking old saves.
-- **Networking:** any protocol must serialize the *logical* state represented by these arrays, not the SWF assets or `MovieClip` objects. The text schemas are a useful reference for compact entity state, but the live game state is much broader.
+- **Networking:** any protocol must serialize the *logical* state represented by these arrays, not the SWF assets or `MovieClip` objects. The text schemas are a useful reference for compact entity state, but the live game state is much broader. See [DATA-FLOW-AND-DEPENDENCIES.md](DATA-FLOW-AND-DEPENDENCIES.md) and [LOGICAL-GAME-STATE-MODEL.md](LOGICAL-GAME-STATE-MODEL.md).

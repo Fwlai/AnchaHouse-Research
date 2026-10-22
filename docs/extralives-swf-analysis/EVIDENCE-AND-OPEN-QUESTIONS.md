@@ -31,6 +31,15 @@ The repository's SWF is corrupt, so it cannot be used as a complete source. The 
 | 19 | Frame-rate/RNG affects outcomes | `Rnd`, `RndDec`, `RndOr`, `stage.frameRate` changes, single-threaded loop | Strong inference |
 | 20 | Cross-device determinism is unproven | No determinism test or runtime replay was performed | Unknown |
 | 21 | Online can be added as a substantial fork | Requires transport, state model, authority, session, serialization, UI | Engineering assessment |
+| 22 | `Frames.txt` fields mean `X,Y,Z,A,S,D,F` | Loader arrays plus `RenderFrame`, `GetFrame`, accessory/wound consumers, `frameD` weapon direction | Verified |
+| 23 | Frame pose data affects combat geometry | Runtime limb positions feed impact checks and head-height tests | Verified |
+| 24 | Frames `1347..1400` duplicate frame 0 | Exact 91-field equality; literal `pAnimFrame` assignments stop at 1346 | Verified data; strong inference on unused status |
+| 25 | Character ordinal is identity; names are not keys | Loader indexes `char=1..200`; relationships use ordinals | Verified |
+| 26 | Six stats exist; only five have text labels | `textStat`, `pStat[1..6]`, `FindStrength` sampling | Verified |
+| 27 | 127 costume-2 scale values are fractional and loader casts with `int` | Data scan plus `LoadedDefaultChars` | Verified data; truncation is strong inference |
+| 28 | Loop has no fixed timestep | `GameScreen`/`ManageTime`/`PlayerCycle`; frame-rate changes and inner time loops | Verified |
+| 29 | RNG is pervasive and shared with presentation | 405 `Math.random` occurrences, 1,738 `Rnd(` occurrences; sound/particle calls draw from the same source | Verified static count; runtime ordering inference |
+| 30 | Host-authoritative snapshots are the pragmatic baseline | No fixed tick/seeded RNG; render-derived combat geometry; monolithic state | Engineering assessment |
 
 ## Exact code locations worth citing
 
@@ -57,8 +66,8 @@ All paths refer to the analysis copy outside the repository:
 | Input | `GetInput` 8607; `TranslateInput` 8729; `FindGestures` 8253 |
 | Local multiplayer | `IncludeHuman` 20757; `textMultiplayer` 110117; controller setup ~115419 |
 | Persistence | `LoadSystem` 3139; `LoadProgress` 3389; `SaveProgress` 3529; `LoadDeviceChars` 19919; `SaveDeviceChars` 20516 |
-| Characters | `LoadedDefaultChars` 19723 |
-| Frames | `FramesLoaded` 13912; `SaveFrames` 13872 |
+| Characters | `LoadedDefaultChars` 19717 |
+| Frames | `FramesLoaded` 13913; `SaveFrames` 13872 |
 | Network fetch | line 109835 |
 | Ads/billing | billing around 3920–3950; ad setup around 4154–4276 |
 
@@ -86,7 +95,7 @@ All paths refer to the analysis copy outside the repository:
 3. **What is the exact `gamMode` mapping?** Static conditionals strongly indicate survival vs deathmatch, but a runtime trace would confirm all mode transitions.
 4. **Which “Multiplayer” values are reachable on which devices?** The code gates on gamepads and `optGamepad`; UI behavior on touch-only devices should be tested.
 5. **Is `Mystery` a role assignment or a random hidden mode?** `IncludeHuman` selects a local entity by role; the full menu semantics were not exhaustively traced.
-6. **What exactly do `frameA/S/D/F` mean geometrically?** The loader names them; their full animation semantics would require correlating `GetFrame`/`UpdateCostume` and rendering tests.
+6. **What exactly do `frameA/S/D/F` mean geometrically?** **Resolved statically:** `A` is limb rotation, `S` is limb scale percentage, `D` is a direction/flip sign also used for weapon direction, and `F` is a limb subframe selector plus bind-table selector for children of limbs 1/2. `X/Y/Z` are local offsets and depth rank. See [FRAMES-TXT-ANALYSIS.md](FRAMES-TXT-ANALYSIS.md). Remaining runtime question: how these values map to every visible pose and hit outcome.
 
 ### Content and assets
 
@@ -131,4 +140,4 @@ Until such evidence exists, the defensible conclusion is: **Extra Lives 1.170.64
 - Tag dump: 46,670 flattened entries; 5,398 top-level tags.
 - All analysis artifacts are under `/tmp/extralives-swf-analysis/`; none are committed.
 
-See [SWF-FORMAT-AND-TOOLCHAIN.md](SWF-FORMAT-AND-TOOLCHAIN.md) for exact hashes/commands and [NETWORKING-AND-MULTIPLAYER-FEASIBILITY.md](NETWORKING-AND-MULTIPLAYER-FEASIBILITY.md) for the feasibility assessment.
+See [SWF-FORMAT-AND-TOOLCHAIN.md](SWF-FORMAT-AND-TOOLCHAIN.md) for exact hashes/commands, [FRAMES-TXT-ANALYSIS.md](FRAMES-TXT-ANALYSIS.md) and [CHARACTERS-TXT-ANALYSIS.md](CHARACTERS-TXT-ANALYSIS.md) for the data evidence, [DETERMINISM-AND-GAME-LOOP.md](DETERMINISM-AND-GAME-LOOP.md) for why lockstep is not ready, and [ONLINE-MULTIPLAYER-ARCHITECTURE.md](ONLINE-MULTIPLAYER-ARCHITECTURE.md) / [ONLINE-MULTIPLAYER-PROTOTYPE.md](ONLINE-MULTIPLAYER-PROTOTYPE.md) for the resulting design.

@@ -8,6 +8,8 @@ The game's “Multiplayer” feature is **local, same-device multiplayer** using
 
 This conclusion is based on a systematic static search of the decompiled ActionScript and the application manifest, not on a runtime packet capture. It is a **verified** absence of the relevant APIs in the exported game code; a native AIR runtime could in principle make connections on behalf of an extension, but no such gameplay path is present in the app code.
 
+The resulting design work is split into [ONLINE-MULTIPLAYER-ARCHITECTURE.md](ONLINE-MULTIPLAYER-ARCHITECTURE.md) (options and recommended authority model), [LOGICAL-GAME-STATE-MODEL.md](LOGICAL-GAME-STATE-MODEL.md) (what must be synchronized), and [ONLINE-MULTIPLAYER-PROTOTYPE.md](ONLINE-MULTIPLAYER-PROTOTYPE.md) (minimal movement and combat prototypes).
+
 ## What was searched
 
 Search space:
@@ -21,7 +23,7 @@ Search space:
 Patterns searched include:
 
 ```text
-Socket, XMLSocket, WebSocket, NetConnection, NetStream,
+Socket, XMLSocket, WebSocket, DatagramSocket, NetConnection, NetStream,
 NetGroup, RTMFP, RemoteObject, SharedObject, URLStream,
 URLLoader, URLRequest, navigateToURL, sendToURL,
 LocalConnection, StageVideo, Peer, ServerSocket
@@ -31,7 +33,8 @@ Results:
 
 | API / pattern | Finding |
 |---|---|
-| `Socket`, `XMLSocket`, `WebSocket` | none |
+| `Socket`, `XMLSocket`, `WebSocket`, `DatagramSocket` | none |
+| `ServerSocket`, socket-server listeners | none |
 | `NetConnection`, `NetStream`, `NetGroup`, `RTMFP` | none |
 | `RemoteObject`, RPC/AMF remoting | none |
 | `LocalConnection` | none |
@@ -198,6 +201,6 @@ These are engineering judgments, not measured estimates. No network prototype wa
 | Is there any network gameplay state? | None found | Verified absence in exported code |
 | Can online be added without major refactoring? | No | Strong inference |
 | Is online feasible at all? | Yes, as a substantial fork/prototype | Engineering assessment |
-| Best first step | Measure determinism and extract logical state | Recommendation |
+| Best first step | Extract a logical state model and build a fixed-tick headless authority | Recommendation; see [ONLINE-MULTIPLAYER-PROTOTYPE.md](ONLINE-MULTIPLAYER-PROTOTYPE.md) |
 
 See [EVIDENCE-AND-OPEN-QUESTIONS.md](EVIDENCE-AND-OPEN-QUESTIONS.md) for the exact code locations and the limits of this audit.

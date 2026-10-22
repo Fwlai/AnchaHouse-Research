@@ -97,7 +97,8 @@ Movement and animation are then handled by `ManageAnimations`, which reads the A
 ### Animation and rendering
 
 - `ManageAnimations` (line 23540) is a ~34.7k-line state machine. It handles stance, walking/running, climbing, jumping, grappling, attacks, injury, vehicles, and special cases.
-- `Frames.txt` stores the actual limb poses for 1,400 frames. `GetFrame` selects upper/lower body frames and applies per-character scale/limb/accessory data.
+- `Frames.txt` stores 1,401 limb-pose records (`0..1400`), each with 13 limbs × 7 fields. `GetFrame` selects upper/lower body frames; `RenderFrame` applies pose offsets, rotation, scale, flipping, depth, and per-character costume data. See [FRAMES-TXT-ANALYSIS.md](FRAMES-TXT-ANALYSIS.md).
+- Frame-derived limb positions feed combat checks and weapon direction, so pose data is gameplay-relevant rather than purely cosmetic.
 - Each visual entity is registered with `LogEntity(sprite, displayZ)`. `DepthSorting` (line 14549) sorts entities by `displayZ` and calls `setChildIndex` so nearer objects render above farther ones.
 - This is a **2.5D painter's algorithm**, not a 3D renderer. The project uses Flash/AIR GPU rendering of 2D sprites.
 
@@ -186,9 +187,18 @@ The local multiplayer path is gated by `optGamepad > 0`. With Versus, a second l
 
 - **Verified:** the simulation is frame-driven and state is centralized on one class.
 - **Verified:** a match can contain up to four locally controlled player slots, plus active-area population entities. Population is derived from map width (`round(width / 150)`), so typical areas target roughly single-digit to high-teens NPCs, while the global character table holds 200 characters.
-- **Strong inference:** results depend on frame order and random calls (`Rnd`, `RndDec`, `RndOr`) in the single-threaded loop. Reproducing a match exactly across machines would require controlling that RNG and tick order.
+- **Verified:** there is no fixed timestep. `ManageTime` changes `stage.frameRate`, and `PlayerCycle` can run extra inner loops based on speed stats and animation state.
+- **Verified:** randomness is unseeded `Math.random`, wrapped by `Rnd`, `RndDec`, `RndOr`, and used directly in hundreds of places, including presentation/sound. Results therefore depend on frame order and RNG draw order.
 - **Verified:** no network state, serialization format, or server protocol exists to extend.
-- **Unknown:** whether frame-rate-dependent logic makes the game materially nondeterministic across devices; this needs runtime tests.
+- **Strong inference:** reproducing a match exactly across machines would require a fixed tick, seeded PRNG, deterministic presentation isolation, stable entity ordering, and replay validation. See [DETERMINISM-AND-GAME-LOOP.md](DETERMINISM-AND-GAME-LOOP.md).
+- **Unknown:** whether a controlled build can achieve cross-device determinism; this needs runtime tests.
+
+## Related detailed analyses
+
+- [DATA-FLOW-AND-DEPENDENCIES.md](DATA-FLOW-AND-DEPENDENCIES.md) — startup, text/SWF/save/runtime data graph.
+- [DETERMINISM-AND-GAME-LOOP.md](DETERMINISM-AND-GAME-LOOP.md) — verified tick order, RNG, determinism boundaries.
+- [LOGICAL-GAME-STATE-MODEL.md](LOGICAL-GAME-STATE-MODEL.md) — authoritative/derived/presentation state.
+- [ONLINE-MULTIPLAYER-ARCHITECTURE.md](ONLINE-MULTIPLAYER-ARCHITECTURE.md) and [ONLINE-MULTIPLAYER-PROTOTYPE.md](ONLINE-MULTIPLAYER-PROTOTYPE.md) — online design and staged prototype.
 
 ## Architectural conclusion
 

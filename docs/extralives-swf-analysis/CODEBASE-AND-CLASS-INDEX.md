@@ -150,7 +150,7 @@ This confirms a single-threaded, frame-driven simulation. There is no fixed-time
 | Method | Line | Role |
 |---|---:|---|
 | `LoadDefaultChars` | 19700 | load `Characters.txt` |
-| `LoadedDefaultChars` | 19723 | parse 200 character records |
+| `LoadedDefaultChars` | 19717 | parse 200 character records |
 | `GenerateCharacter` | 18783 | procedural character creation |
 | `GenerateRelationships` | 19490 | social graph initialization |
 | `CreateZombie` | 18189 | zombie conversion |
@@ -170,7 +170,7 @@ This confirms a single-threaded, frame-driven simulation. There is no fixed-time
 | `AttackSensible` | 13155 | target/attack choice |
 | `RiskReversal` / `RiskCounter` | 44835 / 44859 | reversals and counters |
 
-`ManageAnimations` is by far the largest method. It spans roughly lines 23,540–58,286 and contains the state machine for movement, stance, climbing, grappling, attacks, injuries, vehicles, and special animations. The animation IDs index the 1,400 stored frames, not 1,400 distinct high-level states.
+`ManageAnimations` is by far the largest method. It spans roughly lines 23,540–58,286 and contains the state machine for movement, stance, climbing, grappling, attacks, injuries, vehicles, and special animations. Animation IDs eventually select from 1,401 pose records, not 1,401 distinct high-level states. See [FRAMES-TXT-ANALYSIS.md](FRAMES-TXT-ANALYSIS.md) and [CHARACTERS-TXT-ANALYSIS.md](CHARACTERS-TXT-ANALYSIS.md).
 
 ### Input and local multiplayer
 
