@@ -108,14 +108,14 @@ renderer.domElement.addEventListener('pointermove',e=>{if(!dragging)return;const
 const endDrag=()=>{dragging=false;};renderer.domElement.addEventListener('pointerup',endDrag);renderer.domElement.addEventListener('pointercancel',endDrag);
 const clock=new THREE.Clock();const lookTarget=new THREE.Vector3(0,2.2,0);const cameraTarget=new THREE.Vector3(-4.5,6.4,18.5);
 function render(){requestAnimationFrame(render);const dt=Math.min(clock.getDelta(),.04),t=clock.elapsedTime;
-// One complete day/night cycle takes four minutes, so the menu never feels static for long.
-const phase=(t/240*Math.PI*2-Math.PI/2);dayBlend=(Math.sin(phase)+1)/2;
+// One complete day/night cycle takes ten minutes, keeping daylight around much longer.
+const phase=(t/600*Math.PI*2-Math.PI/2);dayBlend=(Math.sin(phase)+1)/2;
 const night=new THREE.Color('#111a39'),dawn=new THREE.Color('#d28d83'),day=new THREE.Color('#77b5df'),dusk=new THREE.Color('#df8b72');let skyColor;
 if(dayBlend<.25)skyColor=night.clone().lerp(dawn,dayBlend/.25);else if(dayBlend<.72)skyColor=dawn.clone().lerp(day,(dayBlend-.25)/.47);else skyColor=day.clone().lerp(dusk,Math.min(1,(dayBlend-.72)/.28));
 scene.background.copy(skyColor);skyMaterial.uniforms.topColor.value.copy(new THREE.Color('#090f28').lerp(new THREE.Color('#78b8e6'),dayBlend));skyMaterial.uniforms.horizonColor.value.copy(skyColor);skyMaterial.uniforms.lowColor.value.copy(new THREE.Color('#10162e').lerp(new THREE.Color('#d7a39a'),dayBlend*.7));scene.fog.color.copy(skyColor);starField.visible=dayBlend<.98;starField.children.forEach(star=>{star.material.opacity=THREE.MathUtils.clamp(1-dayBlend*1.15,0,1);});
 key.color.copy(new THREE.Color('#a7c7ff').lerp(new THREE.Color('#fff0cf'),dayBlend));key.intensity=.45+2.85*dayBlend;fill.intensity=1.25;scene.children.find(o=>o.isHemisphereLight).intensity=.65+1.6*dayBlend;
 const starsVisible=1-dayBlend; // sparse tiny square stars fade away in daylight
-const pitchLimit=THREE.MathUtils.lerp(.10,.62,THREE.MathUtils.smoothstep(dayBlend,.12,.82));targetPitch=THREE.MathUtils.clamp(targetPitch,-.16,pitchLimit);if(!dragging){targetYaw+=dt*.075;targetPitch=THREE.MathUtils.damp(targetPitch,0,.035,dt);}
+const pitchLimit=THREE.MathUtils.lerp(.10,.62,THREE.MathUtils.smoothstep(dayBlend,.12,.82));targetPitch=THREE.MathUtils.clamp(targetPitch,-.16,pitchLimit);if(!dragging){targetYaw+=dt*.13;targetPitch=THREE.MathUtils.damp(targetPitch,0,.035,dt);}
 yaw=THREE.MathUtils.damp(yaw,targetYaw+(!dragging?Math.sin(t*.18)*.018:0),5.5,dt);pitch=THREE.MathUtils.damp(pitch,targetPitch,5.5,dt);
 world.rotation.y=yaw;world.rotation.x=pitch;
 cameraTarget.set(-4.5-yaw*.35,6.4+pitch*1.8,18.5-Math.abs(yaw)*.45);camera.position.x=THREE.MathUtils.damp(camera.position.x,cameraTarget.x,1.15,dt);camera.position.y=THREE.MathUtils.damp(camera.position.y,cameraTarget.y,1.15,dt);camera.position.z=THREE.MathUtils.damp(camera.position.z,cameraTarget.z,1.15,dt);lookTarget.set(-4.5+yaw*.25,1.1+pitch*1.2,0);camera.lookAt(lookTarget);
