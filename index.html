@@ -7,7 +7,7 @@
 <title>Ancha House</title>
 <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"}}</script>
 <style>
-:root{color-scheme:dark}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#07172b;font-family:Georgia,serif}body{touch-action:none}#stage{position:fixed;inset:0;overflow:hidden}canvas{display:block;width:100%;height:100%;touch-action:none}#menu{position:fixed;inset:0;pointer-events:none;display:flex;justify-content:flex-end;align-items:center;padding:clamp(16px,4vw,58px)}#slots{display:flex;flex-direction:column;gap:clamp(9px,1.7vh,18px);width:clamp(58px,8vw,102px);pointer-events:auto}.slot{height:clamp(48px,9vh,82px);border:1px solid #d7c48a66;border-radius:5px;background:linear-gradient(145deg,#16233c9c,#080f21b8);box-shadow:0 7px 18px #02061155,inset 0 1px #fff2;backdrop-filter:blur(3px);transform:translateZ(0);transition:transform .2s ease,border-color .2s ease}.slot:nth-child(2),.slot:nth-child(4){transform:translateX(-5px)}.slot:active,.slot:nth-child(2):active,.slot:nth-child(4):active{transform:translateY(5px) scale(.96);border-color:#e8d7a9aa;box-shadow:0 2px 6px #02061166,inset 0 2px 8px #0007}#brand{position:fixed;left:clamp(16px,3vw,42px);bottom:clamp(14px,3vh,32px);color:#fff0d2aa;font-size:clamp(10px,1.1vw,14px);letter-spacing:.28em;text-transform:uppercase;pointer-events:none;text-shadow:0 2px 9px #000}#landscape{display:none;position:fixed;z-index:20;inset:0;background:linear-gradient(#101c37,#07111e);color:#eee6d1;align-items:center;justify-content:center;text-align:center;padding:28px;font:16px/1.6 system-ui,sans-serif}#landscape .inner{max-width:320px}#landscape .phone{font-size:52px;display:block;margin-bottom:18px;animation:turn 2.5s ease-in-out infinite alternate}@keyframes turn{to{transform:rotate(90deg)}}@media(orientation:portrait){#landscape{display:flex}#stage,#menu,#brand{visibility:hidden}}#error{display:none;position:fixed;left:12px;bottom:12px;color:#fff;background:#721f2c;padding:8px;font:12px system-ui;max-width:80vw}
+:root{color-scheme:dark}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#07172b;font-family:Georgia,serif}body{touch-action:none}#stage{position:fixed;inset:0;overflow:hidden}canvas{display:block;width:100%;height:100%;touch-action:none}#menu{position:fixed;inset:0;pointer-events:none;display:flex;justify-content:flex-end;align-items:center;padding:clamp(16px,4vw,58px)}#slots{display:flex;flex-direction:column;gap:clamp(7px,1.15vh,12px);width:clamp(150px,21vw,245px);pointer-events:auto}.slot{appearance:none;display:block;width:100%;height:clamp(40px,7.6vh,58px);padding:0;border:2px solid #b7a273;border-radius:2px;background:linear-gradient(180deg,#24334bcc 0%,#121d32ee 48%,#0b1428f5 100%);box-shadow:inset 0 1px 0 #fff3,inset 0 -3px 0 #030917a8,0 4px 0 #050a16,0 7px 16px #02061166;backdrop-filter:blur(4px);transform:translateZ(0);transition:transform .13s ease,background .13s ease,border-color .13s ease;cursor:pointer}.slot:nth-child(2),.slot:nth-child(4){transform:translateX(-3px)}.slot:active,.slot:nth-child(2):active,.slot:nth-child(4):active{transform:translateY(3px) scale(.985);border-color:#ead8a8;background:linear-gradient(180deg,#0a1326,#26334a);box-shadow:inset 0 3px 8px #0009,0 1px 0 #050a16,0 3px 8px #02061166}#brand{position:fixed;left:clamp(16px,3vw,42px);bottom:clamp(14px,3vh,32px);color:#fff0d2aa;font-size:clamp(10px,1.1vw,14px);letter-spacing:.28em;text-transform:uppercase;pointer-events:none;text-shadow:0 2px 9px #000}#landscape{display:none;position:fixed;z-index:20;inset:0;background:linear-gradient(#101c37,#07111e);color:#eee6d1;align-items:center;justify-content:center;text-align:center;padding:28px;font:16px/1.6 system-ui,sans-serif}#landscape .inner{max-width:320px}#landscape .phone{font-size:52px;display:block;margin-bottom:18px;animation:turn 2.5s ease-in-out infinite alternate}@keyframes turn{to{transform:rotate(90deg)}}@media(orientation:portrait){#landscape{display:flex}#stage,#menu,#brand{visibility:hidden}}#error{display:none;position:fixed;left:12px;bottom:12px;color:#fff;background:#721f2c;padding:8px;font:12px system-ui;max-width:80vw}
 </style>
 </head>
 <body>
@@ -26,24 +26,25 @@ const renderer=new THREE.WebGLRenderer({antialias:false,alpha:false,powerPrefere
 scene.add(new THREE.HemisphereLight(0xd9e9ff,0x536049,2.1));
 const key=new THREE.DirectionalLight(0xffe7bf,3.3);key.position.set(-8,15,9);scene.add(key);
 const fill=new THREE.DirectionalLight(0xa9caff,1.7);fill.position.set(8,9,-10);scene.add(fill);
-const world=new THREE.Group();scene.add(world);const island=new THREE.Group();world.add(island);
+const world=new THREE.Group();world.position.x=-2.8;scene.add(world);const island=new THREE.Group();world.add(island);
 const mat=(color,roughness=1)=>new THREE.MeshStandardMaterial({color,roughness,flatShading:true});
-const grass=mat('#477c48'),grass2=mat('#5d914c'),sand=mat('#c9ad75'),sandLight=mat('#e0c68c'),stone=mat('#777d80'),stone2=mat('#92958b'),waterMats=['#164c78','#1a5b83','#21678b','#2b7192'].map(c=>new THREE.MeshStandardMaterial({color:c,roughness:.82,flatShading:true}));
+const grass=mat('#477c48'),grass2=mat('#5d914c'),grassDark=mat('#3e7041'),sand=mat('#c9ad75'),sandLight=mat('#e0c68c'),stone=mat('#777d80'),stone2=mat('#92958b'),waterMats=['#164c78','#1a5b83','#21678b','#2b7192'].map(c=>new THREE.MeshStandardMaterial({color:c,roughness:.82,flatShading:true}));
 const plane=(w,h,m,x,y,z,group=island)=>{const o=new THREE.Mesh(new THREE.BoxGeometry(w,.22,h),m);o.position.set(x,y,z);group.add(o);return o};
 const ocean=new THREE.Group();scene.add(ocean);
 for(let i=0;i<15;i++){for(let j=0;j<10;j++){const x=(i-7)*5.2,z=(j-5)*5.2;const tile=plane(5.1,5.1,waterMats[(i*7+j*3)%4],x,-2.35,z,ocean);tile.userData.baseY=-2.35;tile.userData.phase=(i*17+j*13)%100;}}
 const coast=new THREE.Group();island.add(coast);
-const groundBase=new THREE.Mesh(new THREE.BoxGeometry(28,1.5,21),sand);groundBase.position.set(0,-1.45,0);island.add(groundBase);
-plane(26.5,19.5,grass,0,-.62,0);
-for(let i=0;i<340;i++){const x=(Math.random()-.5)*25.8,z=(Math.random()-.5)*18.8;const patch=new THREE.Mesh(new THREE.BoxGeometry(.13+Math.random()*.22,.025,.13+Math.random()*.22),Math.random()>.6?grass2:mat('#3e7041'));patch.position.set(x,-.48+Math.random()*.025,z);island.add(patch);}
+function makeIslandShape(){const s=new THREE.Shape();s.moveTo(-10.5,-5.4);s.bezierCurveTo(-13.2,-3.8,-13.4,.3,-11.8,3.9);s.bezierCurveTo(-10.4,7.7,-6.7,9.2,-3.1,8.4);s.bezierCurveTo(.1,10.5,4.3,9.2,6.4,7.2);s.bezierCurveTo(10.3,6.3,12.6,2.7,11.5,-1.3);s.bezierCurveTo(12.3,-4.4,8.4,-8.2,4.3,-7.4);s.bezierCurveTo(1,-9.5,-3.3,-8.9,-5.7,-7.7);s.bezierCurveTo(-8.5,-7.8,-10.1,-6.9,-10.5,-5.4);return s;}
+const landShape=makeIslandShape();const groundGeometry=new THREE.ExtrudeGeometry(landShape,{depth:1.2,bevelEnabled:false,curveSegments:10});groundGeometry.rotateX(-Math.PI/2);const groundBase=new THREE.Mesh(groundGeometry,sand);groundBase.position.y=-1.68;island.add(groundBase);
+const grassTop=new THREE.Mesh(new THREE.ShapeGeometry(makeIslandShape(),10),grass);grassTop.rotation.x=-Math.PI/2;grassTop.scale.set(.94,1,.94);grassTop.position.y=-.465;island.add(grassTop);
+for(let i=0;i<520;i++){const x=(Math.random()-.5)*23.2,z=(Math.random()-.5)*16.8;if((x/11.6)**2+(z/8.4)**2>.78)continue;const patch=new THREE.Mesh(new THREE.BoxGeometry(.12+Math.random()*.2,.025,.12+Math.random()*.2),Math.random()>.62?grass2:grassDark);patch.position.set(x,-.435+Math.random()*.025,z);island.add(patch);}
 const paving=new THREE.Group();island.add(paving);
 function tileFloor(w,h,cols,rows,x0,z0,sizeX,sizeZ){for(let z=0;z<rows;z++)for(let x=0;x<cols;x++){const m=Math.random()>.58?stone2:stone;const t=new THREE.Mesh(new THREE.BoxGeometry(sizeX-.055,.09,sizeZ-.055),m);t.position.set(x0+x*sizeX,-.39,z0+z*sizeZ);paving.add(t);if(Math.random()>.82){const seam=new THREE.Mesh(new THREE.BoxGeometry(sizeX*.12,.012,sizeZ*.12),mat('#62696b'));seam.position.set(t.position.x,-.33,t.position.z);paving.add(seam);}}}
 tileFloor(1,1,8,6,-3.5,-3,1,1);tileFloor(1,1,5,2,-2,-4.1,1,1);
 const shore=new THREE.Group();island.add(shore);
-for(let i=0;i<100;i++){let x,z;if(i<50){x=(Math.random()-.5)*27;z=(Math.random()>.5?1:-1)*(9.55+Math.random()*.42)}else{z=(Math.random()-.5)*19.5;x=(Math.random()>.5?1:-1)*(13.25+Math.random()*.35)}const peb=new THREE.Mesh(new THREE.BoxGeometry(.15+Math.random()*.35,.025,.12+Math.random()*.2),Math.random()>.5?sandLight:sand);peb.position.set(x,-.61,z);island.add(peb);}
+for(let i=0;i<135;i++){const a=Math.random()*Math.PI*2;const rx=11.7+(Math.random()-.5)*.9,rz=8.55+(Math.random()-.5)*.7;const x=Math.cos(a)*rx,z=Math.sin(a)*rz;const peb=new THREE.Mesh(new THREE.BoxGeometry(.12+Math.random()*.3,.025,.1+Math.random()*.18),Math.random()>.5?sandLight:sand);peb.position.set(x,-.465,z);peb.rotation.y=a*.35;island.add(peb);}
 const castleRoot=new THREE.Group();island.add(castleRoot);let castle=null;
-new GLTFLoader().load('./assets/castle_3d_model.glb',g=>{castle=g.scene;castleRoot.add(castle);const box=new THREE.Box3().setFromObject(castle);const center=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3());castle.position.sub(center);castle.position.y+=Math.max(.4,-box.min.y+center.y);const max=Math.max(size.x,size.y,size.z);castle.scale.setScalar(13.8/max);castle.position.y-=.15;},undefined,e=>{error.style.display='block';error.textContent='Castle model failed to load. Check assets/castle_3d_model.glb and hosting.';});
-castleRoot.position.set(-.5,-.15,-.2);
+new GLTFLoader().load('./assets/castle_3d_model.glb',g=>{castle=g.scene;castle.updateMatrixWorld(true);const bounds=new THREE.Box3().setFromObject(castle);const center=bounds.getCenter(new THREE.Vector3()),size=bounds.getSize(new THREE.Vector3());const longest=Math.max(size.x,size.y,size.z);castle.position.set(-center.x,-bounds.min.y,-center.z);const visual=new THREE.Group();visual.scale.setScalar(8.8/longest);visual.add(castle);castleRoot.add(visual);},undefined,e=>{error.style.display='block';error.textContent='Castle model failed to load. Check assets/castle_3d_model.glb and hosting.';});
+castleRoot.position.set(-.5,-.465,-.2);
 const skyMaterial=new THREE.ShaderMaterial({
   side:THREE.BackSide,depthWrite:false,
   uniforms:{topColor:{value:new THREE.Color('#080f27')},horizonColor:{value:new THREE.Color('#3c4268')},lowColor:{value:new THREE.Color('#171d38')}},
@@ -89,11 +90,11 @@ function setWitchFrame(sprite,texture,frame,row){
   sprite.material.map=texture;
   sprite.material.needsUpdate=true;
 }
-let yaw=0,pitch=0,targetYaw=0,targetPitch=0,dragging=false,pointerX=0,pointerY=0,downX=0,downY=0,dayBlend=0;
-renderer.domElement.addEventListener('pointerdown',e=>{dragging=true;pointerX=e.clientX;pointerY=e.clientY;downX=e.clientX;downY=e.clientY;renderer.domElement.setPointerCapture(e.pointerId);});
+let yaw=0,pitch=0,targetYaw=0,targetPitch=0,dragging=false,pointerX=0,pointerY=0,dayBlend=0;
+renderer.domElement.addEventListener('pointerdown',e=>{dragging=true;pointerX=e.clientX;pointerY=e.clientY;renderer.domElement.setPointerCapture(e.pointerId);});
 renderer.domElement.addEventListener('pointermove',e=>{if(!dragging)return;const dx=e.clientX-pointerX,dy=e.clientY-pointerY;pointerX=e.clientX;pointerY=e.clientY;targetYaw=THREE.MathUtils.clamp(targetYaw+dx*.006,-.72,.72);targetPitch=THREE.MathUtils.clamp(targetPitch+dy*.003,-.18,.24);});
 const endDrag=()=>{dragging=false;};renderer.domElement.addEventListener('pointerup',endDrag);renderer.domElement.addEventListener('pointercancel',endDrag);
-const clock=new THREE.Clock();const lookTarget=new THREE.Vector3(0,2.5,0);
+const clock=new THREE.Clock();const lookTarget=new THREE.Vector3(0,2.2,0);
 function render(){requestAnimationFrame(render);const dt=Math.min(clock.getDelta(),.04),t=clock.elapsedTime;
 // One full day/night cycle takes 12 minutes, with long twilight transitions.
 const phase=(t/720*Math.PI*2-Math.PI/2);dayBlend=(Math.sin(phase)+1)/2;
@@ -103,10 +104,9 @@ scene.background.copy(skyColor);skyMaterial.uniforms.topColor.value.copy(new THR
 key.color.copy(new THREE.Color('#a7c7ff').lerp(new THREE.Color('#fff0cf'),dayBlend));key.intensity=.45+2.85*dayBlend;fill.intensity=1.25;scene.children.find(o=>o.isHemisphereLight).intensity=.65+1.6*dayBlend;
 const starsVisible=1-dayBlend; // sparse tiny square stars fade away in daylight
 castleRoot.rotation.y=dragging?targetYaw:THREE.MathUtils.damp(castleRoot.rotation.y,targetYaw+Math.sin(t*.22)*.012,.7,dt);
-castleRoot.rotation.x=dragging?targetPitch:THREE.MathUtils.damp(castleRoot.rotation.x,targetPitch,.8,dt);
+// Keep the castle upright around its ground-level pivot. Vertical dragging tilts the view, not the building.
 if(!dragging){targetYaw=THREE.MathUtils.damp(targetYaw,0,.5,dt);targetPitch=THREE.MathUtils.damp(targetPitch,0,.65,dt);}
-
-camera.position.x=THREE.MathUtils.damp(camera.position.x,Math.sin(castleRoot.rotation.y)*1.15,.9,dt);camera.position.y=8.4+castleRoot.rotation.x*5;camera.lookAt(lookTarget);
+camera.position.x=0;camera.position.y=8.4+targetPitch*14;camera.lookAt(lookTarget);
 clouds.forEach(c=>{c.position.x=c.userData.x+Math.sin(t*c.userData.speed+c.userData.phase)*1.1;c.position.y+=Math.sin(t*.15+c.userData.phase)*.0008;});
 ocean.children.forEach(tile=>{tile.position.y=tile.userData.baseY+Math.sin(t*.7+tile.userData.phase)*.035;});
 const nightFactor=THREE.MathUtils.smoothstep(1-dayBlend,.32,.78);witches.forEach((w,i)=>{const speed=i===0?.19:-.155;const a=t*speed+i*Math.PI;const radius=i===0?7.3:9.1;const x=Math.cos(a)*radius-.5,z=Math.sin(a)*radius-1.5,y=4.5+Math.sin(a*2+i)*1.1;w.position.set(x,y,z);w.material.opacity=nightFactor;w.visible=nightFactor>.015;w.material.rotation=-Math.sin(a)*.13;const tangent=a+(speed>0?Math.PI/2:-Math.PI/2);const angle=((tangent%(Math.PI*2))+(Math.PI*2))%(Math.PI*2);const row=angle<Math.PI/4||angle>=7*Math.PI/4?1:angle<3*Math.PI/4?2:angle<5*Math.PI/4?3:0;const frame=Math.floor(t/0.15)%3;setWitchFrame(w,witchTextures[i],frame,row);});
