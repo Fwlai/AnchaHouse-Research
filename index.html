@@ -2,226 +2,80 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#100f17">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#07172b">
 <title>Ancha House</title>
 <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"}}</script>
 <style>
-:root{color-scheme:dark;--paper:#eee3d0;--muted:#a79aaa;--gold:#d8b879;--line:#66546b;--panel:#191622}
-*{box-sizing:border-box}
-html,body{margin:0;min-height:100%;background:#100f17;color:var(--paper);font-family:Georgia,"Times New Roman",serif}
-body{min-height:100svh;overflow:hidden}
-#screen{position:relative;min-height:100svh;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(290px,.8fr);background:radial-gradient(ellipse at 35% 48%,#35263d 0%,#1b1725 42%,#100f17 78%);isolation:isolate}
-#screen:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.18;background-image:linear-gradient(#a98eaf11 1px,transparent 1px),linear-gradient(90deg,#a98eaf11 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(90deg,#000,transparent 90%)}
-#scene{position:relative;min-height:100svh;overflow:hidden;display:grid;place-items:center}
-#scene:after{content:"";position:absolute;inset:8% 4%;border:1px solid #bba0bb24;pointer-events:none}
-#model-frame{position:absolute;inset:4% 0 4% 0;display:grid;place-items:center}
-#castle-view{width:100%;height:100%;display:block;outline:none;touch-action:pan-y;cursor:grab}
-#model-note{position:absolute;bottom:24px;left:24px;max-width:300px;color:#b6a7bd;font:11px/1.7 ui-monospace,monospace;letter-spacing:.04em;pointer-events:none}
-#model-note strong{display:block;color:#d8b879;font-weight:normal;letter-spacing:.15em;margin-bottom:4px}
-#menu{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(28px,6vw,88px);padding-left:clamp(24px,4vw,64px);border-left:1px solid #bba0bb24;background:linear-gradient(90deg,#100f1720,#100f17a8)}
-.eyebrow{font:10px/1.6 ui-monospace,monospace;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
-h1{font-size:clamp(42px,5.8vw,82px);font-weight:normal;line-height:.9;letter-spacing:-.055em;margin:17px 0 18px;text-wrap:balance}
-h1 span{display:block;color:#c9a9c9;font-style:italic;font-size:.78em;margin-top:10px}
-.intro{max-width:290px;font-size:14px;line-height:1.8;color:#b8adbd;margin:0 0 36px}
-nav{display:flex;flex-direction:column;align-items:stretch;gap:10px;width:min(100%,280px)}
-.menu-button{position:relative;display:flex;align-items:center;gap:14px;min-height:50px;padding:0 17px;border:1px solid #7c667f;background:#211c2bc9;color:var(--paper);text-align:left;font:12px ui-monospace,monospace;letter-spacing:.14em;cursor:pointer;transition:background .18s,border-color .18s,transform .18s}
-.menu-button .index{color:var(--gold);font-size:10px}
-.menu-button:hover,.menu-button:focus-visible{outline:none;background:#49334d;border-color:#d8b879;transform:translateX(3px)}
-.menu-button.primary{background:#59405c;border-color:#c7a66e}
-.menu-button.primary:hover{background:#725378}
-.footer{display:flex;gap:20px;align-items:center;margin-top:38px;color:#80748a;font:9px ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}
-.footer button{border:0;background:none;padding:0;color:#b8a4c1;font:inherit;letter-spacing:inherit;cursor:pointer}
-.footer button:hover{color:var(--gold)}
-#dialog{position:absolute;z-index:5;inset:0;display:none;place-items:center;background:#09080dd9;padding:20px}
-#dialog.open{display:grid}
-.dialog-card{width:min(440px,100%);border:1px solid #806b85;background:#1a1623;padding:26px;box-shadow:0 18px 80px #0009}
-.dialog-card h2{font-weight:normal;margin:0 0 12px;font-size:25px}
-.dialog-card p{color:#b8adbd;font:12px/1.8 ui-monospace,monospace}
-.dialog-card button{margin-top:10px;padding:10px 15px;border:1px solid #b99a6b;background:#382b40;color:var(--paper);font:11px ui-monospace,monospace;letter-spacing:.1em}
-#model-warning{position:absolute;top:18px;left:18px;max-width:260px;padding:8px 10px;background:#15111ddd;border:1px solid #806b85;color:#cbbdd0;font:10px/1.6 ui-monospace,monospace;display:none}
-@media(max-width:760px){
- body{overflow:auto}
- #screen{min-height:100svh;grid-template-columns:1fr;grid-template-rows:minmax(40svh,46svh) auto}
- #scene{min-height:40svh}
- #scene:after{inset:12px}
- #model-frame{inset:0}
- #model-note{left:18px;bottom:15px;font-size:9px}
- #menu{border-left:0;border-top:1px solid #bba0bb24;padding:28px 26px 24px;justify-content:flex-start;align-items:center;text-align:center;background:linear-gradient(180deg,#100f1730,#100f17cc)}
- h1{font-size:54px;margin:12px 0}
- .intro{margin-bottom:22px;font-size:12px}
- nav{width:min(100%,360px);gap:8px}
- .menu-button{min-height:46px}
- .footer{margin-top:24px}
-}
-@media(prefers-reduced-motion:reduce){.menu-button{transition:none}}
+:root{color-scheme:dark}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#07172b;font-family:Georgia,serif}body{touch-action:none}#stage{position:fixed;inset:0;overflow:hidden}canvas{display:block;width:100%;height:100%;touch-action:none}#menu{position:fixed;inset:0;pointer-events:none;display:flex;justify-content:flex-end;align-items:center;padding:clamp(16px,4vw,58px)}#slots{display:flex;flex-direction:column;gap:clamp(9px,1.7vh,18px);width:clamp(58px,8vw,102px);pointer-events:auto}.slot{height:clamp(48px,9vh,82px);border:1px solid #d7c48a66;border-radius:5px;background:linear-gradient(145deg,#16233c9c,#080f21b8);box-shadow:0 7px 18px #02061155,inset 0 1px #fff2;backdrop-filter:blur(3px);transform:translateZ(0);transition:transform .2s ease,border-color .2s ease}.slot:nth-child(2),.slot:nth-child(4){transform:translateX(-5px)}.slot:active{transform:scale(.97)}#brand{position:fixed;left:clamp(16px,3vw,42px);bottom:clamp(14px,3vh,32px);color:#fff0d2aa;font-size:clamp(10px,1.1vw,14px);letter-spacing:.28em;text-transform:uppercase;pointer-events:none;text-shadow:0 2px 9px #000}#landscape{display:none;position:fixed;z-index:20;inset:0;background:linear-gradient(#101c37,#07111e);color:#eee6d1;align-items:center;justify-content:center;text-align:center;padding:28px;font:16px/1.6 system-ui,sans-serif}#landscape .inner{max-width:320px}#landscape .phone{font-size:52px;display:block;margin-bottom:18px;animation:turn 2.5s ease-in-out infinite alternate}@keyframes turn{to{transform:rotate(90deg)}}@media(orientation:portrait){#landscape{display:flex}#stage,#menu,#brand{visibility:hidden}}#error{display:none;position:fixed;left:12px;bottom:12px;color:#fff;background:#721f2c;padding:8px;font:12px system-ui;max-width:80vw}
 </style>
 </head>
 <body>
-<main id="screen">
-<section id="scene" aria-label="Castle presentation">
-  <div id="model-frame"><canvas id="castle-view" aria-label="Three-dimensional castle model display"></canvas></div>
-  <div id="model-note"><strong>THE HOUSE AWAITS</strong><span id="scene-caption">Raising the castle...</span></div>
-  <div id="model-warning">Castle model not loaded. Expected at <code>assets/castle_3d_model.glb</code>, served over HTTP.</div>
-</section>
-<section id="menu" aria-label="Main menu">
-  <div class="eyebrow">A small world for familiar souls</div>
-  <h1>Ancha <span>House</span></h1>
-  <p class="intro">Beyond the old walls, a quiet place to gather, wander, and make stories together.</p>
-  <nav aria-label="Main menu">
-    <button class="menu-button primary" data-panel="enter"><span class="index">01</span><span>ENTER THE HOUSE</span></button>
-    <button class="menu-button" data-panel="characters"><span class="index">02</span><span>CHARACTERS</span></button>
-    <button class="menu-button" data-panel="settings"><span class="index">03</span><span>SETTINGS</span></button>
-    <button class="menu-button" data-panel="credits"><span class="index">04</span><span>CREDITS &amp; SOURCES</span></button>
-  </nav>
-  <div class="footer"><span>EARLY DESIGN SHELL</span><button id="music-toggle" type="button" aria-pressed="false">MUSIC: OFF</button><span>v0.2</span></div>
-</section>
-<div id="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
-  <div class="dialog-card"><div class="eyebrow">ANCHA HOUSE</div><h2 id="dialog-title">Not ready yet</h2><p id="dialog-copy">Placeholder.</p><button id="dialog-close" type="button">BACK TO MENU</button></div>
-</div>
-</main>
-<script>
-(() => {
-  const dialog=document.getElementById('dialog');
-  const title=document.getElementById('dialog-title');
-  const copy=document.getElementById('dialog-copy');
-  const panels={
-    enter:['The house is being prepared','The entry point is reserved here. The next stage is to connect this menu to the real game scene.'],
-    characters:['Characters','Character selection and the final approved sprite sheets will live here.'],
-    settings:['Settings','Audio, display, language, and accessibility settings will live here once the game systems exist.'],
-    credits:['Credits & sources','Castle 3D Model by JoshGarber (CC BY 4.0), sketchfab.com/3d-models/castle-3d-model-23eb94cac33d4099b7185a81bdc038e4. Witch on Broomstick by Svetlana Kushnariova (Cabbit) and Jordan Irwin (AntumDeluge), OGA-BY 3.0 / CC BY 3.0, opengameart.org/node/86131. Ground tiles are drawn in code. Full list: credits/ASSET-CREDITS.md in the repository.']
-  };
-  document.querySelectorAll('[data-panel]').forEach(button=>button.addEventListener('click',()=>{
-    const data=panels[button.dataset.panel];title.textContent=data[0];copy.textContent=data[1];dialog.classList.add('open');
-  }));
-  document.getElementById('dialog-close').addEventListener('click',()=>dialog.classList.remove('open'));
-  dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.classList.remove('open')});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape')dialog.classList.remove('open')});
-  const music=document.getElementById('music-toggle');
-  music.addEventListener('click',()=>{
-    const enabled=music.getAttribute('aria-pressed')!=='true';
-    music.setAttribute('aria-pressed',String(enabled));
-    music.textContent='MUSIC: '+(enabled?'ON - TRACK NOT ADDED':'OFF');
-  });
-
-  const warning=document.getElementById('model-warning');
-  const caption=document.getElementById('scene-caption');
-  Promise.all([import('three'),import('three/addons/loaders/GLTFLoader.js')]).then(async([THREE,{GLTFLoader}])=>{
-    const canvas=document.getElementById('castle-view');
-    const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
-    renderer.setClearColor(0x000000,0);
-    renderer.outputColorSpace=THREE.SRGBColorSpace;
-    renderer.toneMapping=THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure=1.25;
-    const scene=new THREE.Scene();
-    const camera=new THREE.PerspectiveCamera(32,1,0.1,1000);
-    scene.add(new THREE.HemisphereLight(0xcbb8ff,0x312333,2.2));
-    const key=new THREE.DirectionalLight(0xffdfad,3.2);key.position.set(4,8,5);scene.add(key);
-    const rim=new THREE.DirectionalLight(0x9b83df,2.2);rim.position.set(-5,3,-4);scene.add(rim);
-    const pivot=new THREE.Group();scene.add(pivot);
-    let castle=null,dragging=false,lastX=0,autoRotate=true,H=4,S=6.7;
-    const resize=()=>{
-      const w=canvas.clientWidth||1,h=canvas.clientHeight||1;
-      renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();
-    };
-    new ResizeObserver(resize).observe(canvas);resize();
-
-    // ---- Pixel-tile ground, drawn in code (no third-party art) ----
-    const rng=seed=>()=>{seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296};
-    const pixTex=c=>{const t=new THREE.CanvasTexture(c);t.magFilter=THREE.NearestFilter;t.minFilter=THREE.NearestFilter;t.generateMipmaps=false;t.colorSpace=THREE.SRGBColorSpace;return t};
-    function grassCanvas(){
-      const N=32,T=5,c=document.createElement('canvas');c.width=c.height=N*T;const g=c.getContext('2d'),r=rng(7);
-      const greens=['#4f7f3a','#5a8c42','#477236','#63974a'];
-      for(let y=0;y<N;y++)for(let x=0;x<N;x++){g.fillStyle=greens[(r()*4)|0];g.fillRect(x*T,y*T,T,T)}
-      const bloom=['#e8d27a','#eee6ef','#c98fd0','#d96a7a'];
-      for(let i=0;i<46;i++){g.fillStyle=bloom[(r()*4)|0];g.fillRect(((r()*N)|0)*T+1,((r()*N)|0)*T+1,3,3)}
-      for(let i=0;i<16;i++){const x=((r()*N)|0)*T,y=((r()*N)|0)*T;g.fillStyle='#7d7a88';g.fillRect(x,y,T,T);g.fillStyle='#a6a2b1';g.fillRect(x,y,T,2)}
-      g.fillStyle='#35592a';g.fillRect(0,0,c.width,T);g.fillRect(0,c.height-T,c.width,T);g.fillRect(0,0,T,c.height);g.fillRect(c.width-T,0,T,c.height);
-      return c;
-    }
-    function dirtCanvas(){
-      const c=document.createElement('canvas');c.width=64;c.height=16;const g=c.getContext('2d'),r=rng(11);
-      const browns=['#5a4030','#6b4e39','#4a3427','#7a5a42'];
-      for(let y=0;y<4;y++)for(let x=0;x<16;x++){g.fillStyle=browns[(r()*4)|0];g.fillRect(x*4,y*4,4,4)}
-      g.fillStyle='#3d6a30';g.fillRect(0,0,64,4);
-      return c;
-    }
-    const grassMat=new THREE.MeshBasicMaterial({map:pixTex(grassCanvas()),toneMapped:false});
-    const dirtMat=new THREE.MeshBasicMaterial({map:pixTex(dirtCanvas()),toneMapped:false});
-
-    // ---- Castle ----
-    try{
-      const gltf=await new GLTFLoader().loadAsync('assets/castle_3d_model.glb',e=>{
-        if(e.lengthComputable)caption.textContent='Raising the castle... '+Math.round(e.loaded/e.total*100)+'%';
-      });
-      castle=gltf.scene;
-      let b=new THREE.Box3().setFromObject(castle);
-      const size0=b.getSize(new THREE.Vector3());
-      castle.scale.setScalar(4.5/(Math.max(size0.x,size0.y,size0.z)||1));
-      castle.updateMatrixWorld(true);
-      b=new THREE.Box3().setFromObject(castle);
-      const c=b.getCenter(new THREE.Vector3()),sz=b.getSize(new THREE.Vector3());
-      castle.position.set(-c.x,-b.min.y,-c.z);
-      pivot.add(castle);
-      H=sz.y;S=Math.max(sz.x,sz.z)*1.5;
-      caption.textContent='Drag to turn the castle.';
-    }catch(error){
-      warning.style.display='block';
-      caption.textContent='The 3D stage is ready for the castle model.';
-    }
-    const thick=.35;
-    const ground=new THREE.Mesh(new THREE.BoxGeometry(S,thick,S),[dirtMat,dirtMat,grassMat,dirtMat,dirtMat,dirtMat]);
-    ground.position.y=-thick/2-.002;pivot.add(ground);
-    const dist=S*1.55;
-    camera.position.set(S*1.05,H*1.1,dist);
-    const look=new THREE.Vector3(0,H*.45,0);camera.lookAt(look);
-
-    // ---- Witches: 2D pixel sprites flying around the castle ----
-    const loader=new THREE.TextureLoader();
-    function makeWitch(file,phase,speed,radius,ybase,dir){
-      const tex=loader.load('assets/sprites/witch-on-broomstick/PNG/24x32/'+file);
-      tex.magFilter=THREE.NearestFilter;tex.minFilter=THREE.NearestFilter;tex.generateMipmaps=false;tex.colorSpace=THREE.SRGBColorSpace;
-      tex.repeat.set(1/3,1/4);
-      const s=new THREE.Sprite(new THREE.SpriteMaterial({map:tex,alphaTest:.5,toneMapped:false}));
-      s.scale.set(.9*.75,.9,1);scene.add(s);
-      return{tex,s,phase,speed,radius,ybase,dir};
-    }
-    const witches=[
-      makeWitch('witch-001-NESW.png',0,.38,S*.56,H*.78,1),
-      makeWitch('witch-002-NESW.png',3.4,.3,S*.62,H*.58,-1)
-    ];
-    const right=new THREE.Vector3(),fwd=new THREE.Vector3();
-    function updateWitch(w,t){
-      const a=w.phase+t*w.speed*w.dir;
-      w.s.position.set(Math.cos(a)*w.radius,w.ybase+Math.sin(t*1.7+w.phase)*.18,Math.sin(a)*w.radius);
-      const vx=-Math.sin(a)*w.dir,vz=Math.cos(a)*w.dir;
-      camera.updateMatrixWorld();
-      right.setFromMatrixColumn(camera.matrixWorld,0);
-      camera.getWorldDirection(fwd);fwd.y=0;fwd.normalize();
-      const dx=vx*right.x+vz*right.z,dz=vx*fwd.x+vz*fwd.z;
-      // rows (NESW sheet): 0 back, 1 right, 2 front, 3 left
-      const row=Math.abs(dx)>Math.abs(dz)?(dx>0?1:3):(dz>0?0:2);
-      const col=[0,1,2,1][Math.floor(t*8+w.phase*3)%4];
-      w.tex.offset.set(col/3,1-(row+1)/4);
-    }
-
-    canvas.addEventListener('pointerdown',e=>{dragging=true;lastX=e.clientX;autoRotate=false;canvas.setPointerCapture(e.pointerId)});
-    canvas.addEventListener('pointermove',e=>{if(!dragging)return;pivot.rotation.y+=(e.clientX-lastX)*.008;lastX=e.clientX});
-    const stop=()=>{dragging=false};canvas.addEventListener('pointerup',stop);canvas.addEventListener('pointercancel',stop);
-    let previous=performance.now();
-    function render(now){
-      const dt=Math.min((now-previous)/1000,.05);previous=now;
-      if(autoRotate)pivot.rotation.y+=dt*.13;
-      witches.forEach(w=>updateWitch(w,now/1000));
-      renderer.render(scene,camera);requestAnimationFrame(render);
-    }
-    requestAnimationFrame(render);
-  }).catch(()=>{
-    warning.style.display='block';
-    caption.textContent='The 3D stage could not start in this browser.';
-  });
-})();
+<div id="stage"></div>
+<div id="menu" aria-label="Main menu"><div id="slots"><button class="slot" aria-label="Menu slot 1"></button><button class="slot" aria-label="Menu slot 2"></button><button class="slot" aria-label="Menu slot 3"></button><button class="slot" aria-label="Menu slot 4"></button><button class="slot" aria-label="Menu slot 5"></button></div></div>
+<div id="brand">ANCHA HOUSE</div>
+<div id="landscape"><div class="inner"><span class="phone">▯</span><strong>Rotate your device</strong><br>This experience is designed for landscape mode.</div></div>
+<div id="error"></div>
+<script type="module">
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+const host=document.querySelector('#stage'),error=document.querySelector('#error');
+const scene=new THREE.Scene();scene.background=new THREE.Color('#10172f');scene.fog=new THREE.Fog('#10172f',38,100);
+const camera=new THREE.PerspectiveCamera(34,innerWidth/innerHeight,.1,180);camera.position.set(0,8.4,27);
+const renderer=new THREE.WebGLRenderer({antialias:false,alpha:false,powerPreference:'high-performance'});renderer.setPixelRatio(Math.min(devicePixelRatio,1.7));renderer.setSize(innerWidth,innerHeight);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.16;host.appendChild(renderer.domElement);
+scene.add(new THREE.HemisphereLight(0xd9e9ff,0x536049,2.1));
+const key=new THREE.DirectionalLight(0xffe7bf,3.3);key.position.set(-8,15,9);scene.add(key);
+const fill=new THREE.DirectionalLight(0xa9caff,1.7);fill.position.set(8,9,-10);scene.add(fill);
+const world=new THREE.Group();scene.add(world);const island=new THREE.Group();world.add(island);
+const mat=(color,roughness=1)=>new THREE.MeshStandardMaterial({color,roughness,flatShading:true});
+const grass=mat('#477c48'),grass2=mat('#5d914c'),sand=mat('#c9ad75'),sandLight=mat('#e0c68c'),stone=mat('#777d80'),stone2=mat('#92958b'),waterMats=['#164c78','#1a5b83','#21678b','#2b7192'].map(c=>new THREE.MeshStandardMaterial({color:c,roughness:.82,flatShading:true}));
+const plane=(w,h,m,x,y,z,group=island)=>{const o=new THREE.Mesh(new THREE.BoxGeometry(w,.22,h),m);o.position.set(x,y,z);group.add(o);return o};
+const ocean=new THREE.Group();scene.add(ocean);
+for(let i=0;i<15;i++){for(let j=0;j<10;j++){const x=(i-7)*5.2,z=(j-5)*5.2;const tile=plane(5.1,5.1,waterMats[(i*7+j*3)%4],x,-2.35,z,ocean);tile.userData.baseY=-2.35;tile.userData.phase=(i*17+j*13)%100;}}
+const coast=new THREE.Group();island.add(coast);
+const groundBase=new THREE.Mesh(new THREE.BoxGeometry(28,1.5,21),sand);groundBase.position.set(0,-1.45,0);island.add(groundBase);
+plane(26.5,19.5,grass,0,-.62,0);
+for(let i=0;i<340;i++){const x=(Math.random()-.5)*25.8,z=(Math.random()-.5)*18.8;const patch=new THREE.Mesh(new THREE.BoxGeometry(.13+Math.random()*.22,.025,.13+Math.random()*.22),Math.random()>.6?grass2:mat('#3e7041'));patch.position.set(x,-.48+Math.random()*.025,z);island.add(patch);}
+const paving=new THREE.Group();island.add(paving);
+function tileFloor(w,h,cols,rows,x0,z0,sizeX,sizeZ){for(let z=0;z<rows;z++)for(let x=0;x<cols;x++){const m=Math.random()>.58?stone2:stone;const t=new THREE.Mesh(new THREE.BoxGeometry(sizeX-.055,.09,sizeZ-.055),m);t.position.set(x0+x*sizeX,-.39,z0+z*sizeZ);paving.add(t);if(Math.random()>.82){const seam=new THREE.Mesh(new THREE.BoxGeometry(sizeX*.12,.012,sizeZ*.12),mat('#62696b'));seam.position.set(t.position.x,-.33,t.position.z);paving.add(seam);}}}
+tileFloor(1,1,8,6,-3.5,-3,1,1);tileFloor(1,1,5,2,-2,-4.1,1,1);
+const shore=new THREE.Group();island.add(shore);
+for(let i=0;i<100;i++){let x,z;if(i<50){x=(Math.random()-.5)*27;z=(Math.random()>.5?1:-1)*(9.55+Math.random()*.42)}else{z=(Math.random()-.5)*19.5;x=(Math.random()>.5?1:-1)*(13.25+Math.random()*.35)}const peb=new THREE.Mesh(new THREE.BoxGeometry(.15+Math.random()*.35,.025,.12+Math.random()*.2),Math.random()>.5?sandLight:sand);peb.position.set(x,-.61,z);island.add(peb);}
+const castleRoot=new THREE.Group();island.add(castleRoot);let castle=null;
+new GLTFLoader().load('./assets/castle_3d_model.glb',g=>{castle=g.scene;castleRoot.add(castle);const box=new THREE.Box3().setFromObject(castle);const center=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3());castle.position.sub(center);castle.position.y+=Math.max(.4,-box.min.y+center.y);const max=Math.max(size.x,size.y,size.z);castle.scale.setScalar(13.8/max);castle.position.y-=.15;},undefined,e=>{error.style.display='block';error.textContent='Castle model failed to load. Check assets/castle_3d_model.glb and hosting.';});
+castleRoot.position.set(-.5,-.15,-.2);
+const skyDome=new THREE.Mesh(new THREE.SphereGeometry(100,16,10),new THREE.MeshBasicMaterial({color:'#111c3b',side:THREE.BackSide,depthWrite:false}));scene.add(skyDome);
+// Blocky voxel clouds: intentionally cube-built, no spherical shapes and no cast shadows.
+const clouds=[];
+for(let c=0;c<13;c++){const group=new THREE.Group();const count=7+(c%5);for(let k=0;k<count;k++){const w=.7+(k%3)*.22,h=.25+(k%2)*.16,d=.45+(k%2)*.18;const mesh=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),new THREE.MeshStandardMaterial({color:k%3===0?'#e2e4f0':'#c7d4e8',roughness:1,flatShading:true,transparent:true,opacity:.72}));mesh.position.set((k-(count-1)/2)*.53,(k%3)*.14,Math.sin(k*2)*.14);group.add(mesh);}group.position.set((c-6)*8,13+(c%4)*1.6,-35-(c%3)*8);group.userData={x:group.position.x,phase:c*1.7,speed:.08+(c%4)*.012};scene.add(group);clouds.push(group);}
+// A tiny pixel-art witch sprite made from hard-edged pixels; two copies follow independent castle-relative orbits.
+function makeWitchTexture(palette){const c=document.createElement('canvas');c.width=24;c.height=32;const x=c.getContext('2d');x.imageSmoothingEnabled=false;const pix=(a,b,w,h,col)=>{x.fillStyle=col;x.fillRect(a,b,w,h)};pix(7,22,12,2,palette.broom);pix(12,19,2,4,palette.broom);pix(9,15,7,7,palette.cloak);pix(10,10,5,6,palette.skin);pix(8,8,9,3,palette.hat);pix(11,5,5,4,palette.hat);pix(7,11,3,2,palette.hat);pix(10,12,1,1,'#201c2a');pix(14,12,1,1,'#201c2a');pix(8,17,2,5,palette.cloak);pix(15,17,2,5,palette.cloak);pix(6,24,13,1,palette.broom);pix(5,23,2,2,palette.broom);return new THREE.CanvasTexture(c);}
+const witchTex=[makeWitchTexture({hat:'#27253f',cloak:'#454b87',skin:'#e3c3aa',broom:'#78513d'}),makeWitchTexture({hat:'#211d30',cloak:'#633b75',skin:'#edc8a7',broom:'#72503a'})];witchTex.forEach(t=>{t.magFilter=THREE.NearestFilter;t.minFilter=THREE.NearestFilter;t.colorSpace=THREE.SRGBColorSpace;});
+const witches=[];for(let i=0;i<2;i++){const sprite=new THREE.Sprite(new THREE.SpriteMaterial({map:witchTex[i],transparent:true,depthWrite:false,alphaTest:.1}));sprite.scale.set(1.45,1.95,1);scene.add(sprite);witches.push(sprite);}
+let yaw=0,pitch=0,targetYaw=0,targetPitch=0,dragging=false,pointerX=0,pointerY=0,downX=0,downY=0,dayBlend=0;
+renderer.domElement.addEventListener('pointerdown',e=>{dragging=true;pointerX=e.clientX;pointerY=e.clientY;downX=e.clientX;downY=e.clientY;renderer.domElement.setPointerCapture(e.pointerId);});
+renderer.domElement.addEventListener('pointermove',e=>{if(!dragging)return;const dx=e.clientX-pointerX,dy=e.clientY-pointerY;pointerX=e.clientX;pointerY=e.clientY;targetYaw=THREE.MathUtils.clamp(targetYaw+dx*.006,-.72,.72);targetPitch=THREE.MathUtils.clamp(targetPitch+dy*.003,-.18,.24);});
+const endDrag=()=>{dragging=false;};renderer.domElement.addEventListener('pointerup',endDrag);renderer.domElement.addEventListener('pointercancel',endDrag);
+const clock=new THREE.Clock();const lookTarget=new THREE.Vector3(0,2.5,0);
+function render(){requestAnimationFrame(render);const t=clock.getElapsedTime(),dt=Math.min(clock.getDelta(),.04);
+// One full day/night cycle takes 12 minutes, with long twilight transitions.
+const phase=(t/720*Math.PI*2-Math.PI/2);dayBlend=(Math.sin(phase)+1)/2;
+const night=new THREE.Color('#111a39'),dawn=new THREE.Color('#d28d83'),day=new THREE.Color('#77b5df'),dusk=new THREE.Color('#df8b72');let skyColor;
+if(dayBlend<.25)skyColor=night.clone().lerp(dawn,dayBlend/.25);else if(dayBlend<.72)skyColor=dawn.clone().lerp(day,(dayBlend-.25)/.47);else skyColor=day.clone().lerp(dusk,Math.min(1,(dayBlend-.72)/.28));
+scene.background.copy(skyColor);skyDome.material.color.copy(skyColor);scene.fog.color.copy(skyColor);
+key.color.copy(new THREE.Color('#a7c7ff').lerp(new THREE.Color('#fff0cf'),dayBlend));key.intensity=.45+2.85*dayBlend;fill.intensity=1.25;scene.children.find(o=>o.isHemisphereLight).intensity=.65+1.6*dayBlend;
+const starsVisible=1-dayBlend; // sparse tiny square stars fade away in daylight
+castleRoot.rotation.y=dragging?targetYaw:THREE.MathUtils.damp(castleRoot.rotation.y,targetYaw+Math.sin(t*.22)*.012,.7,dt);
+castleRoot.rotation.x=dragging?targetPitch:THREE.MathUtils.damp(castleRoot.rotation.x,targetPitch,.8,dt);
+if(!dragging){targetYaw=THREE.MathUtils.damp(targetYaw,0,.5,dt);targetPitch=THREE.MathUtils.damp(targetPitch,0,.65,dt);}
+island.rotation.y=castleRoot.rotation.y*.10;island.rotation.x=castleRoot.rotation.x*.1;
+camera.position.x=THREE.MathUtils.damp(camera.position.x,Math.sin(castleRoot.rotation.y)*1.15,.9,dt);camera.position.y=8.4+castleRoot.rotation.x*5;camera.lookAt(lookTarget);
+clouds.forEach(c=>{c.position.x=c.userData.x+Math.sin(t*c.userData.speed+c.userData.phase)*1.1;c.position.y+=Math.sin(t*.15+c.userData.phase)*.0008;});
+ocean.children.forEach(tile=>{tile.position.y=tile.userData.baseY+Math.sin(t*.7+tile.userData.phase)*.035;});
+const nightFactor=THREE.MathUtils.smoothstep(1-dayBlend,.32,.78);witches.forEach((w,i)=>{const a=t*(i===0?.24:-.19)+i*Math.PI;const radius=i===0?7.3:9.1;const x=Math.cos(a)*radius-.5,z=Math.sin(a)*radius-1.5,y=4.5+Math.sin(a*2+i)*1.1;w.position.set(x,y,z);w.material.opacity=nightFactor;w.visible=nightFactor>.015;w.material.rotation=-Math.sin(a)*.13;});
+renderer.render(scene,camera);}
+function resize(){camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);renderer.setPixelRatio(Math.min(devicePixelRatio,1.7));}
+addEventListener('resize',resize);render();
 </script>
 </body>
 </html>
